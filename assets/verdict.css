@@ -1,0 +1,182 @@
+/* =========================================================
+   THE VERDICT — seller side of the v3 marketplace plan.
+
+   This is the screen where the two sides of the business
+   meet: the person with the thing finds out that specific
+   named buyers want it. Stays in the paper skin — the seller
+   must never see credits, pulls, rarity or drops (plan §12.4).
+
+   The two-number rule (plan §4.1 step 3) is load-bearing and
+   is why .twonum exists as a pair and never as one figure:
+   buyers pay less than private sale, and saying so plainly
+   is what stops sellers feeling cheated later.
+   ========================================================= */
+
+/* ---------------- ITEM PICKER (demo affordance) ---------------- */
+.demo-pick{
+  display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+  margin-top:18px;padding-top:16px;border-top:1px dashed var(--line-2);
+}
+.demo-pick .lb{font-size:.76rem;color:var(--clay);font-weight:600}
+.demo-pick button{
+  border:1px solid var(--line-2);border-radius:999px;padding:7px 14px;
+  font-size:.83rem;font-weight:600;background:var(--paper);
+  transition:all .2s var(--ease);
+}
+.demo-pick button:hover{border-color:var(--clay)}
+.demo-pick button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* ---------------- TWO NUMBERS ---------------- */
+.twonum{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:16px}
+.num{
+  border:1px solid var(--line-2);border-radius:18px;padding:20px;background:var(--paper);
+  position:relative;overflow:hidden;
+}
+.num.buyer{
+  background:linear-gradient(165deg,var(--calm-soft),var(--paper) 72%);
+  border-color:var(--calm-line);
+}
+.num .k{
+  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:800;color:var(--clay);margin-bottom:10px;
+}
+.num.buyer .k{color:#33553D}
+.num .v{
+  font-family:var(--display);font-size:1.85rem;line-height:1;letter-spacing:-.038em;
+  font-variation-settings:"SOFT" 26,"WONK" 1,"opsz" 144;margin-bottom:9px;
+}
+.num.buyer .v{color:var(--calm)}
+.num .d{font-size:.83rem;color:var(--ink-2);line-height:1.45}
+.num .conf{
+  display:inline-flex;align-items:center;gap:5px;margin-top:11px;
+  font-size:.7rem;font-weight:700;color:var(--clay);
+  background:var(--paper-2);border:1px solid var(--line);border-radius:6px;padding:3px 8px;
+}
+.num .conf .ic{width:11px;height:11px}
+
+.twonote{
+  font-size:.87rem;color:var(--ink-2);line-height:1.55;
+  border-left:2px solid var(--line-2);padding-left:14px;margin-bottom:26px;
+}
+
+/* ---------------- BUYER DEMAND REVEAL ---------------- */
+.demand{
+  border:1px solid var(--calm-line);border-radius:20px;overflow:hidden;
+  margin-bottom:26px;background:var(--card);box-shadow:var(--sh-2);
+}
+.demand-hd{
+  padding:18px 22px;background:linear-gradient(150deg,var(--calm-soft),var(--card) 80%);
+  border-bottom:1px solid var(--calm-line);
+}
+.demand-hd .n{
+  font-family:var(--display);font-size:1.5rem;letter-spacing:-.03em;line-height:1.15;
+  font-variation-settings:"SOFT" 26,"WONK" 1;
+}
+.demand-hd .s{font-size:.86rem;color:var(--ink-2);margin-top:5px}
+.demand-list{padding:6px 22px 18px}
+.dbuyer{
+  display:flex;align-items:center;gap:13px;padding:13px 0;
+  border-bottom:1px dashed var(--line-2);
+  animation:rowIn .4s var(--ease) both;
+}
+.dbuyer:last-child{border-bottom:none}
+.dbuyer .dav{
+  width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;
+  background:var(--paper-2);border:1px solid var(--line);color:var(--clay);
+}
+.dbuyer .dav .ic{width:18px;height:18px}
+.dbuyer .dt{flex:1;min-width:0}
+.dbuyer .dt b{display:block;font-size:.95rem;font-weight:600;letter-spacing:-.012em}
+.dbuyer .dt span{display:block;font-size:.81rem;color:var(--clay);line-height:1.4}
+.dbuyer .dpay{
+  font-size:.8rem;font-weight:700;color:var(--calm);white-space:nowrap;
+  background:var(--calm-soft);border:1px solid var(--calm-line);border-radius:8px;padding:5px 10px;
+}
+.demand-ft{
+  padding:14px 22px;background:var(--paper-2);border-top:1px solid var(--line);
+  font-size:.82rem;color:var(--ink-2);line-height:1.5;
+}
+.demand-ft .ic{width:13px;height:13px;vertical-align:-.15em;color:var(--calm)}
+
+/* ---------------- THE FOUR DOORS ---------------- */
+.doors{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:8px}
+.door{
+  border:1px solid var(--line-2);border-radius:18px;padding:20px;text-align:left;
+  background:var(--paper);position:relative;
+  transition:all .22s var(--ease);box-shadow:var(--sh-1);
+}
+.door:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:var(--sh-2)}
+.door .di{
+  width:36px;height:36px;border-radius:10px;display:grid;place-items:center;margin-bottom:12px;
+  background:var(--paper-2);border:1px solid var(--line);
+}
+.door .di .ic{width:18px;height:18px}
+.door b{display:block;font-family:var(--display);font-size:1.14rem;letter-spacing:-.022em;margin-bottom:5px}
+.door span{display:block;font-size:.83rem;color:var(--ink-2);line-height:1.45}
+.door.rec{border-color:var(--urgent);background:linear-gradient(160deg,var(--urgent-soft),var(--paper) 72%)}
+.door.rec .di{background:#fff;border-color:var(--urgent-line);color:var(--urgent)}
+.door .rectag{
+  position:absolute;right:14px;top:14px;
+  font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  background:var(--urgent);color:#fff;border-radius:999px;padding:4px 9px;
+}
+
+/* the honest-broker callout — the platform arguing against its own revenue */
+.honest{
+  border:1px solid var(--amber-line);background:var(--amber-soft);
+  border-radius:16px;padding:17px 19px;margin-bottom:22px;
+  font-size:.89rem;color:#734D08;line-height:1.6;
+}
+.honest b{display:block;margin-bottom:4px;font-size:.94rem}
+.honest .ic{width:15px;height:15px;vertical-align:-.2em;margin-right:6px}
+
+/* ---------------- SELL TERMS ---------------- */
+.terms{display:grid;gap:11px;margin-bottom:22px}
+.term{
+  border:1px solid var(--line-2);border-radius:15px;padding:16px 18px;text-align:left;
+  background:var(--paper);display:flex;align-items:center;gap:14px;
+  transition:all .2s var(--ease);
+}
+.term:hover{border-color:var(--clay);transform:translateX(3px)}
+.term.on{border-color:var(--ink);background:var(--card);box-shadow:var(--sh-2)}
+.term .tr{
+  width:20px;height:20px;border-radius:50%;border:2px solid var(--line-2);flex:none;
+  display:grid;place-items:center;transition:border-color .2s var(--ease);
+}
+.term.on .tr{border-color:var(--ink)}
+.term.on .tr::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--ink)}
+.term .tt b{display:block;font-size:.96rem;font-weight:600}
+.term .tt span{display:block;font-size:.83rem;color:var(--clay);line-height:1.4;margin-top:2px}
+
+/* ---------------- POSTED (sell branch) ---------------- */
+.sent{
+  border:1px solid var(--calm-line);border-radius:18px;overflow:hidden;
+  margin:22px 0;text-align:left;
+}
+.sent-hd{
+  padding:15px 20px;background:var(--calm-soft);border-bottom:1px solid var(--calm-line);
+  font-size:.72rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#33553D;
+}
+.sent-bd{padding:6px 20px 16px;background:var(--card)}
+.sent-row{
+  display:flex;align-items:center;gap:11px;padding:11px 0;
+  border-bottom:1px dashed var(--line-2);font-size:.9rem;
+}
+.sent-row:last-child{border-bottom:none}
+.sent-row .ic{width:15px;height:15px;color:var(--calm);flex:none}
+.sent-row .sr{flex:1}
+.sent-row .st{font-size:.78rem;color:var(--clay);white-space:nowrap}
+
+.privacy-mini{
+  display:flex;gap:10px;align-items:flex-start;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+  padding:14px 16px;font-size:.85rem;color:var(--ink-2);line-height:1.55;text-align:left;
+}
+.privacy-mini .ic{width:16px;height:16px;color:var(--ink);flex:none;margin-top:2px}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media(max-width:640px){
+  .twonum{grid-template-columns:1fr}
+  .doors{grid-template-columns:1fr}
+  .dbuyer .dpay{display:none}
+}

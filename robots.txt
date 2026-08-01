@@ -1,0 +1,6 @@
+# Prototype with sample data — not for indexing yet.
+# When the sample listings, testimonials and impact figures are replaced
+# with real ones, change this to "Allow: /" and drop the X-Robots-Tag
+# header from netlify.toml.
+User-agent: *
+Disallow: /

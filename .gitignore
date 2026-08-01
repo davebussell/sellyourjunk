@@ -1,0 +1,23 @@
+# Internal strategy docs — these must never reach the repo or the CDN.
+# Netlify publishes from the repo root, so anything committed here is
+# fetchable at https://<site>/<filename>. These contain financial
+# projections, unit economics and competitive analysis.
+SellYourJunk-Commercial-Plan-v1.md
+SellYourJunk-Mission-Plan.md
+SellYourJunk-Marketplace-Plan-v3.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Node (not used today, but the plan calls for Next.js later)
+node_modules/
+.netlify/
+
+# Standalone inlined snapshot of an earlier build — kept locally for
+# sharing, but excluded so it does not serve as a stale duplicate page.
+SellYourJunk-preview.html

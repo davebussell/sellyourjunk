@@ -1,0 +1,31 @@
+# Netlify configuration for SellYourJunk
+# Static prototype — no build step. Files are served from the repo root.
+
+[build]
+  publish = "."
+  command = ""
+
+# Security & caching headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Prototype: keep it out of search results until the sample data
+    # is replaced with real listings. Remove this line to go public.
+    X-Robots-Tag = "noindex, nofollow"
+
+# CSS/JS change often in this prototype — revalidate each load (cheap 304
+# via ETag) so updates go live immediately instead of being cached for a day.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Belt and braces: the strategy docs are gitignored, but if one ever gets
+# committed by accident it should still 404 rather than serve.
+[[redirects]]
+  from = "/*.md"
+  to = "/index.html"
+  status = 404

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SellYourJunk.com — Somebody wants it.</title>
+<meta name="description" content="Post what you're throwing out, say how long you'll wait, and let the people who need it come and get it. Free, always.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/buyer.css">
+<link rel="stylesheet" href="assets/verdict.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <div class="logo" onclick="go('home')">
+      <span class="dot"></span>
+      <span>SellYourJunk<small>Somebody wants it.</small></span>
+    </div>
+    <nav class="navlinks" id="navlinks">
+      <button data-nav="feed" onclick="go('feed')">Available now</button>
+      <button data-nav="how" onclick="go('how')">How it works</button>
+      <button data-nav="clearing" onclick="go('clearing')">Clearing a home</button>
+      <button data-nav="orgs" onclick="go('orgs')">For organizations</button>
+      <button data-nav="receiver" onclick="go('receiver')">Receiver view</button>
+      <button data-nav="drop" onclick="go('drop')">The Drop</button>
+      <button data-nav="inbox" class="bell" onclick="go('inbox')"><i data-lucide="users" class="ic"></i>Your listings<span class="bell-count" id="bell-count">0</span></button>
+      <button data-nav="story" onclick="go('story')">Our story</button>
+      <button class="btn urgent" onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><i data-lucide="menu" class="ic"></i></button>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<div class="view on" id="v-home">
+  <div class="hero">
+    <div class="hero-art">
+      <div class="hero-shot">
+        <img src="https://images.unsplash.com/photo-1603844908699-ff22c77bece8?w=1200&q=75&auto=format&fit=crop" alt="A living room of furniture" loading="eager">
+        <span class="ph-grade"></span>
+      </div>
+      <div class="hero-chip">
+        <span class="clock hot"><span class="pip"></span>6 hr 12 min left</span>
+        <div class="hero-chip-t">Everything in this room</div>
+        <div class="hero-chip-s">Lakeview, Mississauga · 4 organizations notified</div>
+      </div>
+    </div>
+    <div class="wrap">
+      <span class="eyebrow"><span class="blip"></span>SellYourJunk.com · last call before the landfill</span>
+      <h1>Somebody wants it.</h1>
+      <p class="lede">Post what you're throwing out, say how long you'll wait, and let the people who need it come and get it. Free, always. Takes about thirty seconds.</p>
+      <div class="hero-actions">
+        <button class="btn urgent lg" onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
+        <button class="btn ghost lg" onclick="go('feed')"><i data-lucide="clock" class="ic"></i>See what's available</button>
+      </div>
+      <div class="ticker" id="ticker"></div>
+      <p class="hero-note">Clearing out a family home? <button onclick="go('clearing')">We built something for that.</button></p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap stat-grid">
+      <div class="stat" reveal>
+        <div class="n hot">80%</div>
+        <div class="l">of discarded furniture goes straight to landfill</div>
+        <div class="src">EPA / industry data</div>
+      </div>
+      <div class="stat" reveal>
+        <div class="n hot">0.3%</div>
+        <div class="l">of landfilled furniture gets recycled</div>
+        <div class="src">EPA</div>
+      </div>
+      <div class="stat" reveal>
+        <div class="n">50%+</div>
+        <div class="l">of landfilled bulky waste is still perfectly reusable</div>
+        <div class="src">Journal of Circular Economy</div>
+      </div>
+      <div class="stat" reveal>
+        <div class="n">$158</div>
+        <div class="l">per tonne Toronto pays to bury it</div>
+        <div class="src">City of Toronto</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="kicker">How it works</div>
+        <h2>The deadline is the whole idea.</h2>
+        <p>Free-stuff boards fail because listings sit forever and nobody shows up. A post that says <em>this goes to the dump Saturday at noon</em> is honest, it creates real urgency, and it expires on its own.</p>
+      </div>
+      <div class="steps">
+        <div class="step" reveal>
+          <div class="num">1</div>
+          <h3>Take a photo</h3>
+          <p>Point your phone at it. We write the title, work out the size, and flag whether it fits in a car or needs a truck.</p>
+        </div>
+        <div class="step" reveal>
+          <div class="num">2</div>
+          <h3>Say when it has to go</h3>
+          <p>Tonight, this weekend, next Thursday. That deadline is what turns a listing into something people act on.</p>
+        </div>
+        <div class="step" reveal>
+          <div class="num">3</div>
+          <h3>Somebody comes and gets it</h3>
+          <p>Local charities and community groups get first look for 24 hours — they have trucks and volunteers. Then it opens to everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="impact reveal">
+        <div class="impact-in">
+          <div class="imp"><div class="n" data-count="1284">0</div><div class="l">items rehomed in the GTA this month</div></div>
+          <div class="imp"><div class="n" data-count="31.6" data-dec="1" data-suf=" t">0</div><div class="l">kept out of landfill this year</div></div>
+          <div class="imp"><div class="n" data-count="118">0</div><div class="l">organizations receiving</div></div>
+          <div class="imp"><div class="n" data-count="0" data-pre="$">0</div><div class="l">cost to anyone, ever</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="kicker">Available near you</div>
+        <h2>Going to the dump soon.</h2>
+        <p>Real listings expire on their own. Nothing here is stale, because nothing here can be.</p>
+      </div>
+      <div class="feed-grid" id="home-feed"></div>
+      <div style="margin-top:28px"><button class="btn ghost" onclick="go('feed')">See everything available →</button></div>
+    </div>
+  </section>
+
+  <section class="band alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="kicker">What happens after</div>
+        <h2>It ends up somewhere.</h2>
+      </div>
+      <div class="two">
+        <figure class="quote reveal">
+          <blockquote>We had four days to empty my mother's house and I was dreading every hour of it. A community centre took her sewing machine and all her fabric. They asked if I wanted to come and see the class that uses it.</blockquote>
+          <figcaption>
+            <span class="av" style="background-image:url('https://live.staticflickr.com/869/27000742647_3fc34732b6_b.jpg')"></span>
+            <span><b>Marianne D.</b><small>Cleared a home in Lakeview, June 2026</small></span>
+          </figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>We used to send a van out blind and hope it was worth the trip. Now we see photographs, sizes and a deadline before we leave the depot. Our cost per tonne dropped and we're not guessing any more.</blockquote>
+          <figcaption>
+            <span class="av" style="background-image:url('https://live.staticflickr.com/8422/7807920818_1c70e7d707_b.jpg')"></span>
+            <span><b>Riverdale Community Centre</b><small>Receiving since launch · 118 items</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="narrow" style="text-align:center">
+      <div class="kicker">Why we built this</div>
+      <h2 style="margin-bottom:20px">A house full of useful things, and three days to empty it.</h2>
+      <p style="font-size:1.1rem;color:var(--ink-2)">When my grandparents died, their couches, sewing machines, fabric and lamps went into a dumpster. Not because they were worthless. Because there was no practical way, in three days, to find the people who wanted them.</p>
+      <button class="btn ghost" onclick="go('story')" style="margin-top:12px">Read the whole story</button>
+    </div>
+  </section>
+</div>
+
+<!-- ================= FEED ================= -->
+<div class="view" id="v-feed">
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="kicker">Available now · Mississauga, Etobicoke &amp; Brampton</div>
+        <h2>Last calls in your area</h2>
+      </div>
+      <div class="ticker ticker-wide" id="ticker2"></div>
+      <div class="stage-banner">
+        <i data-lucide="landmark" class="ic"></i>
+        <div>
+          <b>Some of these are in the organization window.</b>
+          Charities, shelters and community groups get first look for 24 hours — they have trucks and volunteers, and one van can take forty items in a single trip. Then everything opens to everyone.
+        </div>
+      </div>
+      <div class="filters">
+        <button class="fchip on" data-f="all" onclick="filterFeed('all',this)"><i data-lucide="package" class="ic"></i>Everything</button>
+        <button class="fchip" data-f="car" onclick="filterFeed('car',this)"><i data-lucide="car" class="ic"></i>Fits in a car</button>
+        <button class="fchip" data-f="truck" onclick="filterFeed('truck',this)"><i data-lucide="truck" class="ic"></i>Needs a truck</button>
+        <button class="fchip" data-f="porch" onclick="filterFeed('porch',this)"><i data-lucide="house" class="ic"></i>Porch pickup</button>
+        <button class="fchip" data-f="soon" onclick="filterFeed('soon',this)"><i data-lucide="clock" class="ic"></i>Going in &lt; 12 hrs</button>
+      </div>
+      <div class="feed-grid" id="full-feed"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= POST FLOW ================= -->
+<div class="view" id="v-post">
+  <section class="band">
+    <div class="wrap">
+      <div class="panel" id="post-panel">
+        <div class="progress"><i class="on"></i><i></i><i></i><i></i></div>
+        <div id="post-step"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= CLEARING A HOME ================= -->
+<div class="view" id="v-clearing">
+  <section class="band">
+    <div class="wrap">
+      <div class="panel wide" id="clear-panel">
+        <div class="progress"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+        <div id="clear-step"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= OWNER INBOX ================= -->
+<div class="view" id="v-inbox">
+  <section class="band">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px">
+        <span class="badge-demo">Owner view</span>
+        <span style="font-size:.86rem;color:var(--clay)">Signed in as <b style="color:var(--ink)">Marianne D.</b> · Lakeview, Mississauga</span>
+      </div>
+      <div class="sec-head" style="margin-bottom:26px">
+        <h2>People want your things.</h2>
+        <p>Someone asks for a time. You say yes. Only then does your address go anywhere. Your phone number never does.</p>
+      </div>
+
+      <div class="privacy-bar">
+        <div><i data-lucide="house" class="ic"></i><span><b>Your address stays hidden</b>Released only to the person you approve, once you approve them.</span></div>
+        <div><i data-lucide="users" class="ic"></i><span><b>Your number stays private</b>Messages and calls go through a relay that switches off after the pickup.</span></div>
+        <div><i data-lucide="timer" class="ic"></i><span><b>Silence won't waste it</b>No reply? It approves automatically 6 hours before your deadline.</span></div>
+      </div>
+
+      <div id="inbox"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= RECEIVER ================= -->
+<div class="view" id="v-receiver">
+  <section class="band">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px">
+        <span class="badge-demo">Receiver view</span>
+        <span style="font-size:.86rem;color:var(--clay)">Signed in as <b style="color:var(--ink)">Riverdale Community Centre</b> · verified organization</span>
+      </div>
+      <div class="sec-head reveal" style="margin-bottom:30px">
+        <h2>4 things you're looking for became available today.</h2>
+        <p>You set your standing wants once. We only tell you when something you actually want shows up inside your radius.</p>
+      </div>
+
+      <div class="metrics">
+        <div class="metric" reveal><div class="n">118</div><div class="l">Items received this year</div></div>
+        <div class="metric" reveal><div class="n">3.4 t</div><div class="l">Diverted from landfill</div></div>
+        <div class="metric" reveal><div class="n">$0</div><div class="l">Paid to use this — always</div></div>
+        <div class="metric" reveal><div class="n">2</div><div class="l">Pickups scheduled this week</div></div>
+      </div>
+
+      <div class="rec-layout">
+        <aside class="side">
+          <h4>Your standing wants</h4>
+          <div class="want"><i data-lucide="check" class="ic tick"></i> Sewing machines &amp; notions</div>
+          <div class="want"><i data-lucide="check" class="ic tick"></i> Fabric &amp; textiles</div>
+          <div class="want"><i data-lucide="check" class="ic tick"></i> Kitchen tables &amp; chairs</div>
+          <div class="want"><i data-lucide="check" class="ic tick"></i> Table &amp; floor lamps</div>
+          <div class="want"><i data-lucide="check" class="ic tick"></i> Dressers &amp; storage</div>
+          <div class="side-div"></div>
+          <h4>Never send us</h4>
+          <div class="want"><i data-lucide="x" class="ic no"></i> Upholstered sofas</div>
+          <div class="want"><i data-lucide="x" class="ic no"></i> Mattresses</div>
+          <div class="want"><i data-lucide="x" class="ic no"></i> Exercise equipment</div>
+          <div class="side-div"></div>
+          <h4>Capacity</h4>
+          <div class="want"><i data-lucide="map-pin" class="ic"></i> Within 25 km</div>
+          <div class="want"><i data-lucide="truck" class="ic"></i> 2 pickups / week</div>
+          <div class="want"><i data-lucide="timer" class="ic"></i> 48 hrs notice</div>
+          <div class="side-div"></div>
+          <button class="btn ghost sm" style="width:100%">Edit standing wants</button>
+        </aside>
+
+        <div id="matches"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= THE DROP (buyer side) ================= -->
+<div class="view" id="v-drop">
+  <div class="bx-bar" id="bx-bar"></div>
+  <div id="bx-body"></div>
+</div>
+
+<!-- ================= REPORT ================= -->
+<div class="view" id="v-report">
+  <section class="band">
+    <div class="wrap">
+      <div class="report">
+        <div class="report-hero">
+          <div class="kicker">Diversion report · 41 Wexford Ave</div>
+          <div class="big">142</div>
+          <div class="cap">items found homes · <b>1.9 tonnes</b> kept out of landfill</div>
+        </div>
+
+        <h3 style="margin-bottom:16px">Where things went</h3>
+        <div class="where"><span class="org">Furniture Bank Toronto</span><span class="cnt">38 items · bedroom set, dining table, chairs, dressers</span></div>
+        <div class="where"><span class="org">Riverdale Community Centre</span><span class="cnt">44 items · sewing machine, fabric, notions, lamps</span></div>
+        <div class="where"><span class="org">Habitat ReStore — Mississauga</span><span class="cnt">31 items · bookcases, kitchenware, light fixtures</span></div>
+        <div class="where"><span class="org">COSTI Settlement Services</span><span class="cnt">18 items · linens, small appliances, dishes</span></div>
+        <div class="where"><span class="org">Neighbours &amp; individuals</span><span class="cnt">11 items · books, plants, garden tools</span></div>
+        <div class="where" style="opacity:.6"><span class="org">Hauled &amp; recycled</span><span class="cnt">9 items · broken, stained or unsafe</span></div>
+
+        <div style="margin-top:32px;padding-top:26px;border-top:1px solid var(--line)">
+          <h3 style="margin-bottom:14px">Estimated fair market value</h3>
+          <p style="font-size:.94rem;color:var(--ink-2);margin:0">
+            <b>$4,180</b> across 131 donated items. We've prepared the item-by-item valuation each receiving charity needs to issue you a tax receipt.
+          </p>
+          <button class="btn ghost sm" style="margin-top:14px"><i data-lucide="download" class="ic"></i>Download valuation summary (PDF)</button>
+        </div>
+
+        <div class="report-note">
+          “The sewing machine went to a community centre that runs a sewing class for newcomers on Tuesday nights. They've asked whether you'd like to come and see it being used.”
+        </div>
+
+        <div style="display:flex;gap:10px;margin-top:28px;flex-wrap:wrap">
+          <button class="btn" onclick="go('home')">Done</button>
+          <button class="btn ghost">Share this report</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= HOW IT WORKS ================= -->
+<div class="view" id="v-how">
+  <section class="band">
+    <div class="narrow">
+      <div class="kicker">How it works</div>
+      <h2 style="margin-bottom:26px">Simple on purpose.</h2>
+      <p style="font-size:1.1rem;color:var(--ink-2)">Every extra field is a reason not to post. So there are almost none.</p>
+    </div>
+  </section>
+
+  <section class="band alt" style="padding-top:56px">
+    <div class="wrap">
+      <div class="two">
+        <div class="card" reveal>
+          <h3>If you're giving something away</h3>
+          <ul class="list-check">
+            <li><i data-lucide="arrow-right" class="ic"></i>Take a photo. We write the listing.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Say when it has to be gone.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Turn on Porch Pickup if you'd rather not be home — leave it out, someone takes it, done.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Add a line about the thing if you want to. People claim items with stories far more often.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Charities get 24 hours first, unless you're in a hurry. One tap opens it to everyone.</li>
+          </ul>
+        </div>
+        <div class="card" reveal>
+          <h3>If you want something</h3>
+          <ul class="list-check">
+            <li><i data-lucide="arrow-right" class="ic"></i>Browse what's near you. Everything shows how long is left.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Claiming means picking an actual arrival window — not "I'm interested".</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>The owner approves your time, then the address arrives. You message through a relay, so neither of you hands a stranger a phone number.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Miss your window and it passes to the next person automatically. No awkward messages.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>No haggling, no chat threads, no "is this still available?" The countdown answers that.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>It's free. There's no catch, no membership, and nobody checks whether you qualify.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="narrow">
+      <h2 style="margin-bottom:22px">Things we decided not to build</h2>
+      <p style="color:var(--ink-2)"><b>No messaging.</b> Chat is where these platforms die — negotiation over free items, ghosting, arguments. You get four buttons: on my way, running late, can't make it, got it.</p>
+      <p style="color:var(--ink-2)"><b>No volunteer moderators.</b> The most consistent failure of every neighbourhood giving group. Moderation here is automated first and paid staff second. No neighbour will ever have the power to ban another neighbour.</p>
+      <p style="color:var(--ink-2)"><b>No eligibility checks.</b> We don't ask why you want it or whether you need it. A large share of people using this are under real financial pressure and none of them should have to prove it to get a lamp.</p>
+      <p style="color:var(--ink-2)"><b>No reseller police.</b> Someone who takes a free dresser and flips it has still kept a dresser out of the ground and put it in a home. Givers can set a preference and we honour it — but we're not building an inquisition.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ORGS ================= -->
+<div class="view" id="v-orgs">
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="kicker">For organizations</div>
+        <h2>We lower your cost per tonne.</h2>
+        <p>You already know what you need. What you don't know is which house three streets over is about to throw it in a bin. That's the only thing we do.</p>
+      </div>
+      <div class="two" style="margin-bottom:20px">
+        <div class="card" reveal>
+          <h3>What you get</h3>
+          <ul class="list-check">
+            <li><i data-lucide="arrow-right" class="ic"></i>Photographed, categorised, measured items — before you send a truck</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>A standing wants list you set once, then never think about again</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>24 hours of exclusive access before anything opens to the public</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Geographically batched pickups, so one run collects from several homes</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>Claim whole lots — "all the fabric", "the dining set" — not item by item</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>An automatic monthly impact report you can forward to your board</li>
+          </ul>
+        </div>
+        <div class="card" reveal>
+          <h3>What it costs</h3>
+          <p class="free-num">Nothing.</p>
+          <p>Not now, not later, not for premium features or priority placement. The moment a shelter has to weigh a subscription fee against its programs, we've broken the thing we're trying to do.</p>
+          <p style="margin-top:14px">We're funded by grants, municipal diversion contracts, and referral fees from the haulers who take away what nobody claimed.</p>
+        </div>
+      </div>
+      <div class="card" reveal>
+        <h3>Who's already receiving</h3>
+        <p style="margin-bottom:14px">Furniture banks · Habitat ReStores · women's and youth shelters · newcomer and refugee resettlement agencies · faith communities · repair cafés and tool libraries · school and community theatre programs · thrift retailers · scrap metal and auto recyclers · animal shelters</p>
+        <button class="btn urgent"><i data-lucide="hand-heart" class="ic"></i>Apply to become a receiver</button>
+        <button class="btn ghost" onclick="go('receiver')">See the receiver view</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= STORY ================= -->
+<div class="view" id="v-story">
+  <section class="band">
+    <div class="narrow story">
+      <div class="kicker">Our story</div>
+      <h2 style="margin-bottom:30px">Nothing useful should end up in a landfill because nobody knew it was there.</h2>
+      <figure class="story-shot reveal">
+        <img src="https://live.staticflickr.com/59/230542171_e9742085d9_b.jpg" alt="An emptied living room" loading="lazy">
+        <span class="ph-grade"></span>
+        <figcaption>The room after. This is the part nobody photographs.</figcaption>
+      </figure>
+      <p class="lead">When my grandparents died, my dad had a few days to empty their house. The couches went in a dumpster. So did the sewing machines, the fabric, the lamps.</p>
+      <p>None of it was worthless. My grandmother had sewn on that machine for decades. Somebody, somewhere within a few kilometres of that house, needed a lamp and a kitchen table and could not afford one. There was no way to find them in three days, so a lifetime of useful things went into a hole in the ground.</p>
+      <p>Watching it happen was heartbreaking, and the part I couldn't stop thinking about afterwards was that <em>nothing about it was necessary</em>. This isn't a shortage problem. The things exist. The people who need them exist. They're often on the same street on the same afternoon. They just never meet.</p>
+      <div class="pull">More than half of the bulky waste we bury is still perfectly usable. We're not running out of things. We're running out of ways to find each other in time.</div>
+      <p>Facebook groups and giving boards half-solve this, and I'm grateful they exist. But they're gated, fragmented, and full of listings that have sat there since March. You have to join, be approved, learn the rules, tolerate the drama — and then still get ghosted by three people who said they'd come.</p>
+      <p>So this works differently. You say what you have and when it has to be gone. That deadline is the entire mechanic. It's honest — it's your actual constraint — and it gives a charity with a van something they can genuinely plan around. When the clock runs out, the listing disappears. Nothing here gets stale, because nothing here can.</p>
+      <p>Charities, shelters and community groups get first look, because they have trucks and volunteers where most of us have a sedan and good intentions. Then it opens to everyone, and we never ask anybody to prove they need what they're taking.</p>
+      <p>And for anyone facing what my dad faced — a house, a deadline, and a lifetime of belongings — we built something specific. Walk through the rooms with your phone. We'll list everything, sort out who wants what, and hand you a schedule so you're not answering the door forty times in a weekend. At the end you get a page that tells you where everything went.</p>
+      <p>My grandparents' things are gone. But there's a house being emptied somewhere this week with the same things in it, and right now the only tool that family has is a bin.</p>
+      <div style="margin-top:36px;display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn urgent" onclick="go('clearing')">Clearing a home</button>
+        <button class="btn ghost" onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= MODAL ================= -->
+<div class="modal-bg" id="modal">
+  <div class="modal" id="modal-inner"></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="logo" style="margin-bottom:14px;cursor:default"><span class="dot"></span><span>SellYourJunk<small>Somebody wants it.</small></span></div>
+        <p>A project of The SellYourJunk Foundation, a Canadian non-profit. Free to give, free to receive, free for organizations — permanently.</p>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <button onclick="go('feed')">Available now</button>
+        <button onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
+        <button onclick="go('clearing')">Clearing a home</button>
+        <button onclick="go('inbox')">Your listings &amp; requests</button>
+        <button onclick="go('report')">Sample diversion report</button>
+        <button onclick="go('drop')">The Drop — for buyers</button>
+      </div>
+      <div>
+        <h5>About</h5>
+        <button onclick="go('story')">Our story</button>
+        <button onclick="go('orgs')">For organizations</button>
+        <button onclick="go('receiver')">Receiver view</button>
+        <button onclick="go('how')">How it works</button>
+      </div>
+    </div>
+    <div class="foot-btm">
+      <span>© 2026 The SellYourJunk Foundation · Mississauga, Etobicoke &amp; Brampton</span>
+      <span><span class="badge-demo">Prototype</span> &nbsp; Sample data — nothing here is a real listing</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/buyer.js"></script>
+<script src="assets/verdict.js"></script>
+</body>
+</html>
