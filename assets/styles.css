@@ -684,6 +684,9 @@ footer{border-top:1px solid var(--line);background:var(--paper-2);padding:64px 0
 .quote .av{
   width:44px;height:44px;border-radius:50%;flex:none;background-size:cover;background-position:center;
   border:1px solid var(--line);filter:saturate(.85);
+  /* neutral by default — these are illustrative scenarios, so they must
+     not wear a real person's photograph as though it were a customer */
+  background-color:var(--paper-3);
 }
 .quote figcaption small{display:block;color:var(--clay);font-size:.79rem;margin-top:1px}
 

@@ -59,7 +59,7 @@ function listings(){
     {id:6,t:"Kids' bike, 20 inch",ico:"bike",cat:"car",where:"Brampton North",cond:"Needs a new chain",due:n+4.5*H,porch:true,orgOnly:false,claimed:false},
     {id:7,t:"2009 Corolla — doesn't run",ico:"car",cat:"truck",where:"Malton, Mississauga",cond:"Dead engine. Scrap or parts.",due:n+70*H,porch:false,orgOnly:false,claimed:false},
     {id:8,t:"Bar fridge",ico:"fridge",cat:"car",where:"Etobicoke North",cond:"Cold and quiet",due:n+2.2*H,porch:true,orgOnly:false,claimed:false},
-    {id:9,t:"Two oak bookcases",ico:"shelf",cat:"truck",where:"Cooksville, Mississauga",cond:"Very good",due:n+27*H,porch:false,orgOnly:false,claimed:true,by:"Habitat ReStore"},
+    {id:9,t:"Two oak bookcases",ico:"shelf",cat:"truck",where:"Cooksville, Mississauga",cond:"Very good",due:n+27*H,porch:false,orgOnly:false,claimed:true,by:"a local reuse charity"},
     {id:10,t:"Pine dresser, 5 drawers",ico:"dresser",cat:"truck",where:"Brampton West",cond:"Good, one stiff drawer",due:n+45*H,porch:false,orgOnly:false,claimed:false},
     {id:11,t:"Boxes of kitchenware",ico:"kitchen",cat:"car",where:"Lakeview, Mississauga",cond:"Plates, pots, cutlery, glasses",due:n+7*H,porch:true,orgOnly:false,claimed:false},
     {id:12,t:"Four dining chairs",ico:"chair",cat:"car",where:"Streetsville, Mississauga",cond:"Wobbly but fixable",due:n+9.5*H,porch:false,orgOnly:false,claimed:false}
