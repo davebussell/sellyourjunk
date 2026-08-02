@@ -723,7 +723,7 @@ window.addEventListener('load',()=>{
 function initStickyCta(){
   const b=document.createElement('button');
   b.className='sticky-cta'; b.onclick=()=>go('post');
-  b.innerHTML=ic('camera')+'Post a Last Call';
+  b.innerHTML=ic('camera')+"What's it worth?";
   document.body.appendChild(b); icons();
   const show=()=>b.classList.toggle('on',
     window.scrollY>600 && document.querySelector('.view.on')?.id!=='v-post');

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>We Pay for Junk — Somebody wants it.</title>
-<meta name="description" content="Post what you're throwing out, say how long you'll wait, and let the people who need it come and get it. Free, always.">
+<meta name="description" content="Photograph what you're getting rid of. We work out what it is, what it's worth, and which local buyers want it — then they come to you and pay. Free to use, always.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
@@ -23,7 +23,7 @@
       <span>WePayForJunk</span>
     </div>
     <nav class="navlinks" id="navlinks">
-      <button data-nav="feed" onclick="go('feed')">Available now</button>
+      <button data-nav="feed" onclick="go('feed')">Going free</button>
       <button data-nav="how" onclick="go('how')">How it works</button>
       <button data-nav="clearing" onclick="go('clearing')">Clearing a home</button>
       <button data-nav="orgs" onclick="go('orgs')">For organizations</button>
@@ -31,7 +31,7 @@
       <button data-nav="drop" onclick="go('drop')">The Drop</button>
       <button data-nav="inbox" class="bell" onclick="go('inbox')"><i data-lucide="users" class="ic"></i>Your listings<span class="bell-count" id="bell-count">0</span></button>
       <button data-nav="story" onclick="go('story')">Our story</button>
-      <button class="btn urgent" onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
+      <button class="btn urgent" onclick="go('post')"><i data-lucide="camera" class="ic"></i>What's it worth?</button>
     </nav>
     <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><i data-lucide="menu" class="ic"></i></button>
   </div>
@@ -48,16 +48,16 @@
       <div class="hero-chip">
         <span class="clock hot"><span class="pip"></span>6 hr 12 min left</span>
         <div class="hero-chip-t">Everything in this room</div>
-        <div class="hero-chip-s">Lakeview, Mississauga · 4 organizations notified</div>
+        <div class="hero-chip-s">Lakeview, Mississauga · 4 buyers notified</div>
       </div>
     </div>
     <div class="wrap">
-      <span class="eyebrow"><span class="blip"></span>WePayForJunk.com · last call before the landfill</span>
-      <h1>Somebody wants it.</h1>
-      <p class="lede">Post what you're throwing out, say how long you'll wait, and let the people who need it come and get it. Free, always. Takes about thirty seconds.</p>
+      <span class="eyebrow"><span class="blip"></span>WePayForJunk.com · find out what it's worth</span>
+      <h1>Somebody wants it. And they'll pay.</h1>
+      <p class="lede">Photograph what you're getting rid of. We work out exactly what it is, what it's worth, and which local buyers want that specific thing — then they come to you. Free to use, always. Takes about thirty seconds.</p>
       <div class="hero-actions">
-        <button class="btn urgent lg" onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
-        <button class="btn ghost lg" onclick="go('feed')"><i data-lucide="clock" class="ic"></i>See what's available</button>
+        <button class="btn urgent lg" onclick="go('post')"><i data-lucide="camera" class="ic"></i>See what it's worth</button>
+        <button class="btn ghost lg" onclick="go('feed')"><i data-lucide="clock" class="ic"></i>See what's going free</button>
       </div>
       <div class="ticker" id="ticker"></div>
       <p class="hero-note">Clearing out a family home? <button onclick="go('clearing')">We built something for that.</button></p>
@@ -93,24 +93,24 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <div class="kicker">How it works</div>
-        <h2>The deadline is the whole idea.</h2>
-        <p>Free-stuff boards fail because listings sit forever and nobody shows up. A post that says <em>this goes to the dump Saturday at noon</em> is honest, it creates real urgency, and it expires on its own.</p>
+        <h2>We already know who wants it.</h2>
+        <p>Buyers tell us what they're after in their own words — <em>pre-1990 steel road bikes, non-running sedans, mid-century teak</em>. When yours matches, they pay us to reach you. You never pay us anything, and nothing happens until you say yes.</p>
       </div>
       <div class="steps">
         <div class="step" reveal>
           <div class="num">1</div>
           <h3>Take a photo</h3>
-          <p>Point your phone at it. We write the title, work out the size, and flag whether it fits in a car or needs a truck.</p>
+          <p>Point your phone at it. We work out exactly what it is — make, model, condition, what's wrong with it — and what it's actually worth.</p>
         </div>
         <div class="step" reveal>
           <div class="num">2</div>
-          <h3>Say when it has to go</h3>
-          <p>Tonight, this weekend, next Thursday. That deadline is what turns a listing into something people act on.</p>
+          <h3>See who's buying</h3>
+          <p>We show you the local buyers who want that specific thing, what they've bought before, and what they pay. Your name and address stay hidden.</p>
         </div>
         <div class="step" reveal>
           <div class="num">3</div>
-          <h3>Somebody comes and gets it</h3>
-          <p>Local charities and community groups get first look for 24 hours — they have trucks and volunteers. Then it opens to everyone.</p>
+          <h3>They come to you</h3>
+          <p>Pick one and they collect and pay on the spot. Nobody buying? It goes to the charities who want it — deadline and all, exactly as before.</p>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@
           <div class="imp"><div class="n" data-count="1284">0</div><div class="l">items rehomed a month — the year-one target</div></div>
           <div class="imp"><div class="n" data-count="31.6" data-dec="1" data-suf=" t">0</div><div class="l">tonnes we're aiming to keep out of landfill</div></div>
           <div class="imp"><div class="n" data-count="118">0</div><div class="l">organizations we're working to sign</div></div>
-          <div class="imp"><div class="n" data-count="0" data-pre="$">0</div><div class="l">cost to anyone, ever — this one's real</div></div>
+          <div class="imp"><div class="n" data-count="0" data-pre="$">0</div><div class="l">what we'll ever charge you to sell — this one's real</div></div>
         </div>
       </div>
     </div>
@@ -137,12 +137,12 @@
   <section class="band alt">
     <div class="wrap">
       <div class="sec-head reveal">
-        <div class="kicker">Available near you</div>
+        <div class="kicker">Going free near you</div>
         <h2>Going to the dump soon.</h2>
-        <p>Real listings expire on their own. Nothing here is stale, because nothing here can be.</p>
+        <p>Not everything is worth money, and the rest still shouldn't be buried. These are the ones the owner decided to give away — free, first come, and they expire on their own.</p>
       </div>
       <div class="feed-grid" id="home-feed"></div>
-      <div style="margin-top:28px"><button class="btn ghost" onclick="go('feed')">See everything available →</button></div>
+      <div style="margin-top:28px"><button class="btn ghost" onclick="go('feed')">See everything going free →</button></div>
     </div>
   </section>
 
@@ -187,7 +187,7 @@
   <section class="band">
     <div class="wrap">
       <div class="sec-head reveal">
-        <div class="kicker">Available now · Mississauga, Etobicoke &amp; Brampton</div>
+        <div class="kicker">Going free · Mississauga, Etobicoke &amp; Brampton</div>
         <h2>Last calls in your area</h2>
       </div>
       <div class="ticker ticker-wide" id="ticker2"></div>
@@ -366,15 +366,27 @@
 
   <section class="band alt" style="padding-top:56px">
     <div class="wrap">
-      <div class="two">
+      <div class="three">
         <div class="card" reveal>
-          <h3>If you're giving something away</h3>
+          <h3>If you're selling it</h3>
+          <ul class="list-check">
+            <li><i data-lucide="arrow-right" class="ic"></i>Take a photo. We identify it properly — make, model, condition, faults.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>You get two numbers, never one: what it fetches in a private sale, and what a buyer will hand you today. Buyers pay less. We say so.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>You see the buyers who want that specific thing — what they've bought before and what they pay.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>They can see your photos and your neighbourhood. Not your name, address or number — not until you pick one and say yes.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>One item, one approved buyer. You will not get fourteen phone calls.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>It costs you nothing. The buyer pays us, and only when we actually deliver.</li>
+          </ul>
+        </div>
+        <div class="card" reveal>
+          <h3>If you're giving it away</h3>
           <ul class="list-check">
             <li><i data-lucide="arrow-right" class="ic"></i>Take a photo. We write the listing.</li>
             <li><i data-lucide="arrow-right" class="ic"></i>Say when it has to be gone.</li>
             <li><i data-lucide="arrow-right" class="ic"></i>Turn on Porch Pickup if you'd rather not be home — leave it out, someone takes it, done.</li>
             <li><i data-lucide="arrow-right" class="ic"></i>Add a line about the thing if you want to. People claim items with stories far more often.</li>
             <li><i data-lucide="arrow-right" class="ic"></i>Charities get 24 hours first, unless you're in a hurry. One tap opens it to everyone.</li>
+            <li><i data-lucide="arrow-right" class="ic"></i>We'll tell you if it's worth money before you give it away. Plenty of people give it away anyway. That's a good outcome too.</li>
           </ul>
         </div>
         <div class="card" reveal>
@@ -395,7 +407,8 @@
   <section class="band">
     <div class="narrow">
       <h2 style="margin-bottom:22px">Things we decided not to build</h2>
-      <p style="color:var(--ink-2)"><b>No messaging.</b> Chat is where these platforms die — negotiation over free items, ghosting, arguments. You get four buttons: on my way, running late, can't make it, got it.</p>
+      <p style="color:var(--ink-2)"><b>No messaging.</b> Chat is where these platforms die — haggling, ghosting, "is this still available?". Buyers send one number and you tap yes or no. Everyone else gets four buttons: on my way, running late, can't make it, got it.</p>
+      <p style="color:var(--ink-2)"><b>No fees to you.</b> Not a listing fee, not a commission, not a cut of what a buyer pays you. The buyers fund this, and only when we put a real seller in front of them. If we don't deliver, we don't get paid either.</p>
       <p style="color:var(--ink-2)"><b>No volunteer moderators.</b> The most consistent failure of every neighbourhood giving group. Moderation here is automated first and paid staff second. No neighbour will ever have the power to ban another neighbour.</p>
       <p style="color:var(--ink-2)"><b>No eligibility checks.</b> We don't ask why you want it or whether you need it. A large share of people using this are under real financial pressure and none of them should have to prove it to get a lamp.</p>
       <p style="color:var(--ink-2)"><b>No reseller police.</b> Someone who takes a free dresser and flips it has still kept a dresser out of the ground and put it in a home. Givers can set a preference and we honour it — but we're not building an inquisition.</p>
@@ -463,7 +476,7 @@
       <p>My grandparents' things are gone. But there's a house being emptied somewhere this week with the same things in it, and right now the only tool that family has is a bin.</p>
       <div style="margin-top:36px;display:flex;gap:10px;flex-wrap:wrap">
         <button class="btn urgent" onclick="go('clearing')">Clearing a home</button>
-        <button class="btn ghost" onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
+        <button class="btn ghost" onclick="go('post')"><i data-lucide="camera" class="ic"></i>See what it's worth</button>
       </div>
     </div>
   </section>
@@ -483,8 +496,8 @@
       </div>
       <div>
         <h5>Product</h5>
-        <button onclick="go('feed')">Available now</button>
-        <button onclick="go('post')"><i data-lucide="camera" class="ic"></i>Post a Last Call</button>
+        <button onclick="go('feed')">Going free</button>
+        <button onclick="go('post')"><i data-lucide="camera" class="ic"></i>What's it worth?</button>
         <button onclick="go('clearing')">Clearing a home</button>
         <button onclick="go('inbox')">Your listings &amp; requests</button>
         <button onclick="go('report')">Sample diversion report</button>
