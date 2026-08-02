@@ -134,7 +134,7 @@ header.nav.stuck{border-bottom-color:var(--line);background:rgba(251,248,243,.9)
 /* ---------------- BUTTONS ---------------- */
 .btn{
   position:relative;display:inline-flex;align-items:center;gap:8px;justify-content:center;
-  background:var(--ink);color:var(--paper);
+  background:var(--ink);color:#fff;
   padding:11px 20px;border-radius:999px;font-size:.9rem;font-weight:600;letter-spacing:-.008em;
   box-shadow:var(--sh-2), inset 0 1px 0 rgba(255,255,255,.09);
   transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s var(--ease);
