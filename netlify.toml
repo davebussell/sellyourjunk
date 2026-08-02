@@ -1,4 +1,4 @@
-# Netlify configuration for SellYourJunk
+# Netlify configuration for We Pay for Junk
 # Static prototype — no build step. Files are served from the repo root.
 
 [build]

@@ -13,6 +13,6 @@ def js(m):
 h = re.sub(r'<link[^>]+href="(assets/[^"]+\.css)"[^>]*>', css, h)
 h = re.sub(r'<script src="(assets/[^"]+\.js)"></script>', js, h)
 
-open("SellYourJunk-preview.html","w",encoding="utf-8").write(h)
+open("WePayForJunk-preview.html","w",encoding="utf-8").write(h)
 left = re.findall(r'(?:href|src)="assets/[^"]*"', h)
 print(f"preview: {len(h)/1024:.1f} KB · not inlined: {left or 'none'}")

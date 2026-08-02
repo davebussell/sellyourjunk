@@ -854,7 +854,7 @@ function makeCode(){return "SYJ-"+Math.random().toString(36).slice(2,6).toUpperC
 function makeRelay(){
   const n=(4160000000+Math.floor(Math.random()*8999999));
   return {phone:"+1 "+String(n).slice(0,3)+" "+String(n).slice(3,6)+" "+String(n).slice(6,10),
-          email:"pickup-"+Math.random().toString(36).slice(2,7)+"@relay.sellyourjunk.com"};
+          email:"pickup-"+Math.random().toString(36).slice(2,7)+"@relay.wepayforjunk.com"};
 }
 
 /* ---------- claimant side: request a slot ---------- */
