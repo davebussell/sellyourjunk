@@ -372,12 +372,13 @@ function renderClear_inner(){
     s.innerHTML=`
       <h2 style="margin-bottom:10px">Clearing a home</h2>
       <p style="color:var(--ink-2);font-size:1.05rem;margin-bottom:12px">If you're doing this after a death, we're sorry. We built this because someone we know had three days and a dumpster, and it didn't have to go that way.</p>
-      <p style="color:var(--ink-2);margin-bottom:26px">Walk through each room with your phone. Talk or don't. We'll list everything in the house, work out who wants what, and hand you a single schedule so you're not answering the door forty times.</p>
+      <p style="color:var(--ink-2);margin-bottom:26px">Walk through each room with your phone. Talk or don't. We'll list everything in the house, tell you what's worth money and what isn't, work out who wants what, and hand you a single schedule so you're not answering the door forty times.</p>
       <div style="background:var(--paper-2);border-radius:14px;padding:20px;margin-bottom:26px">
         <div style="font-weight:600;margin-bottom:10px">Before you start</div>
         <div style="font-size:.92rem;color:var(--ink-2);line-height:1.75">
           · Nothing is published until you say so.<br>
           · Anything you might want, mark <b>Ask first</b> — it gets held, not listed.<br>
+          · We'll flag anything a buyer would pay for. Sell it or give it away — no one here will push you either way.<br>
           · Estate listings never show a street address publicly, and never mention that a house is empty.<br>
           · You can undo any claim for 48 hours.
         </div>
