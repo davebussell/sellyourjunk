@@ -296,7 +296,7 @@ function renderPost_inner(){
           <div style="display:flex;justify-content:space-between;padding:5px 0"><span style="color:var(--clay)">Pickup</span><b>${P.porch?'Porch — no need to be home':'Arranged time slot'}</b></div>
           <div style="display:flex;justify-content:space-between;padding:5px 0"><span style="color:var(--clay)">First look</span><b>${P.orgFirst?'Organizations, 24 hrs':'Open to everyone now'}</b></div>
         </div>
-        <p style="font-size:.92rem;color:var(--ink-2)"><b>3 organizations</b> have this on their standing wants list and were notified just now — Riverdale Community Centre, Furniture Bank Toronto and a sewing program in Malton.</p>
+        <p style="font-size:.92rem;color:var(--ink-2)"><b>3 organizations</b> have this on their standing wants list and were notified just now — a community centre in Lakeview, a furniture bank in Etobicoke and a sewing program in Malton.</p>
         <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap">
           <button class="btn" onclick="go('feed')">See it in the feed</button>
           <button class="btn ghost" onclick="P={step:0,photos:0,deadline:null,porch:false,memory:'',orgFirst:true};renderPost()">Post another</button>
@@ -468,19 +468,19 @@ function renderClear_inner(){
       <div class="sched">
         <div class="sched-day">Saturday</div>
         <div class="sched-row"><div class="sched-time">9:00</div><div class="sched-body">
-          <div class="who">Furniture Bank Toronto</div>
+          <div class="who">A furniture bank in Etobicoke</div>
           <div class="what">Bed frames, dresser, wardrobe, bedside tables, dining table, six chairs</div>
           <div class="veh">${ic("truck")} 5-ton truck · 3 people · ~45 min</div></div></div>
         <div class="sched-row"><div class="sched-time">11:00</div><div class="sched-body">
-          <div class="who">Riverdale Community Centre</div>
+          <div class="who">A community centre in Lakeview</div>
           <div class="what">Both sewing machines, sewing table, dress form, 6 boxes fabric, notions</div>
           <div class="veh">${ic("truck")} Van · 2 volunteers · ~30 min</div></div></div>
         <div class="sched-row"><div class="sched-time">1:00</div><div class="sched-body">
-          <div class="who">Habitat ReStore — Mississauga</div>
+          <div class="who">A building-reuse charity in Mississauga</div>
           <div class="what">Bookcases, shelving, coffee table, desk, lamps, kitchenware</div>
           <div class="veh">${ic("truck")} Box truck · 2 people · ~40 min</div></div></div>
         <div class="sched-row"><div class="sched-time">2:30</div><div class="sched-body">
-          <div class="who">COSTI Settlement Services</div>
+          <div class="who">A newcomer settlement agency</div>
           <div class="what">Linens, dinner service, stand mixer, bar fridge, small appliances</div>
           <div class="veh">${ic("truck")} Van · 2 people · ~25 min</div></div></div>
         <div class="sched-day">Sunday</div>
@@ -774,34 +774,17 @@ function openDetail(id){
 }
 
 /* =========================================================
-   LIVE ACTIVITY — makes the marketplace feel inhabited
+   HERO TICKER
+
+   The invented activity feed that used to live here has been
+   removed, not overridden. It rotated pickups credited to real
+   charities with "12 min ago" timestamps — a fabricated live feed,
+   and one that would have come back the moment worth.js failed to
+   load. startTicker now lives in assets/worth.js and rotates value
+   facts instead. Only the shared timer handle stays here, because
+   the router in this file clears it between views.
    ========================================================= */
-const FEEDLOG=[
-  ['Habitat ReStore','claimed two oak bookcases','Cooksville'],
-  ['Riverdale Community Centre','claimed a sewing machine','Lakeview'],
-  ['A neighbour','took three brass lamps','Port Credit'],
-  ['Furniture Bank Toronto','claimed a dining set','Etobicoke South'],
-  ['COSTI Settlement Services','claimed boxes of kitchenware','Malton'],
-  ['A neighbour','took a kids’ bike','Brampton North'],
-  ['GTA Auto Recyclers','collected a non-running Corolla','Malton'],
-  ['St. Matthew’s Church','claimed a dresser','Streetsville']
-];
 var _tick=null;
-function startTicker(){
-  const els=[...document.querySelectorAll('.ticker')]; if(!els.length) return;
-  if(_tick) clearInterval(_tick);
-  let i=0;
-  const paint=()=>{ els.forEach(el=>{
-    const [who,what,where]=FEEDLOG[i%FEEDLOG.length];
-    const mins=2+((i*7)%41);
-    el.innerHTML=`<span class="tk-dot"></span>
-      <span class="tk-txt"><b>${who}</b> ${what} in ${where}</span>
-      <span class="tk-ago">${mins} min ago</span>`;
-    el.classList.remove('tk-in'); void el.offsetWidth; el.classList.add('tk-in');
-    }); i++;
-  };
-  paint(); _tick=setInterval(paint,4200);
-}
 
 /* =========================================================
    IMPACT COUNTERS — count up once, on scroll
@@ -832,11 +815,11 @@ var ME={name:"You", type:"person", rating:"12 of 13 pickups kept", verified:fals
 
 /* people already in the queue, so the owner inbox isn't empty on arrival */
 var SEED_PEOPLE=[
-  {name:"Riverdale Community Centre",type:"org",verified:true,rating:"41 pickups · 0 missed",
+  {name:"A community centre in Lakeview",type:"org",verified:true,rating:"41 pickups · 0 missed",
    note:"We run a sewing class for newcomers on Tuesdays. We'd take the fabric and notions too if they're still going."},
   {name:"Amara O.",type:"person",verified:false,rating:"7 of 7 pickups kept",
    note:"I can bring a friend to help lift it."},
-  {name:"Habitat ReStore — Mississauga",type:"org",verified:true,rating:"120 pickups · 1 missed",note:""}
+  {name:"A building-reuse charity in Mississauga",type:"org",verified:true,rating:"120 pickups · 1 missed",note:""}
 ];
 function seedRequests(){
   if(REQUESTS.length) return;

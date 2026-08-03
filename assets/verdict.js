@@ -48,8 +48,8 @@ const VITEMS = {
       {n:"A private collector", d:"Oakville · 22 km · cast-body Singers only", p:"$40–50", i:"user"}
     ],
     orgs:[
-      {n:"Riverdale Community Centre", d:"Runs a Tuesday sewing class for newcomers — machines are their standing want"},
-      {n:"Furniture Bank Toronto", d:"Van in your area Thursday"},
+      {n:"A community centre in Lakeview", d:"Runs a Tuesday sewing class for newcomers — machines are their standing want"},
+      {n:"A furniture bank in Etobicoke", d:"Van in your area Thursday"},
       {n:"A sewing program in Malton", d:"Has asked for three machines this month"}
     ],
     rec:"give",
