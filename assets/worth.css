@@ -1,0 +1,95 @@
+/* =========================================================
+   WHAT'S YOURS WORTH — the homepage teaser.
+
+   The conversion problem this solves: an average person will not
+   photograph their junk on the promise that we'll value it. They
+   have no reason to believe their stuff is worth anything, and
+   uploading feels like work for an unknown payoff.
+
+   So pay out before we ask. Tapping a category costs nothing and
+   returns the same two-number answer the real Verdict gives —
+   including the ones worth nothing, which is what makes the ones
+   worth something believable.
+   ========================================================= */
+
+.worth{border-block:1px solid var(--line);background:var(--paper-2);padding:64px 0}
+.worth-head{max-width:640px;margin-bottom:26px}
+.worth-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);letter-spacing:-.03em;margin-bottom:12px}
+.worth-head p{color:var(--ink-2);margin:0;font-size:1.02rem}
+
+/* category chips */
+.worth-chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}
+.wchip{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--line-2);border-radius:999px;padding:9px 15px;
+  background:var(--card);font-size:.89rem;font-weight:600;color:var(--ink-2);
+  transition:transform .18s var(--ease),border-color .18s var(--ease),
+             background .18s var(--ease),color .18s var(--ease);
+}
+.wchip:hover{border-color:var(--clay);transform:translateY(-2px);color:var(--ink)}
+.wchip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.wchip svg{width:17px;height:17px;opacity:.55}
+.wchip.on svg{opacity:1}
+.wchip.other{border-style:dashed;font-weight:500}
+
+/* the answer panel */
+.worth-panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:28px;box-shadow:var(--sh-2);
+  animation:worthIn .42s var(--ease) both;
+}
+@keyframes worthIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.worth-panel .wp-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.wp-ico{
+  width:52px;height:52px;border-radius:14px;flex:none;display:grid;place-items:center;
+  background:var(--paper-2);border:1px solid var(--line);
+}
+.wp-ico svg{width:26px;height:26px;opacity:.5}
+.wp-title{flex:1;min-width:180px}
+.wp-title h3{font-size:1.35rem;letter-spacing:-.025em;margin-bottom:4px}
+.wp-title .wp-sub{font-size:.85rem;color:var(--clay)}
+.wp-verdict{
+  display:inline-flex;align-items:center;gap:7px;flex:none;
+  font-size:.7rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;
+  padding:7px 13px;border-radius:999px;
+}
+.wp-verdict .ic{width:13px;height:13px}
+.wp-verdict.sell{background:var(--calm-soft);color:#33553D;border:1px solid var(--calm-line)}
+.wp-verdict.give{background:var(--urgent-soft);color:var(--urgent-2);border:1px solid var(--urgent-line)}
+.wp-verdict.haul{background:var(--amber-soft);color:#734D08;border:1px solid var(--amber-line)}
+.wp-verdict.depends{background:var(--paper-3);color:var(--ink-2);border:1px solid var(--line-2)}
+
+/* reuses .twonum / .num from verdict.css on purpose — the teaser and the
+   real Verdict must answer in exactly the same shape */
+.worth-panel .twonum{margin-bottom:18px}
+
+.wp-note{
+  font-size:.95rem;color:var(--ink-2);line-height:1.6;
+  border-left:2px solid var(--line-2);padding-left:15px;margin-bottom:20px;
+}
+.wp-buyers{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+  padding:13px 16px;margin-bottom:20px;font-size:.9rem;
+}
+.wp-buyers .ic{width:16px;height:16px;color:var(--calm);flex:none}
+.wp-buyers b{font-weight:700}
+.wp-buyers.none .ic{color:var(--clay)}
+
+.wp-cta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:4px}
+.wp-cta .fine{font-size:.83rem;color:var(--clay);line-height:1.45}
+
+/* the friction-killers, stated where the ask happens */
+.assure{
+  display:flex;gap:20px;flex-wrap:wrap;margin-top:24px;
+  font-size:.86rem;color:var(--ink-2);
+}
+.assure span{display:inline-flex;align-items:center;gap:8px}
+.assure .ic{width:15px;height:15px;color:var(--calm);flex:none}
+
+@media(max-width:640px){
+  .worth{padding:44px 0}
+  .worth-panel{padding:22px}
+  .wp-cta .btn{width:100%}
+  .assure{gap:10px;flex-direction:column}
+}

@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="assets/styles.css">
 <link rel="stylesheet" href="assets/buyer.css">
 <link rel="stylesheet" href="assets/verdict.css">
+<link rel="stylesheet" href="assets/worth.css">
 </head>
 <body>
 
@@ -60,9 +61,28 @@
         <button class="btn ghost lg" onclick="go('feed')"><i data-lucide="clock" class="ic"></i>See what's going free</button>
       </div>
       <div class="ticker" id="ticker"></div>
+      <div class="assure">
+        <span><i data-lucide="user-x" class="ic"></i>No account, no email</span>
+        <span><i data-lucide="house" class="ic"></i>Your address stays hidden</span>
+        <span><i data-lucide="wallet" class="ic"></i>Free — the buyers pay, never you</span>
+      </div>
       <p class="hero-note">Clearing out a family home? <button onclick="go('clearing')">We built something for that.</button></p>
     </div>
   </div>
+
+  <!-- ====== WHAT'S YOURS WORTH — pay out before asking for a photo ====== -->
+  <section class="worth">
+    <div class="wrap">
+      <div class="worth-head">
+        <div class="kicker">Before you photograph anything</div>
+        <h2>What's yours worth?</h2>
+        <p>Tap whatever you're trying to get rid of. No upload, no account — we'll just tell you.
+          Including when the answer is nothing.</p>
+      </div>
+      <div class="worth-chips" id="worth-chips"></div>
+      <div class="worth-panel" id="worth-panel"></div>
+    </div>
+  </section>
 
   <div class="stats">
     <div class="wrap stat-grid">
@@ -527,5 +547,6 @@
 <script src="assets/app.js"></script>
 <script src="assets/buyer.js"></script>
 <script src="assets/verdict.js"></script>
+<script src="assets/worth.js"></script>
 </body>
 </html>
