@@ -93,3 +93,48 @@
   .wp-cta .btn{width:100%}
   .assure{gap:10px;flex-direction:column}
 }
+
+/* ---------------- REAL SUBMISSION FORM ----------------
+   The rest of the page is a demo. This posts to Netlify Forms and
+   lands in a real inbox, which is what turns the prototype into a
+   pilot: valuations get done by hand while the buyer network is
+   being built. Deliberately asks for as little as possible —
+   photo, area, email. No name, no phone, no street address. */
+.realbox{
+  background:var(--card);border:1px solid var(--line);border-radius:28px;
+  padding:40px;box-shadow:var(--sh-3);
+}
+.realform{margin-top:26px}
+.realform .field{margin-bottom:20px}
+.realform .hint{font-size:.82rem;color:var(--clay);margin-top:7px;line-height:1.45}
+.realform label .opt{
+  font-weight:500;letter-spacing:0;text-transform:none;color:var(--clay);font-size:.78rem;
+}
+.realform .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.realform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+.input.file{
+  padding:14px;background:var(--paper);cursor:pointer;
+  border-style:dashed;border-width:2px;
+}
+.input.file::file-selector-button{
+  font-family:inherit;font-size:.85rem;font-weight:600;cursor:pointer;
+  background:var(--ink);color:#fff;border:none;border-radius:999px;
+  padding:8px 16px;margin-right:14px;
+}
+.input.file:hover{border-color:var(--urgent);background:var(--urgent-soft)}
+
+.consent{
+  display:flex;gap:12px;align-items:flex-start;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+  padding:16px 18px;font-size:.88rem;color:var(--ink-2);line-height:1.55;cursor:pointer;
+}
+.consent input{
+  width:19px;height:19px;flex:none;margin-top:2px;accent-color:var(--urgent);cursor:pointer;
+}
+.realform .fine{font-size:.82rem;color:var(--clay);line-height:1.45;flex:1;min-width:200px}
+
+@media(max-width:640px){
+  .realbox{padding:26px 22px;border-radius:22px}
+  .realform .row2{grid-template-columns:1fr;gap:0}
+}

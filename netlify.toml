@@ -12,9 +12,6 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    # Prototype: keep it out of search results until the sample data
-    # is replaced with real listings. Remove this line to go public.
-    X-Robots-Tag = "noindex, nofollow"
 
 # CSS/JS change often in this prototype — revalidate each load (cheap 304
 # via ETag) so updates go live immediately instead of being cached for a day.
@@ -23,9 +20,38 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Belt and braces: the strategy docs are gitignored, but if one ever gets
-# committed by accident it should still 404 rather than serve.
+# Belt and braces: the strategy docs are gitignored and excluded from
+# deploys, but if one ever gets uploaded it must still 404 rather than
+# serve. Netlify splats only work at the end of a path (/*.md never
+# matched), so each doc gets an explicit forced rule — force = true is
+# what makes a rule shadow a real uploaded file.
 [[redirects]]
-  from = "/*.md"
+  from = "/SellYourJunk-Commercial-Plan-v1.md"
   to = "/index.html"
   status = 404
+  force = true
+
+[[redirects]]
+  from = "/SellYourJunk-Marketplace-Plan-v3.md"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SellYourJunk-Mission-Plan.md"
+  to = "/index.html"
+  status = 404
+  force = true
+
+# Same for local tooling that shouldn't be public.
+[[redirects]]
+  from = "/build-preview.py"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/WePayForJunk-preview.html"
+  to = "/index.html"
+  status = 404
+  force = true

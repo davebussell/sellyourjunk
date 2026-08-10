@@ -518,6 +518,31 @@ textarea.input{resize:vertical;min-height:84px;line-height:1.55}
 .list-check{list-style:none;padding:0;margin:18px 0 0}
 .list-check li{display:flex;gap:12px;font-size:.97rem;color:var(--ink-2);padding:7px 0;line-height:1.5}
 .list-check li .ic{width:16px;height:16px;color:var(--urgent);margin-top:5px}
+/* ---------------- FAQ (marked up as FAQPage) ---------------- */
+.faq{
+  border-bottom:1px solid var(--line);
+  padding:2px 0;
+}
+.faq summary{
+  list-style:none;cursor:pointer;padding:18px 34px 18px 0;position:relative;
+  font-family:var(--display);font-size:1.12rem;letter-spacing:-.02em;line-height:1.35;
+  font-variation-settings:"SOFT" 20,"WONK" 1;
+  transition:color .18s var(--ease);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--urgent)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:9px;height:9px;
+  border-right:2px solid var(--clay);border-bottom:2px solid var(--clay);
+  transform:translateY(-70%) rotate(45deg);transition:transform .25s var(--ease);
+}
+.faq[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq-a{
+  padding:0 34px 20px 0;color:var(--ink-2);font-size:.97rem;line-height:1.65;
+  animation:faqIn .3s var(--ease) both;
+}
+@keyframes faqIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
 .free-num{font-size:3rem;font-family:var(--display);line-height:1;margin:8px 0 14px;letter-spacing:-.04em;font-variation-settings:"SOFT" 30,"WONK" 1,"opsz" 144}
 
 /* ---------------- MODAL ---------------- */
