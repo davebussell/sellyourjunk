@@ -55,3 +55,58 @@
   to = "/index.html"
   status = 404
   force = true
+
+# Client-side routes (assets/routes.js). These are rewrites, not redirects —
+# status 200 serves index.html at the requested path so a deep link or a
+# shared URL loads the right view directly instead of bouncing to the
+# homepage first. Listed explicitly rather than as a catch-all so genuine
+# typos still 404 and the forced 404s above keep working.
+[[redirects]]
+  from = "/whats-it-worth"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/how-it-works"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/going-free"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/clearing-a-home"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/for-organizations"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/our-story"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/the-drop"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/receiver-view"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/your-listings"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/sample-report"
+  to = "/index.html"
+  status = 200
