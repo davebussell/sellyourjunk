@@ -123,20 +123,10 @@ header.nav.stuck{border-bottom-color:var(--line);background:rgba(251,248,243,.9)
   font-variation-settings:normal;
 }
 .navlinks{display:flex;gap:1px;align-items:center}
-/* :not(.btn) matters. The nav CTA is a .btn that lives inside .navlinks,
-   and a bare `.navlinks button` (0,1,1) outranks `.btn` (0,1,0) — which
-   dropped the CTA's white label to --ink-2 for 1.97:1 on the orange
-   gradient, far under the 4.5:1 AA floor, and swapped its gradient for
-   beige on hover. Excluding .btn here fixes the cause rather than
-   stacking a counter-override on top of it. */
-.navlinks button:not(.btn){
-  padding:8px 13px;border-radius:9px;font-size:.9rem;font-weight:500;color:var(--ink-2);
-  white-space:nowrap;transition:background .18s var(--ease),color .18s var(--ease);
-}
-.navlinks button:not(.btn):hover{background:var(--paper-2);color:var(--ink)}
-.navlinks button:not(.btn).on{color:var(--ink);font-weight:700}
-/* 14.4px reversed on saturated orange needs a heavier stem than body copy */
-.navlinks .btn{font-weight:700}
+/* The nav itself now lives in assets/nav.css. The old .navlinks button
+   rules were removed rather than left in place: they still matched the
+   new .mega-t triggers at higher specificity and would have fought the
+   open state. */
 .menu-toggle{display:none}
 
 /* ---------------- BUTTONS ---------------- */
@@ -592,14 +582,7 @@ footer{border-top:1px solid var(--line);background:var(--paper-2);padding:64px 0
   .hero-art{display:none}
   .hero{padding:76px 0 60px}
   section.band{padding:72px 0}
-  .navlinks{display:none}
-  .navlinks.open{
-    display:flex;position:absolute;top:72px;left:0;right:0;background:var(--paper);
-    flex-direction:column;align-items:stretch;padding:14px;border-bottom:1px solid var(--line);
-    gap:2px;box-shadow:var(--sh-3);
-  }
-  .navlinks.open button{text-align:left;padding:13px 15px}
-  .menu-toggle{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;border:1px solid var(--line-2);background:var(--card)}
+  /* mobile nav tray + menu toggle: assets/nav.css */
   .opts{grid-template-columns:1fr}
   .panel,.report{padding:28px;border-radius:22px}
   .story p.lead::first-letter{font-size:3.2rem}

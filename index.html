@@ -33,6 +33,7 @@
 <link rel="stylesheet" href="assets/buyer.css">
 <link rel="stylesheet" href="assets/verdict.css">
 <link rel="stylesheet" href="assets/worth.css">
+<link rel="stylesheet" href="assets/nav.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -168,15 +169,106 @@
       <span>WePayForJunk</span>
     </div>
     <nav class="navlinks" id="navlinks">
-      <button data-nav="feed" onclick="go('feed')">Going free</button>
-      <button data-nav="how" onclick="go('how')">How it works</button>
-      <button data-nav="clearing" onclick="go('clearing')">Clearing a home</button>
-      <button data-nav="orgs" onclick="go('orgs')">For organizations</button>
-      <button data-nav="receiver" onclick="go('receiver')">Receiver view</button>
-      <button data-nav="drop" onclick="go('drop')">The Drop</button>
-      <button data-nav="inbox" class="bell" onclick="go('inbox')"><i data-lucide="users" class="ic"></i>Your listings<span class="bell-count" id="bell-count">0</span></button>
-      <button data-nav="story" onclick="go('story')">Our story</button>
-      <button class="btn urgent" onclick="go('post')"><i data-lucide="camera" class="ic"></i>What's it worth?</button>
+
+      <!-- ============ SELLERS ============ -->
+      <div class="mega">
+        <button class="mega-t" aria-expanded="false" aria-haspopup="true">
+          Getting rid of something <i data-lucide="chevron-down" class="chev"></i>
+        </button>
+        <div class="mega-p">
+          <div class="mega-in split">
+            <div class="mega-links">
+              <a class="mega-link" href="/whats-it-worth" data-view="post">
+                <span class="mi"><i data-lucide="camera" class="ic"></i></span>
+                <span><b>What&#39;s it worth?</b><small>Photograph it. We identify it properly and tell you what it&#39;s actually worth.</small></span>
+              </a>
+              <a class="mega-link" href="/clearing-a-home" data-view="clearing">
+                <span class="mi"><i data-lucide="house" class="ic"></i></span>
+                <span><b>Clearing a home</b><small>A whole house, a deadline, and one schedule instead of forty doorbells.</small></span>
+              </a>
+              <a class="mega-link" href="/going-free" data-view="feed">
+                <span class="mi"><i data-lucide="gift" class="ic"></i></span>
+                <span><b>Going free near you</b><small>What neighbours are giving away before it goes to the dump.</small></span>
+              </a>
+              <a class="mega-link" href="/how-it-works" data-view="how">
+                <span class="mi"><i data-lucide="circle-help" class="ic"></i></span>
+                <span><b>How it works</b><small>What it costs, who sees your address, which areas we cover.</small></span>
+              </a>
+            </div>
+            <div class="mega-feat">
+              <h5>Typical GTA prices</h5>
+              <div class="fline"><span>Car that doesn&#39;t run</span><b class="up">$250–600</b></div>
+              <div class="fline"><span>Vintage road bike</span><b class="up">$70–110</b></div>
+              <div class="fline"><span>Tools &amp; workshop</span><b class="up">$60–300</b></div>
+              <div class="fline"><span>Sofa</span><b>usually $0</b></div>
+              <div class="fline"><span>Upright piano</span><b class="down">you&#39;ll pay</b></div>
+              <a class="fcta" href="/whats-it-worth" data-view="post">Check yours <i data-lucide="arrow-right" class="ic"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ BUYERS ============ -->
+      <div class="mega">
+        <button class="mega-t" aria-expanded="false" aria-haspopup="true">
+          For buyers <i data-lucide="chevron-down" class="chev"></i>
+        </button>
+        <div class="mega-p">
+          <div class="mega-in split">
+            <div class="mega-links">
+              <a class="mega-link" href="/the-drop" data-view="drop">
+                <span class="mi"><i data-lucide="layers" class="ic"></i></span>
+                <span><b>The Drop</b><small>Live Finds matched to what you buy. New batches at 7am, noon and 6pm.</small></span>
+              </a>
+              <a class="mega-link" href="/your-listings" data-view="inbox">
+                <span class="mi"><i data-lucide="inbox" class="ic"></i></span>
+                <span><b>Offers &amp; requests</b><span class="tag">Demo</span><small>How a seller sees your offer, and why their number stays hidden.</small></span>
+              </a>
+            </div>
+            <div class="mega-feat">
+              <h5>What it costs you</h5>
+              <p>Tell us what you buy in your own words. We only charge when we hand you a real seller who is still holding the thing.</p>
+              <div class="fline"><span>Wrong number, already gone</span><b class="up">refunded</b></div>
+              <div class="fline"><span>Not what we said it was</span><b class="up">refunded</b></div>
+              <a class="fcta" href="/the-drop" data-view="drop">See The Drop <i data-lucide="arrow-right" class="ic"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ ORGANISATIONS ============ -->
+      <div class="mega right">
+        <button class="mega-t" aria-expanded="false" aria-haspopup="true">
+          For organizations <i data-lucide="chevron-down" class="chev"></i>
+        </button>
+        <div class="mega-p">
+          <div class="mega-in split">
+            <div class="mega-links">
+              <a class="mega-link" href="/for-organizations" data-view="orgs">
+                <span class="mi"><i data-lucide="hand-heart" class="ic"></i></span>
+                <span><b>Why it&#39;s free</b><small>Charities and community groups never pay. Commercial buyers fund it.</small></span>
+              </a>
+              <a class="mega-link" href="/receiver-view" data-view="receiver">
+                <span class="mi"><i data-lucide="landmark" class="ic"></i></span>
+                <span><b>Receiver view</b><span class="tag">Demo</span><small>Standing wants, matched items and 24 hours of first look.</small></span>
+              </a>
+              <a class="mega-link" href="/sample-report" data-view="report">
+                <span class="mi"><i data-lucide="file-text" class="ic"></i></span>
+                <span><b>Diversion report</b><span class="tag">Demo</span><small>Where every item went, and what stayed out of landfill.</small></span>
+              </a>
+            </div>
+            <div class="mega-feat">
+              <h5>Free, permanently</h5>
+              <p>Not a trial, not a freemium tier. The moment a shelter has to weigh a subscription against its programs, we&#39;ve broken the thing we&#39;re trying to do.</p>
+              <a class="fcta" href="/for-organizations" data-view="orgs">Become a receiver <i data-lucide="arrow-right" class="ic"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="navlink" href="/our-story" data-view="story">Our story</a>
+
+      <a class="btn urgent" href="/whats-it-worth" data-view="post"><i data-lucide="camera" class="ic"></i>What&#39;s it worth?</a>
     </nav>
     <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><i data-lucide="menu" class="ic"></i></button>
   </div>
@@ -819,5 +911,6 @@
 <script src="assets/verdict.js"></script>
 <script src="assets/worth.js"></script>
 <script src="assets/routes.js"></script>
+<script src="assets/nav.js"></script>
 </body>
 </html>

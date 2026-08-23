@@ -1,0 +1,159 @@
+/* =========================================================
+   NAV — mega menus.
+
+   Was nine top-level items competing for the same row, which
+   squeezed the CTA until its label wrapped onto two lines. Now
+   three grouped panels, one plain link and the CTA, organised by
+   who the visitor is: someone getting rid of something, someone
+   buying, or an organisation receiving.
+
+   The links are real <a href> elements pointing at the routes in
+   assets/routes.js, not buttons. Crawlers can follow them, they
+   right-click and middle-click like links, and nav.js intercepts
+   the plain left-click for client-side navigation.
+   ========================================================= */
+
+.navlinks{display:flex;gap:2px;align-items:center}
+
+/* ---- trigger ---- */
+.mega{position:relative}
+.mega-t{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 13px;border-radius:9px;font-size:.9rem;font-weight:500;color:var(--ink-2);
+  white-space:nowrap;transition:background .18s var(--ease),color .18s var(--ease);
+}
+.mega-t:hover{background:var(--paper-2);color:var(--ink)}
+.mega-t .chev{
+  width:14px;height:14px;opacity:.55;
+  transition:transform .25s var(--ease),opacity .2s var(--ease);
+}
+.mega.open .mega-t{background:var(--paper-2);color:var(--ink)}
+.mega.open .mega-t .chev{transform:rotate(180deg);opacity:1}
+.mega-t.on{color:var(--ink);font-weight:700}
+
+/* ---- panel ---- */
+.mega-p{
+  position:absolute;top:calc(100% + 12px);left:-10px;z-index:90;
+  width:max-content;max-width:min(680px,calc(100vw - 56px));
+  background:var(--card);border:1px solid var(--line);border-radius:20px;
+  box-shadow:var(--sh-4);
+  opacity:0;visibility:hidden;transform:translateY(-8px) scale(.985);
+  transform-origin:top left;pointer-events:none;
+  transition:opacity .2s var(--ease),transform .22s var(--ease),visibility .22s;
+}
+.mega.open .mega-p{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.mega.right .mega-p{left:auto;right:-10px;transform-origin:top right}
+
+/* invisible bridge so the pointer can cross the gap without closing */
+.mega-p::before{content:"";position:absolute;left:0;right:0;top:-14px;height:14px}
+
+.mega-in{display:grid;grid-template-columns:1fr;gap:6px;padding:14px}
+.mega-in.split{grid-template-columns:1.15fr .85fr;gap:16px}
+
+.mega-links{display:grid;gap:2px;min-width:290px}
+.mega-link{
+  display:flex;align-items:flex-start;gap:13px;
+  padding:12px 13px;border-radius:13px;text-decoration:none;color:inherit;
+  transition:background .16s var(--ease),transform .16s var(--ease);
+}
+.mega-link:hover{background:var(--paper-2);transform:translateX(2px)}
+.mega-link .mi{
+  width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center;
+  background:var(--paper-2);border:1px solid var(--line);color:var(--ink-2);
+  transition:background .16s var(--ease),color .16s var(--ease),border-color .16s var(--ease);
+}
+.mega-link:hover .mi{background:var(--urgent-soft);border-color:var(--urgent-line);color:var(--urgent)}
+.mega-link .mi .ic{width:17px;height:17px}
+.mega-link b{display:block;font-size:.94rem;font-weight:650;letter-spacing:-.012em;line-height:1.3}
+.mega-link small{
+  display:block;font-size:.81rem;color:var(--clay);line-height:1.45;margin-top:2px;
+  max-width:34ch;
+}
+.mega-link .tag{
+  font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--paper-3);color:var(--clay);border-radius:99px;padding:3px 7px;
+  margin-left:7px;vertical-align:1px;
+}
+
+/* ---- the panel's built-in element ---- */
+.mega-feat{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:15px;
+  padding:16px 17px;display:flex;flex-direction:column;
+}
+.mega-feat h5{
+  font-family:var(--sans);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--clay);font-weight:800;margin:0 0 11px;
+}
+.mega-feat .fline{
+  display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  padding:6px 0;font-size:.85rem;border-bottom:1px dashed var(--line-2);
+}
+.mega-feat .fline:last-of-type{border-bottom:none}
+.mega-feat .fline span{color:var(--ink-2)}
+.mega-feat .fline b{font-weight:700;white-space:nowrap}
+.mega-feat .fline b.up{color:var(--calm)}
+.mega-feat .fline b.down{color:var(--urgent)}
+.mega-feat p{font-size:.85rem;color:var(--ink-2);line-height:1.55;margin:0 0 12px}
+.mega-feat .fcta{
+  margin-top:auto;padding-top:12px;font-size:.83rem;font-weight:700;color:var(--urgent);
+  text-decoration:none;display:inline-flex;align-items:center;gap:6px;
+}
+.mega-feat .fcta:hover{gap:9px}
+.mega-feat .fcta .ic{width:14px;height:14px}
+
+/* ---- CTA: never wrap ---- */
+.navlinks .btn{
+  font-weight:700;white-space:nowrap;flex:none;margin-left:6px;
+  padding:10px 18px;
+}
+.navlinks .btn .ic{width:16px;height:16px}
+
+/* plain links keep their old treatment */
+.navlinks > a.navlink{
+  padding:8px 13px;border-radius:9px;font-size:.9rem;font-weight:500;color:var(--ink-2);
+  white-space:nowrap;text-decoration:none;
+  transition:background .18s var(--ease),color .18s var(--ease);
+}
+.navlinks > a.navlink:hover{background:var(--paper-2);color:var(--ink)}
+.navlinks > a.navlink.on{color:var(--ink);font-weight:700}
+
+/* ---- dark buyer skin ---- */
+body.buyer-skin .mega-t{color:#A99D91}
+body.buyer-skin .mega-t:hover,
+body.buyer-skin .mega.open .mega-t{background:#231F1D;color:#F4EFE8}
+body.buyer-skin .navlinks > a.navlink{color:#A99D91}
+body.buyer-skin .navlinks > a.navlink:hover{background:#231F1D;color:#F4EFE8}
+body.buyer-skin .mega-p{background:#171514;border-color:#443D38}
+body.buyer-skin .mega-link{color:#F4EFE8}
+body.buyer-skin .mega-link:hover{background:#231F1D}
+body.buyer-skin .mega-link .mi{background:#2A2624;border-color:#443D38;color:#A99D91}
+body.buyer-skin .mega-link small{color:#8A8078}
+body.buyer-skin .mega-feat{background:#201D1B;border-color:#312C29}
+body.buyer-skin .mega-feat .fline{border-color:#312C29}
+body.buyer-skin .mega-feat .fline span,body.buyer-skin .mega-feat p{color:#A99D91}
+
+/* ---- mobile: panels become accordions in the tray ---- */
+@media(max-width:980px){
+  .navlinks{display:none}
+  .navlinks.open{
+    display:flex;position:absolute;top:72px;left:0;right:0;background:var(--paper);
+    flex-direction:column;align-items:stretch;padding:14px;border-bottom:1px solid var(--line);
+    gap:2px;box-shadow:var(--sh-3);max-height:calc(100vh - 72px);overflow-y:auto;
+  }
+  .navlinks.open .mega{width:100%}
+  .navlinks.open .mega-t{width:100%;justify-content:space-between;padding:13px 15px;font-size:1rem}
+  .navlinks.open .mega-p{
+    position:static;width:auto;max-width:none;box-shadow:none;border:none;
+    background:transparent;border-radius:0;opacity:1;visibility:hidden;
+    transform:none;pointer-events:none;height:0;overflow:hidden;
+  }
+  .navlinks.open .mega.open .mega-p{visibility:visible;pointer-events:auto;height:auto}
+  .navlinks.open .mega-in,.navlinks.open .mega-in.split{
+    grid-template-columns:1fr;padding:2px 0 10px 8px;gap:2px;
+  }
+  .navlinks.open .mega-links{min-width:0}
+  .navlinks.open .mega-feat{margin-top:8px}
+  .navlinks.open > a.navlink{padding:13px 15px;font-size:1rem}
+  .navlinks.open .btn{margin:10px 0 4px;width:100%;padding:14px 20px}
+  .menu-toggle{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;border:1px solid var(--line-2);background:var(--card)}
+}

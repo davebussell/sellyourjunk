@@ -58,11 +58,7 @@ body.buyer-skin header.nav{
   color:#F4EFE8;
 }
 body.buyer-skin header.nav.stuck{background-color:rgba(15,14,13,.95)}
-/* :not(.btn) for the same reason as styles.css — the nav CTA keeps its
-   own reversed-on-orange treatment on the dark skin too */
-body.buyer-skin .navlinks button:not(.btn){color:#A99D91}
-body.buyer-skin .navlinks button:not(.btn):hover{background:#231F1D;color:#F4EFE8}
-body.buyer-skin .navlinks button:not(.btn).on{color:#F4EFE8}
+/* dark-skin nav triggers live in assets/nav.css alongside the light ones */
 body.buyer-skin .logo{color:#F4EFE8}
 body.buyer-skin .logo small{color:#8A8078}
 body.buyer-skin .sticky-cta{display:none!important}
