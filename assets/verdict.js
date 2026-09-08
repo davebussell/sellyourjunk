@@ -323,7 +323,7 @@ function renderGiven(it,s){
       </div>
       <p style="font-size:.9rem;color:var(--ink-2)">You gave up about <b>${it.buyerPays.v}</b> by choosing this door. We think you made the right call.</p>
       <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap">
-        <button class="btn" onclick="go('feed')">See it in the feed</button>
+        <button class="btn" onclick="go('market')">See it in the feed</button>
         <button class="btn ghost" onclick="resetPost()">Post another</button>
       </div>
     </div>`;

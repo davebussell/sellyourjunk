@@ -34,6 +34,7 @@
 <link rel="stylesheet" href="assets/verdict.css">
 <link rel="stylesheet" href="assets/worth.css">
 <link rel="stylesheet" href="assets/nav.css">
+<link rel="stylesheet" href="assets/market.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -186,9 +187,9 @@
                 <span class="mi"><i data-lucide="house" class="ic"></i></span>
                 <span><b>Clearing a home</b><small>A whole house, a deadline, and one schedule instead of forty doorbells.</small></span>
               </a>
-              <a class="mega-link" href="/going-free" data-view="feed">
+              <a class="mega-link" href="/marketplace" data-view="market">
                 <span class="mi"><i data-lucide="gift" class="ic"></i></span>
-                <span><b>Going free near you</b><small>What neighbours are giving away before it goes to the dump.</small></span>
+                <span><b>Everything going free</b><small>What neighbours are giving away, and what each thing is actually worth.</small></span>
               </a>
               <a class="mega-link" href="/how-it-works" data-view="how">
                 <span class="mi"><i data-lucide="circle-help" class="ic"></i></span>
@@ -294,7 +295,7 @@
       <p class="lede">We tell you exactly what your junk is worth, then show you the best way to get rid of it where you live — sell it to a local buyer, give it away, recycle it, or have it hauled. Free to use, always. Takes about thirty seconds.</p>
       <div class="hero-actions">
         <button class="btn urgent lg" onclick="go('post')"><i data-lucide="camera" class="ic"></i>See what it's worth</button>
-        <button class="btn ghost lg" onclick="go('feed')"><i data-lucide="clock" class="ic"></i>See what's going free</button>
+        <button class="btn ghost lg" onclick="go('market')"><i data-lucide="clock" class="ic"></i>See what's going free</button>
       </div>
       <div class="ticker" id="ticker"></div>
       <div class="assure">
@@ -454,7 +455,7 @@
         <p>Not everything is worth money, and the rest still shouldn't be buried. These are the ones the owner decided to give away — free, first come, and they expire on their own.</p>
       </div>
       <div class="feed-grid" id="home-feed"></div>
-      <div style="margin-top:28px"><button class="btn ghost" onclick="go('feed')">See everything going free →</button></div>
+      <div style="margin-top:28px"><button class="btn ghost" onclick="go('market')">See everything going free →</button></div>
     </div>
   </section>
 
@@ -495,6 +496,8 @@
 </div>
 
 <!-- ================= FEED ================= -->
+<!-- Retired in favour of #v-market (/marketplace). Kept in the DOM because
+     app.js renderFeeds_inner() writes to #full-feed unguarded at parse time. -->
 <div class="view" id="v-feed">
   <section class="band">
     <div class="wrap">
@@ -518,6 +521,60 @@
         <button class="fchip" data-f="soon" onclick="filterFeed('soon',this)"><i data-lucide="clock" class="ic"></i>Going in &lt; 12 hrs</button>
       </div>
       <div class="feed-grid" id="full-feed"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= MARKETPLACE ================= -->
+<div class="view" id="v-market">
+  <section class="band">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <div class="kicker">Mississauga, Etobicoke &amp; Brampton</div>
+        <h2>Everything going free near you</h2>
+        <p>Every listing here is free and expires on its own. Beside each one is what a local buyer would actually pay for it &mdash; which for most of this is nothing, and that is exactly why it is here.</p>
+      </div>
+
+      <div class="mk-demo" id="mk-demo">
+        <span class="badge-demo">Prototype</span>
+        <span id="mk-demo-txt">Sample data &mdash; nothing below is a real listing. Prices are typical GTA ranges for the category, not appraisals of the individual item.</span>
+        <button class="btn ghost sm" id="mk-stress-btn" type="button">See how this behaves with 1,000 items</button>
+      </div>
+
+      <a class="mk-skip" href="#mk-grid">Skip past the filters</a>
+
+      <div class="mk-layout">
+        <aside class="mk-rail" id="mk-rail" aria-label="Filters"></aside>
+
+        <div class="mk-main">
+          <div class="mk-bar">
+            <div class="mk-search">
+              <input type="search" id="mk-q" class="input" autocomplete="off" spellcheck="false"
+                     placeholder="Search &mdash; &ldquo;oak&rdquo;, &ldquo;truck&rdquo;, &ldquo;porch&rdquo;, &ldquo;fridge&rdquo;" aria-label="Search listings">
+            </div>
+            <label class="mk-sortwrap">
+              <span>Sort</span>
+              <select id="mk-sort" class="input" aria-label="Sort listings"></select>
+            </label>
+            <div class="mk-dense" role="group" aria-label="Density">
+              <button type="button" class="mk-dbtn on" data-dense="comfort">Cards</button>
+              <button type="button" class="mk-dbtn" data-dense="compact">Compact</button>
+            </div>
+          </div>
+
+          <button class="btn ghost sm mk-sheet-open" id="mk-sheet-open" type="button">Filters</button>
+
+          <div class="mk-pills" id="mk-pills"></div>
+          <div class="mk-count" id="mk-count"></div>
+          <div class="mk-live" id="mk-live" role="status" aria-live="polite"></div>
+
+          <div class="mk-grid" id="mk-grid"></div>
+          <div class="mk-sentinel" id="mk-sentinel" aria-hidden="true"></div>
+          <div class="mk-end" id="mk-end"></div>
+        </div>
+      </div>
+
     </div>
   </section>
 </div>
@@ -879,7 +936,7 @@
       </div>
       <div>
         <h5>Product</h5>
-        <button onclick="go('feed')">Going free</button>
+        <button onclick="go('market')">Going free</button>
         <button onclick="go('post')"><i data-lucide="camera" class="ic"></i>What's it worth?</button>
         <button onclick="go('clearing')">Clearing a home</button>
         <button onclick="go('inbox')">Your listings &amp; requests</button>
@@ -912,5 +969,7 @@
 <script src="assets/worth.js"></script>
 <script src="assets/routes.js"></script>
 <script src="assets/nav.js"></script>
+<script src="assets/market-stress.js"></script>
+<script src="assets/market.js"></script>
 </body>
 </html>

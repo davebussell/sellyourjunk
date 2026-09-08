@@ -25,6 +25,8 @@ const ROUTES = {
              d:"Photo in, answer out. What it costs, who sees your address, what happens if nobody buys it, and which areas we cover in the western GTA."},
   feed:     {path:'/going-free',        t:"Going free near you — We Pay for Junk",
              d:"Things people are giving away in Mississauga, Etobicoke and Brampton. Free, first come, and every listing expires on its own."},
+  market:   {path:'/marketplace',       t:"Everything going free near you — We Pay for Junk",
+             d:"Every item people are giving away in Mississauga, Etobicoke and Brampton, with what each one is actually worth locally. Free, first come, and every listing expires on its own."},
   clearing: {path:'/clearing-a-home',   t:"Clearing a home — We Pay for Junk",
              d:"Emptying a house after a death, a move or a sale. Walk the rooms with your phone; we list everything, tell you what's worth money, and hand you one schedule."},
   orgs:     {path:'/for-organizations', t:"For organizations — We Pay for Junk",
@@ -100,7 +102,9 @@ window.addEventListener('popstate', () => {
   if(v && v !== 'home'){
     ROUTE_SILENT = true;
     try { go(v); } finally { ROUTE_SILENT = false; }
-    history.replaceState({view:v}, '', ROUTES[v].path);
+    /* keep location.search: assets/market.js stores the marketplace's filter
+       state there, and this line runs before market.js is parsed. */
+    history.replaceState({view:v}, '', ROUTES[v].path + location.search);
   } else {
     applyRouteMeta('home');
   }

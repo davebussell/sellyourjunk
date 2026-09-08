@@ -71,8 +71,15 @@
   to = "/index.html"
   status = 200
 
+# The free feed and the marketplace merged. Old links keep working;
+# Netlify preserves the query string across a 301.
 [[redirects]]
   from = "/going-free"
+  to = "/marketplace"
+  status = 301
+
+[[redirects]]
+  from = "/marketplace"
   to = "/index.html"
   status = 200
 

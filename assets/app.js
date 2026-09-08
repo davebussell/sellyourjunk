@@ -298,7 +298,7 @@ function renderPost_inner(){
         </div>
         <p style="font-size:.92rem;color:var(--ink-2)"><b>3 organizations</b> have this on their standing wants list and were notified just now — a community centre in Lakeview, a furniture bank in Etobicoke and a sewing program in Malton.</p>
         <div style="display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap">
-          <button class="btn" onclick="go('feed')">See it in the feed</button>
+          <button class="btn" onclick="go('market')">See it in the feed</button>
           <button class="btn ghost" onclick="P={step:0,photos:0,deadline:null,porch:false,memory:'',orgFirst:true};renderPost()">Post another</button>
         </div>
       </div>`;
