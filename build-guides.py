@@ -330,7 +330,7 @@ def city_page(m, all_metros, checked):
 
 
 def hub_page(metros, checked):
-    canon = f'{SITE}/donate'
+    canon = f'{SITE}/donate/'   # trailing slash: Netlify 301s /donate -> /donate/
     title = 'Where to donate used goods in Canada — city by city'
     total = sum(len(m['orgs']) for m in metros)
     desc = (f'Verified guides to donating used furniture, clothing and household goods in {len(metros)} Canadian '
@@ -391,7 +391,7 @@ def sync_sitemap(metros, checked):
     marker = '<loc>' + SITE + '/donate'
     kept = [ln for ln in open(p, encoding='utf-8').read().split('\n') if marker not in ln]
     s = '\n'.join(kept)
-    rows = [f'  <url><loc>{SITE}/donate</loc><lastmod>{checked}</lastmod>'
+    rows = [f'  <url><loc>{SITE}/donate/</loc><lastmod>{checked}</lastmod>'
             f'<changefreq>monthly</changefreq><priority>0.8</priority></url>']
     rows += [f'  <url><loc>{SITE}/donate/{m["slug"]}</loc><lastmod>{checked}</lastmod>'
              f'<changefreq>monthly</changefreq><priority>0.7</priority></url>' for m in metros]
