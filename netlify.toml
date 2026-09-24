@@ -50,6 +50,42 @@
   status = 404
   force = true
 
+# The generators are build tooling, not site content, and Netlify would serve
+# every one of them as readable plain text. prep-sell.py is the reason this
+# matters rather than being tidiness: it names specific real businesses in a
+# DROP list ("do not publish") and a COLLECT_UNLIKELY list ("implausible").
+# Those are defensible engineering notes and indefensible things to publish
+# about a named third party on our own domain.
+[[redirects]]
+  from = "/build-guides.py"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/build-sell.py"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/build-outlets.py"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/prep-donations.py"
+  to = "/index.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/prep-sell.py"
+  to = "/index.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/WePayForJunk-preview.html"
   to = "/index.html"
