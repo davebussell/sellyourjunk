@@ -170,3 +170,75 @@
 .g-flag b{font-weight:700}
 .g-flag.not-charity{background:var(--amber-soft);border:1px solid var(--amber-line);color:#734D08}
 .g-flag.restricted{background:var(--paper-2);border:1px solid var(--line-2);color:var(--ink-2)}
+
+/* =========================================================
+   /sell/<city> — the for-profit side.
+
+   Visually a sibling of the donation guides, not a different
+   site, but the two callouts at the top are deliberately louder
+   than anything on the donate pages. On a donation guide the
+   worst outcome is a wasted trip; here it is someone handing
+   over a wedding ring against a loan whose terms they never saw.
+   ========================================================= */
+
+.s-pawn{
+  border:1px solid var(--amber-line);background:var(--amber-soft);
+  border-radius:20px;padding:22px 26px;margin:0 0 24px;
+}
+.s-pawn h2{
+  font-family:var(--display);font-size:1.22rem;letter-spacing:-.024em;
+  margin:0 0 10px;color:#734D08;display:flex;align-items:center;gap:9px;
+}
+.s-pawn h2 .ic{width:19px;height:19px;flex:none}
+.s-pawn p{font-size:.94rem;line-height:1.65;color:#5C3E06;margin:0 0 11px}
+.s-pawn p:last-child{margin-bottom:0}
+.s-pawn b{font-weight:700}
+
+.s-payout{
+  border:1px solid var(--line-2);background:var(--paper-2);
+  border-radius:20px;padding:22px 26px;margin:0 0 30px;
+}
+.s-payout h2{font-family:var(--display);font-size:1.22rem;letter-spacing:-.024em;margin:0 0 10px}
+.s-payout p{font-size:.93rem;line-height:1.68;color:var(--ink-2);margin:0 0 11px}
+.s-payout p:last-child{margin-bottom:0}
+
+/* what kind of transaction this is — the badge that stops the surprise */
+.s-deal{
+  font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  padding:4px 9px;border-radius:999px;white-space:nowrap;
+  border:1px solid var(--line-2);background:var(--card);color:var(--ink-2);
+}
+.s-deal.sell{background:var(--calm-soft);color:#33553D;border-color:var(--calm-line)}
+.s-deal.pawn{background:var(--amber-soft);color:#734D08;border-color:var(--amber-line)}
+.s-deal.consign,.s-deal.credit{background:var(--urgent-soft);color:#8A3A12;border-color:var(--urgent-line)}
+
+/* --clay on --paper-2 is 3.48:1, which is fine for a caption and not fine for
+   this: "Bring it to them" versus "May collect" is the line that decides
+   whether someone needs to borrow a van. --ink-2 takes it to 8.1:1. */
+.s-col{
+  font-size:.66rem;font-weight:700;letter-spacing:.04em;
+  padding:4px 9px;border-radius:999px;white-space:nowrap;
+  border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2);
+}
+.s-col.cond{background:var(--calm-soft);color:#33553D;border-color:var(--calm-line)}
+
+.s-reg{
+  display:flex;gap:11px;align-items:flex-start;
+  border:1px solid var(--line);background:var(--paper-2);border-radius:14px;
+  padding:15px 18px;margin:8px 0 30px;
+  font-size:.86rem;line-height:1.6;color:var(--ink-2);
+}
+.s-reg .ic{width:16px;height:16px;flex:none;margin-top:2px;color:var(--clay)}
+
+@media(max-width:640px){
+  .s-pawn,.s-payout{padding:19px 18px;border-radius:16px}
+}
+
+/* the outlets widget, when it sits on a guide page */
+.ot-deal{
+  font-size:.66rem;font-weight:700;letter-spacing:.04em;
+  padding:3px 8px;border-radius:999px;white-space:nowrap;
+  background:var(--paper-2);border:1px solid var(--line-2);color:var(--ink-2);
+}
+.ot-flag.warn{background:var(--amber-soft);color:#734D08;border:1px solid var(--amber-line)}
+.ot-mores{display:flex;flex-wrap:wrap;gap:16px;margin-top:6px}

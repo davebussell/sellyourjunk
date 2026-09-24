@@ -148,12 +148,17 @@ function renderWorth_inner(){
         : `<b>No buyers</b> want this one — and we're not going to pretend otherwise.`}</span>
     </div>
 
+    <div id="worth-outlets"></div>
+
     <div class="wp-cta">
       <button class="btn urgent" onclick="go('post')">${ic('camera')}What's mine worth?</button>
       <span class="fine">Typical ranges for the GTA. Yours depends on condition,
         age and what it actually is — that's the bit the photo settles.</span>
     </div>`;
   icons();
+  /* The teaser already knows the category the reader tapped, so it can answer
+     "and who near me takes one" without asking anything further. */
+  if (typeof outletsMount === 'function') outletsMount('worth-outlets', [w.k]);
 }
 function renderWorth(){ renderWorth_inner(); }
 

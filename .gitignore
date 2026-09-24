@@ -21,3 +21,28 @@ node_modules/
 # Standalone inlined snapshot of an earlier build — kept locally for
 # sharing, but excluded so it does not serve as a stale duplicate page.
 WePayForJunk-preview.html
+
+# Research scratch left by the guide-building runs: saved copies of statute
+# and bylaw pages, the JSON behind them, the PDFs, and a vendor bundle pulled
+# off someone else's site while checking a claim. None of it is site content,
+# and Netlify publishes the repo root, so an accidental commit would put a
+# third party's minified JavaScript and a pile of PDFs on our own domain.
+__pycache__/
+*.pdf
+*.pdf.txt
+act_out.txt
+reg_out.txt
+/app.js
+/fl.json
+/p.json
+/pr[0-9]*.json
+/bw.html
+/cc.html
+/cl.html
+/ddg.html
+/idx.html
+
+# Raw research output, before prep-*.py applies the audit corrections.
+# The published data is data/donations.json and data/sell-outlets.json.
+raw-*.json
+*-metros.json

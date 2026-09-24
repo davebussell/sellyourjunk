@@ -29,7 +29,7 @@
 /* ---------------- THE TWO DEMO ITEMS ---------------- */
 const VITEMS = {
   sew:{
-    key:"sew", pick:"Sewing machine", thumbs:["sew","fabric","box"],
+    key:"sew", cats:["tools"], pick:"Sewing machine", thumbs:["sew","fabric","box"],
     title:"Singer sewing machine, model 758",
     rows:[
       ["Item","Singer 758, early 1970s"],
@@ -58,7 +58,7 @@ const VITEMS = {
     doorGive:"3 organizations have this on their list right now"
   },
   bike:{
-    key:"bike", pick:"Vintage road bike", thumbs:["bike","box","shelf"],
+    key:"bike", cats:["bike"], pick:"Vintage road bike", thumbs:["bike","box","shelf"],
     title:"Peugeot Iseran road bike, c. 1987",
     rows:[
       ["Item","Peugeot Iseran, c. 1987"],
@@ -203,9 +203,16 @@ function renderPost_inner(){
         </button>
       </div>
 
+      <div id="mk-outlets"></div>
+
       <div class="flow-actions">
         <button class="btn ghost" onclick="P.step=1;renderPost()">Back</button>
       </div>`;
+
+    /* The buyers listed above this are a demonstration. These are not: every
+       organization comes from the verified /donate directory, matched on the
+       item's own category. It is the one part of the Verdict that is real. */
+    if (typeof outletsMount === 'function') outletsMount('mk-outlets', it.cats || []);
   }
 
   /* ---- 3 · terms (sell) or deadline (give) ---- */

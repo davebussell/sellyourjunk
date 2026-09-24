@@ -180,3 +180,63 @@
   .doors{grid-template-columns:1fr}
   .dbuyer .dpay{display:none}
 }
+
+/* ---------------- OUTLETS ----------------
+   The Verdict tells you what a thing is worth; this tells you who near
+   you will actually take it. Same paper skin, deliberately quieter than
+   the two money cells above it — it is the next step, not the headline. */
+.ot-box{
+  background:var(--paper-2);border:1px solid var(--line);border-radius:18px;
+  padding:20px 22px;margin-top:20px;
+}
+.ot-head{margin-bottom:14px}
+.ot-head h4{font-family:var(--display);font-size:1.12rem;letter-spacing:-.022em;margin:0 0 3px}
+.ot-head .ot-sub{font-size:.8rem;color:var(--clay)}
+.ot-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.ot-chip{
+  border:1px solid var(--line-2);border-radius:999px;padding:5px 11px;
+  background:var(--card);font-size:.79rem;font-weight:600;color:var(--ink-2);
+  transition:all .16s var(--ease);
+}
+.ot-chip:hover{border-color:var(--clay);color:var(--ink)}
+.ot-chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ot-ask{font-size:.9rem;color:var(--ink-2);line-height:1.6;margin:0}
+.ot-fail{font-size:.88rem;color:var(--ink-2);line-height:1.6;margin:0}
+.ot-sec{margin-bottom:14px}
+.ot-sec h5{
+  font-family:var(--sans);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:800;color:var(--clay);margin:0 0 8px;
+}
+.ot-sec ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.ot-row{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-size:.88rem;line-height:1.45}
+.ot-row a{color:var(--ink);font-weight:650;text-decoration:none;border-bottom:1px solid var(--line-2)}
+.ot-row a:hover{color:var(--urgent);border-bottom-color:var(--urgent)}
+.ot-note{font-size:.79rem;color:var(--clay);flex-basis:100%;line-height:1.45}
+.ot-pick{
+  font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:999px;white-space:nowrap;
+}
+.ot-pick.free{background:var(--calm-soft);color:#33553D;border:1px solid var(--calm-line)}
+.ot-pick.paid,.ot-pick.conditional{background:var(--amber-soft);color:#734D08;border:1px solid var(--amber-line)}
+.ot-pick.none{background:var(--paper-3);color:var(--ink-2);border:1px solid var(--line-2)}
+.ot-pick.unknown{background:var(--card);color:var(--clay);border:1px solid var(--line)}
+.ot-flag{
+  font-size:.62rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 7px;border-radius:999px;
+  background:var(--amber-soft);color:#734D08;border:1px solid var(--amber-line);
+}
+.ot-more{
+  display:inline-block;margin-top:4px;font-size:.84rem;font-weight:700;
+  color:var(--urgent);text-decoration:none;
+}
+.ot-more:hover{text-decoration:underline}
+
+/* the deal badge and the pawn warning, for the widget inside the SPA —
+   guide.css carries the same rules for the static city pages */
+.ot-deal{
+  font-size:.66rem;font-weight:700;letter-spacing:.04em;
+  padding:3px 8px;border-radius:999px;white-space:nowrap;
+  background:var(--paper-2);border:1px solid var(--line-2);color:var(--ink-2);
+}
+.ot-flag.warn{background:var(--amber-soft);color:#734D08;border:1px solid var(--amber-line)}
+.ot-mores{display:flex;flex-wrap:wrap;gap:16px;margin-top:6px}

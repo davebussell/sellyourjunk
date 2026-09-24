@@ -95,6 +95,7 @@ def head(title, desc, canon, extra_ld=''):
       <a class="navlink" href="/whats-it-worth">What&#39;s it worth?</a>
       <a class="navlink" href="/marketplace">Going free</a>
       <a class="navlink" href="/donate">Donate</a>
+      <a class="navlink" href="/sell">Sell</a>
     </nav>
   </div>
 </header>
@@ -115,8 +116,9 @@ FOOT = f'''
         <a href="/clearing-a-home" style="display:block;font-size:.92rem;color:var(--ink-2);padding:5px 0;text-decoration:none">Clearing a home</a>
       </div>
       <div>
-        <h5>Donate</h5>
-        <a href="/donate" style="display:block;font-size:.92rem;color:var(--ink-2);padding:5px 0;text-decoration:none">All cities</a>
+        <h5>Local guides</h5>
+        <a href="/donate" style="display:block;font-size:.92rem;color:var(--ink-2);padding:5px 0;text-decoration:none">Where to donate it</a>
+        <a href="/sell" style="display:block;font-size:.92rem;color:var(--ink-2);padding:5px 0;text-decoration:none">Where to sell it</a>
         <a href="/for-organizations" style="display:block;font-size:.92rem;color:var(--ink-2);padding:5px 0;text-decoration:none">For organizations</a>
         <a href="/privacy" style="display:block;font-size:.92rem;color:var(--ink-2);padding:5px 0;text-decoration:none">Privacy &amp; terms</a>
       </div>
@@ -316,7 +318,7 @@ def city_page(m, all_metros, checked):
         of. Photograph it and we will tell you which — including when the honest answer is that it is worth
         nothing and a thrift store is exactly the right place for it. We earn nothing when you donate.</p>
       <a class="btn urgent" href="/whats-it-worth">See what it&#39;s worth</a>
-      <a class="btn ghost" href="/marketplace">Browse what&#39;s going free</a>
+      <a class="btn ghost" href="/sell/{slug}">Where to sell it in {E(name)}</a>
     </div>
 
     <div class="g-sec"><h2>Common questions</h2></div>
@@ -374,6 +376,7 @@ def hub_page(metros, checked):
         Some are worth several hundred dollars and should not go in a donation bin. Photograph it and we will
         tell you which you have got — we earn nothing either way.</p>
       <a class="btn urgent" href="/whats-it-worth">See what it&#39;s worth</a>
+      <a class="btn ghost" href="/sell">Where to sell it instead</a>
     </div>
   </div>
 </section>
