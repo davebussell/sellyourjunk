@@ -4,6 +4,13 @@
 [build]
   publish = "."
   command = ""
+  functions = "netlify/functions"
+
+# The marketplace search runs server-side: API credentials cannot ship to a
+# browser, most of these APIs send no CORS headers, and their rate limits
+# need a cache in front of them. Everything else on the site stays static.
+[functions]
+  node_bundler = "esbuild"
 
 # Security & caching headers
 [[headers]]
