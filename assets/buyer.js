@@ -24,7 +24,7 @@ var BUYER = {
   dailyUsed:false
 };
 
-var WANTED = "I buy pre-1990 steel road bikes, any condition, complete or not — plus vintage Campagnolo and Simplex parts. Mid-century teak and rosewood furniture. Non-running Japanese and domestic sedans for parts. Woodworking and power tools, working or not. Scrap lots over about 100 kg. Office IT clearouts, 3+ machines. Not modern aluminium bikes, not particleboard, not upholstery. Within 40 km of Etobicoke South. Up to 3 pickups a week.";
+var WANTED = "I buy pre-1990 steel road bikes, any condition, complete or not — plus vintage Campagnolo and Simplex parts. Mid-century teak and rosewood furniture. Non-running Japanese and domestic sedans for parts. Woodworking and power tools, working or not. Scrap lots over about 100 kg. Office IT clearouts, 3+ machines. Not modern aluminum bikes, not particleboard, not upholstery. Within 40 km of Etobicoke South. Up to 3 pickups a week.";
 
 /* ---------------- THE FINDS ---------------- */
 var FINDS = [];

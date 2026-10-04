@@ -1,0 +1,1142 @@
+{
+ "furniture": {
+  "name": "Furniture",
+  "openingTruth": "With furniture, value runs opposite to bulk: the sofa you most want gone is the hardest thing in the house to give away, and the plain brown dresser you were going to put on the curb may be the only thing in the room worth money. Before you call anyone, pull a drawer out and look at the joint. Solid wood or particleboard is the one fact that decides whether you are making calls or filling the bin.",
+  "tells": [
+   {
+    "what": "Mid-century teak or walnut carrying a maker's mark",
+    "tell": "Tip the piece forward or pull the bottom drawer right out and look at the underside and the back panel. You are looking for a branded or stamped maker's mark, a metal tag, or a paper label - often on the underside of a drawer bottom, inside the carcass back, or under a table top. Photograph it before anything moves, then search the exact wording of the mark."
+   },
+   {
+    "what": "Teak or rosewood sideboards and credenzas",
+    "tell": "Solid wood, not veneer over particleboard: look at the top edge and the door edges. Real teak shows continuous grain wrapping around the edge. Veneered particleboard shows a thin facing line and a different-coloured core underneath."
+   },
+   {
+    "what": "Solid hardwood chests, dressers and dining tables with dovetailed drawers",
+    "tell": "Take one drawer right out and look at the front corner. Interlocking wedge-shaped fingers cut into the wood is a dovetail. Staples, or a dowel-and-glue butt joint, or a stapled-on plywood bottom, means it is not in this category."
+   },
+   {
+    "what": "Matched sets of four or more dining chairs",
+    "tell": "Count them and check they genuinely match: same wood, same wear, same upholstery batch. Turn one over and look for a maker's stamp under the seat rail."
+   },
+   {
+    "what": "Real leather seating that is intact",
+    "tell": "Press the seat with your thumb. Leather warms, creases into fine lines, and the grain varies across the hide. Vinyl and bonded leather stay cool, show a repeating embossed pattern, and peel or flake at the wear points."
+   },
+   {
+    "what": "Solid wood bed frames and headboards",
+    "tell": "Lift one side rail. Solid hardwood rails are heavy and show end grain. Hollow metal or wrapped particleboard rails are not worth moving."
+   },
+   {
+    "what": "Oak filing cabinets, barrister bookcases, drafting tables and workbenches",
+    "tell": "Weight and fasteners. If it is heavy, held together with bolts or mortise-and-tenon joints rather than cam locks, and the drawers run on steel rather than plastic, it is in this category."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Particleboard and MDF flat-pack, once it has been taken apart"
+   },
+   {
+    "what": "Used mattresses and box springs"
+   },
+   {
+    "what": "Sofa beds"
+   },
+   {
+    "what": "Entertainment units and armoires built for tube televisions"
+   },
+   {
+    "what": "Worn upholstered recliners and fabric sectionals"
+   },
+   {
+    "what": "Futons and futon frames"
+   },
+   {
+    "what": "Anything that smells"
+   },
+   {
+    "what": "Desks and shelving with printed paper woodgrain surfaces"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Cribs made before September 1986 should not be used, and non-compliant products cannot be sold or given away",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Health Canada states that cribs made before September 1986 should not be used and that they do not meet current safety regulations, giving slat spacing as an example. Its second-hand shopping guidance adds that cribs made before September 1986 are likely not to meet current regulatory requirements and should not be purchased. Combined with the rule below on giving away non-compliant products, this covers a garage sale, an online listing, a charity donation and passing it to family alike.",
+    "source": "https://www.canada.ca/en/health-canada/services/buying-second-hand-products.html"
+   },
+   {
+    "rule": "Consumer product safety law covers used goods and free giveaways, not just retail sales",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Health Canada states that \"Any person who sells, distributes, or gives away consumer products not complying with the current regulatory requirements is breaking the law in Canada\", and that \"The CCPSA and its regulations do not distinguish between new and used products.\" Second-hand status is not a defence, and neither is giving the item away rather than selling it.",
+    "source": "https://laws-lois.justice.gc.ca/eng/acts/C-1.68/FullText.html"
+   },
+   {
+    "rule": "Mattresses must meet a cigarette combustion-resistance standard",
+    "jurisdiction": "Canada (federal)",
+    "detail": "The Mattresses Regulations (SOR/2016-183) under the Canada Consumer Product Safety Act require testing to CAN/CGSB-4.2 No. 27.7. The definition of mattress expressly excludes mattress pads, parts of upholstered furniture, and crib, cradle and bassinet mattresses. There is no equivalent general federal flammability standard for upholstered furniture in Canada - do not apply US state rules such as California's TB117 here.",
+    "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-183/FullText.html"
+   }
+  ]
+ },
+ "appliance": {
+  "name": "Appliances",
+  "openingTruth": "Two things decide what happens when you turn up with an appliance: whether it still runs, and whether it has a sealed refrigerant system — and if it is a fridge, freezer, air conditioner, dehumidifier or heat pump that no longer runs, you are not selling it, you are paying to be rid of it.",
+  "tells": [
+   {
+    "what": "A working washer, dryer, dishwasher or range under about ten years old",
+    "tell": "Find the model and serial plate before you call anyone. On a washer it is usually under the lid or on the back; on a range, inside the storage drawer or along the door frame. Age is the first question you will be asked, and a guess will not do."
+   },
+   {
+    "what": "Dead appliances with no refrigerant — washers, dryers, dishwashers, ranges, range hoods",
+    "tell": "Your routes are municipal collection, a metal recycler, or a scrap hauler. Call three, ask each whether they charge a trip fee or pay anything for the metal, and get the answer in writing before anything moves."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "A dead fridge or freezer"
+   },
+   {
+    "what": "Any home appliance ten years old or more, as a donation"
+   },
+   {
+    "what": "Window and portable air conditioners and dehumidifiers"
+   },
+   {
+    "what": "Anything with mould in it"
+   },
+   {
+    "what": "A single orphan appliance from a broken-up set"
+   },
+   {
+    "what": "The copper and the compressor, to you"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Refrigerant must be recovered before an appliance is scrapped, crushed or buried — and the rule that applies to your house is provincial, not federal",
+    "jurisdiction": "Canada-wide, set province by province",
+    "detail": "The Federal Halocarbon Regulations, 2022 reach only systems owned by the Crown, systems owned by a federal work or undertaking such as a railway, port authority, airport, telecommunications company or bank, and systems located on federal or Indigenous lands. An ordinary household is governed by its province's regulation instead. Do not rely on anything written for the United States: their rules, certification and disposal requirements are different.",
+    "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2022-110/FullText.html"
+   },
+   {
+    "rule": "No dismantling, recycling, incinerating or landfilling until a certified person has attached a no-refrigerant notice",
+    "jurisdiction": "Ontario",
+    "detail": "O. Reg. 463/10, s. 41(1). The notice required by s. 32 must carry the date, the person's name, their certificate number and expiry, their employer, and a statement that the unit no longer contains refrigerant; only a person certified under s. 34 may make that determination, and a copy must be kept for two years. \"Refrigeration equipment\" is defined to include air-conditioning, heat pump, refrigeration and freezer units. Note carefully what the section does not say: the duty is on whoever dismantles or buries the appliance, not on you for placing it at the curb. That is why Toronto will collect your fridge while a scrapyard may turn it away untagged.",
+    "source": "https://www.ontario.ca/laws/regulation/100463"
+   }
+  ]
+ },
+ "electronics": {
+  "name": "Electronics and computers",
+  "openingTruth": "Nearly everything electronic in the house is worth nothing, and most of it can be dropped off free at a regulated collection site — but what is covered varies by province, Ontario's program takes information and audio-visual equipment only while British Columbia's takes far more, and Nunavut has no regulated program at all, so check your own province's accepted list before you load the car. The only question worth real time before Thursday is whether you can get into the accounts on the phones, tablets and Apple laptops: a signed-in Apple or Google account you cannot clear turns a device someone would otherwise reuse into a recycling-only item, whatever its condition.",
+  "tells": [
+   {
+    "what": "A matched lot of three or more working laptops of the same model",
+    "tell": "Same model number printed on the underside of each base, and each one powers on to a login screen."
+   },
+   {
+    "what": "iPhones, iPads and MacBooks from roughly 2018 onward, signed out of iCloud",
+    "tell": "Settings shows no Apple Account signed in, and 'Transfer or Reset' then 'Erase All Content and Settings' runs to completion without asking for a password you do not have."
+   },
+   {
+    "what": "A desktop graphics card",
+    "tell": "Open the side panel. Look for a long board with its own fans occupying two slot widths at the back, with a thick power cable running to it directly from the power supply. A small card with no fans and no extra power cable is not worth pulling."
+   },
+   {
+    "what": "Vintage hi-fi separates from roughly 1970 to 1985",
+    "tell": "Brushed aluminum or silver front panel, real toggle switches and rotary knobs, substantial weight, and a badge reading Pioneer, Marantz, Sansui, Technics, Kenwood, Luxman, Yamaha or similar. Black plastic shelf systems and anything described as 'home theatre in a box' are not this."
+   },
+   {
+    "what": "Professional CRT monitors",
+    "tell": "'PVM' or 'BVM' on the bezel, usually Sony. BNC screw-on connectors on the back rather than a coaxial antenna socket. Often no tuner and no remote."
+   },
+   {
+    "what": "Pre-1990s synthesizers, drum machines and film camera lenses",
+    "tell": "Synthesizers: a keyboard covered in knobs and sliders rather than a menu screen, badged Roland, Korg, Yamaha, Moog or Sequential. Lenses: a metal mount, a ring of aperture numbers you can physically turn, and no electrical contacts."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "CRT televisions and CRT computer monitors"
+   },
+   {
+    "what": "Rear-projection and early plasma televisions"
+   },
+   {
+    "what": "Printers, scanners, fax machines and all-in-one devices"
+   },
+   {
+    "what": "Any phone, tablet or Mac still locked to an account you cannot clear"
+   },
+   {
+    "what": "DVD players, set-top boxes, shelf stereos and home-theatre-in-a-box systems"
+   },
+   {
+    "what": "Cables, chargers, keyboards, mice, routers, modems and loose power bricks"
+   },
+   {
+    "what": "Monitors under about 24 inches, older LCD panels, and loose optical discs"
+   },
+   {
+    "what": "Landline telephones, answering machines and corded office phones"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Free consumer drop-off is a producer obligation, not a courtesy",
+    "jurisdiction": "Ontario",
+    "detail": "Under the Electrical and Electronic Equipment regulation, producers of information technology, telecommunications and audio-visual equipment have been individually accountable since 1 January 2021 for collecting and reusing, refurbishing or recycling their products, and must ensure consumers can drop off covered equipment free of charge at each site in their collection system. The Resource Productivity and Recovery Authority is the regulator. The previous Waste Electrical and Electronic Equipment program ended on 31 December 2020.",
+    "source": "https://rpra.ca/programs/ittav/"
+   },
+   {
+    "rule": "Ontario's program covers information equipment only, not appliances or tools",
+    "jurisdiction": "Ontario",
+    "detail": "The regulation covers equipment whose primary purpose is collecting, storing, processing, presenting or communicating information, sounds and images, plus supporting peripherals, cables and charging equipment. It excludes small and large appliances and power tools.",
+    "source": "https://rpra.ca/programs/ittav/"
+   },
+   {
+    "rule": "British Columbia accepts a far wider list, including tube displays",
+    "jurisdiction": "British Columbia",
+    "detail": "The program lists 25-plus categories including kitchen countertop appliances, floor care, garment care, power tools, personal care and beauty, exercise machines, medical and monitoring equipment, e-bikes and e-scooters, and musical instruments. The Display Devices category expressly includes cathode ray tube televisions and monitors. Computer peripherals cover keyboards and mice, IT and telecom equipment covers routers and modems, and cables are listed as accepted when bundled with a computer. The FAQ states residents and businesses can drop off unwanted electronics free of charge.",
+    "source": "https://recyclemyelectronics.ca/bc/what-can-i-recycle"
+   },
+   {
+    "rule": "Responsibility for erasing personal data sits with the owner, not the recycler",
+    "jurisdiction": "All EPRA provinces",
+    "detail": "EPRA states that consumers and businesses are responsible for ensuring all personal data is removed from their devices before bringing them to a drop-off location. Its pre-drop-off guidance is to deactivate the device's account service, clear all personal information, and remove the SIM card, and it directs people to manufacturer documentation, erasure software, or expert help. EPRA requires its processors to protect data but does not accept responsibility for information left on a device.",
+    "source": "https://recyclemyelectronics.ca/bc/electronics-recycling-faqs"
+   },
+   {
+    "rule": "Overwriting works on spinning disks and does not work on solid-state drives",
+    "jurisdiction": "Canada, federal guidance",
+    "detail": "The Canadian Centre for Cyber Security's ITSP.40.006 states that a single overwrite pass is effective for modern hard disk drives, but that overwriting and secure erase processes are not suitable for most flash-based devices such as solid-state drives, because wear-levelling features prevent tools from reaching all memory. Cryptographic erase — destroying the encryption key — is identified as suitable for encrypted hard drives, solid-state drives and other flash storage, provided encryption was in use throughout the device's life. Physical destruction should be preceded by best-effort encryption or erasure, so that data cannot be recovered from fragments.",
+    "source": "https://www.cyber.gc.ca/en/guidance/it-media-sanitization-itsp40006"
+   },
+   {
+    "rule": "Windows' built-in data erasure is adequate for household data and not for sensitive data",
+    "jurisdiction": "Not jurisdictional — vendor statement applicable throughout Canada",
+    "detail": "Microsoft recommends Reset this PC with Remove everything and the data erasure option enabled before donating, recycling or selling, describing it as removing files and cleaning the drive and taking an hour or two. Microsoft also states that this consumer-targeted erasure does not meet government and industry data erasure standards.",
+    "source": "https://support.microsoft.com/en-us/windows/rejuvenate-your-pc-0ef73740-b927-549b-b7c9-e6f2b48d275e"
+   },
+   {
+    "rule": "Activation Lock comes off with the erase, and can be cleared remotely after the device has left your hands",
+    "jurisdiction": "Not jurisdictional — Apple policy applicable in Canada",
+    "detail": "Apple's instructions are to sign out of iCloud and then run Transfer or Reset, Erase All Content and Settings. The same page states that when you erase the device, Find My and Activation Lock turn off, and that if Find My was turned on you might need to enter your Apple Account and password — so the account password, not the order of operations, is what determines whether the device can be cleared. If Find My was left on and the device is gone, the owner can sign in at icloud.com/find, select the device, erase it, then remove it from the device list. If the device is offline, the erase begins the next time it connects.",
+    "source": "https://support.apple.com/en-ca/109511"
+   },
+   {
+    "rule": "Clearing a deceased owner's Apple Account requires legal documentation",
+    "jurisdiction": "Canada",
+    "detail": "Apple requires legal documentation before it will assist with a deceased person's account. This generally includes a death certificate, and might also require a court order. A Legacy Contact access key, if one was set up, is the simplest route and may be filed with estate papers. Apple states that after a Legacy Contact request or an account deletion request is completed, Activation Lock is removed automatically.",
+    "source": "https://support.apple.com/en-ca/102431"
+   },
+   {
+    "rule": "Apple will consider an Activation Lock removal request supported by proof of purchase",
+    "jurisdiction": "Not jurisdictional — Apple policy applicable in Canada",
+    "detail": "Apple's Activation Lock page states that if you need help removing Activation Lock and have proof of purchase documentation, you can start an Activation Lock support request. The page does not set out what that documentation must contain, so the criteria are whatever Apple applies through the request process — do not assume a particular receipt or a photograph of the device will qualify.",
+    "source": "https://support.apple.com/en-ca/108934"
+   },
+   {
+    "rule": "EPRA runs the program in eight provinces; Alberta and Newfoundland and Labrador have their own operators",
+    "jurisdiction": "Canada",
+    "detail": "EPRA states it is fulfilling this role on behalf of obligated stewards in eight provinces: British Columbia, Saskatchewan, Manitoba, Ontario, Quebec, New Brunswick, Nova Scotia and Prince Edward Island. In Ontario it operates inside the individual-producer-responsibility regime that the Resource Productivity and Recovery Authority regulates. Alberta's program is administered by the Alberta Recycling Management Authority and Newfoundland and Labrador's by the Multi-Materials Stewardship Board. EPRA does not operate in the territories.",
+    "source": "https://epra.ca/"
+   },
+   {
+    "rule": "Coverage in the territories is partial, and Nunavut has none",
+    "jurisdiction": "Yukon, Northwest Territories, Nunavut",
+    "detail": "The Northwest Territories runs depots including Yellowknife, N'Dilo, Dettah and Hay River, with an expanded list of more than 500 products across seven categories: small appliances and lighting, audio visual, telecom devices, power and air tools, games, toys and music, lawn and garden, and solar panels. Yukon operates a consumer-funded electronics recycling program funded by fees at point of purchase. Nunavut has no regulated electronics stewardship program. Whether a tube television is accepted, and at what cost, could not be confirmed at depot level for either territory, so confirm with the specific depot.",
+    "source": "https://environmentjournal.ca/expanded-electronics-recycling-pilot-launches-in-nwt"
+   }
+  ]
+ },
+ "clothing": {
+  "name": "Clothing and textiles",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "Teen and young-adult mall brands from the last 12 to 18 months",
+    "tell": "It buys all seasons year-round, takes walk-ins with no appointment, and requires items freshly laundered and free of odours. Sizes are adult only and the ranges are set per store: the London page gives girls 0 to 30 and up to 6X and guys XS to 4X and 28 to 44 inch waist, while the chain's national sell-to-us page gives girls 0 to 6X and guys 28 to 3X. Check your own store's page rather than assuming. No kids or youth sizes anywhere."
+   },
+   {
+    "what": "Premium outerwear and technical kit in near-new condition",
+    "tell": "Bring it in June, not in October. VSP publishes its calendar: \"Spring-Summer intake begins in December and Fall-Winter intake begins in June.\" By the time the weather turns, a shop is already full of parkas and will decline yours whatever the label."
+   },
+   {
+    "what": "Unworn items with the original tags still on",
+    "tell": "Keep them separate and still tagged. Do not launder them or remove the tags to make them look tidy."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Mid-market and fast-fashion labels, at a luxury consignor"
+   },
+   {
+    "what": "Clothing with stains, balling, repairs or odours"
+   },
+   {
+    "what": "Household linens in bulk: towels, sheets, duvet covers, curtains"
+   },
+   {
+    "what": "Single socks, single shoes, rags and fabric scraps"
+   },
+   {
+    "what": "Underwear and worn-out basics"
+   },
+   {
+    "what": "The whole-house pile, taken as a pile"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Second-hand textiles are exempt from federal fibre-content labelling if labelled as second-hand",
+    "jurisdiction": "Federal (Textile Labelling and Advertising Regulations, C.R.C., c. 1551, s. 9, under the Textile Labelling Act)",
+    "detail": "Section 9: \"A prescribed consumer textile article that is clearly identified by means of a label as a second-hand article is exempt from the application of section 3 of the Act.\" The regulations do not define \"second-hand\", and the exemption is conditional on the article carrying that label. Relevant if you are reselling a quantity of clothing as a business rather than giving it away.",
+    "source": "https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._1551/page-1.html"
+   }
+  ]
+ },
+ "kitchen": {
+  "name": "Kitchenware and housewares",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "Sterling silver flatware and hollowware",
+    "tell": "Each piece is stamped STERLING, STER, 925, or carries a British lion passant. EPNS, EP, A1, nickel silver, or the words silver plate mean there is no metal value at all. Knives usually have hollow handles filled with pitch or resin and a stainless blade, and weighted candlesticks and shakers are filled with pitch, so do not count their full weight as silver."
+   },
+   {
+    "what": "Bare cast iron frying pans and Dutch ovens",
+    "tell": "Smooth, not pebbled, cooking surface, and raised letters on the base — Griswold, Wagner, Favorite, or the Century and Red Mountain marks used by Birmingham Stove & Range. Hairline cracks, a base that rocks on a flat counter, or deep pitting through the metal kill the value entirely. Surface rust does not."
+   },
+   {
+    "what": "Le Creuset and Staub enamelled cast iron",
+    "tell": "Brand name cast into the base with a size number. Check the interior enamel for chips and crazing before you price anything — it is the first thing a buyer looks at. A missing lid takes a large bite out of the price; sold listings for your size, with and without the lid, will show you how much."
+   },
+   {
+    "what": "KitchenAid stand mixers, Vitamix and Thermomix blenders, and Breville or Jura espresso machines",
+    "tell": "Plug it in and run it before you price it or load it. The model number is on the base or the back. Original bowls, blades, dough hooks and attachments matter more than cosmetic condition."
+   },
+   {
+    "what": "Patterned vintage Pyrex opalware",
+    "tell": "Opaque white glass with a printed pattern — Butterprint, Gooseberry, Snowflake, or the primary-colour nesting bowls — and a Pyrex mark on the base. Dishwasher-faded patterns, lost lids and chips to the rim all cut what a piece will fetch; by how much is not published. Pyrex was genuinely made in Canada, by Corning Glass Works of Canada at Leamington, Ontario, so a Canadian mark is normal and not in itself a premium."
+   },
+   {
+    "what": "Branded kitchen knives in a matched set",
+    "tell": "Wüsthof, Zwilling J.A. Henckels with the two-figure logo, Global, or a Japanese maker's mark on the blade. A single Henckels figure, a bent tip, a wobbling bolster, or a blade reground into a crescent means it is scrap."
+   },
+   {
+    "what": "Heavy copper and commercial-grade cookware",
+    "tell": "Real copper is heavy for its size and the metal is thick at the rim — a thin copper-coloured skin over aluminum is decorative only. Mauviel and Falk are stamped. Commercial pieces are unbranded, heavy, and usually scratched to death, which does not matter."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Complete bone china dinner services — Royal Albert, Royal Doulton, Wedgwood, Noritake, Paragon"
+   },
+   {
+    "what": "Cut crystal stemware, decanters and fruit bowls"
+   },
+   {
+    "what": "Anything silver-plated — EPNS trays, tea services, cutlery, cake stands"
+   },
+   {
+    "what": "Non-stick pans with scratched, flaking or worn coating"
+   },
+   {
+    "what": "Chipped, cracked or crazed dishes and mugs"
+   },
+   {
+    "what": "Incomplete sets — seven of twelve plates, a casserole with no lid, four glasses from a set of eight"
+   },
+   {
+    "what": "Commemorative and collector plates, souvenir mugs, promotional glassware"
+   },
+   {
+    "what": "Plastic food storage, mismatched containers and lidless Tupperware"
+   },
+   {
+    "what": "Burnt bakeware, rusted tins, warped pots, worn wooden and plastic utensils, opened food and part-used cleaning products"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Leachable lead and cadmium limits apply to glazed ceramics and glassware sold in Canada",
+    "jurisdiction": "Canada (federal)",
+    "detail": "The Glazed Ceramics and Glassware Regulations, SOR/2016-175, made under the Canada Consumer Product Safety Act, set maximum migration limits: lead 3.0 mg/L for flatware, 2.0 mg/L for small hollowware, 1.0 mg/L for large hollowware, 0.5 mg/L for cups and mugs, and 0.5 mg/L for pitchers, with cadmium limits of 0.25 to 0.50 mg/L depending on the item. The practical consequence for a house clearance is that worn, crazed and chipped glazes leach more than intact ones, and leaching rises with heat, acidity and contact time — which is both a reason not to keep using damaged dishes and the reason charities refuse them. These regulations replaced the earlier Glazed Ceramics and Glassware Regulations, SOR/98-176, which were repealed in 2016.",
+    "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2016-175/FullText.html"
+   },
+   {
+    "rule": "Giving a recalled product away is prohibited on the same terms as selling it",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Section 8 of the Canada Consumer Product Safety Act (S.C. 2010, c. 21) prohibits any person from advertising or selling a consumer product they know is the subject of a recall order or a voluntary recall in Canada. Section 2 defines \"sell\" to include distributing a product to one or more persons \"whether or not the distribution is made for consideration\", so handing a recalled appliance to a neighbour, a thrift shop or a buy-nothing group for free is caught by the same rule. For a kitchen clearance that makes checking model numbers against Health Canada's recalls and safety alerts database a legal step rather than a precaution, and it applies to the small appliances most people assume are too trivial to check.",
+    "source": "https://laws-lois.justice.gc.ca/eng/acts/C-1.68/FullText.html"
+   },
+   {
+    "rule": "Small kitchen appliances are covered by a free producer-funded recycling program in British Columbia",
+    "jurisdiction": "British Columbia",
+    "detail": "Portable electrical appliances for food preparation with heating elements or motors — kettles, toasters, blenders, coffee makers — plus vacuums, sewing machines, power tools and countertop microwaves are accepted at Recycle My Electronics depots, operated by the Electronic Products Recycling Association. The recycling cost is collected as an Environmental Handling Fee at the point of purchase rather than at drop-off. Built-in appliances and large stationary equipment such as built-in microwaves and air conditioners are not in the program. This program absorbed what BC residents previously knew as ElectroRecycle; the old electrorecycle.ca address now redirects to Recycle My Electronics BC.",
+    "source": "https://recyclemyelectronics.ca/bc/what-can-i-recycle/"
+   },
+   {
+    "rule": "Ontario's electronics regulation does not cover small kitchen appliances",
+    "jurisdiction": "Ontario",
+    "detail": "O. Reg. 522/20 under the Resource Recovery and Circular Economy Act, 2016 applies to information technology, telecommunications and audio-visual equipment and to lighting. ITT/AV is defined by its primary purpose of collecting, storing, processing, presenting or communicating information, sounds or images. A kettle, toaster, blender or microwave is none of those things, so there is no producer-funded take-back for them in Ontario. The route is your municipality's depot or transfer station, usually as scrap metal. Do not assume a BC or American program applies here.",
+    "source": "https://rpra.ca/2025/02/summary-of-recent-amendments-to-ontarios-electrical-and-electronic-equipment-regulation"
+   },
+   {
+    "rule": "Saskatchewan expanded its electronics stewardship program to include small appliances in 2025",
+    "jurisdiction": "Saskatchewan",
+    "detail": "Extended producer responsibility bulletins report that the Electronic Equipment Stewardship Program Regulations came into force on 4 September 2025 under The Environmental Management and Protection Act, 2010, bringing small appliances into the regulated program, with EPRA to communicate the expanded product list during 2026. This is drawn from a law-firm EPR summary rather than the regulation text, which could not be opened. Confirm with EPRA Saskatchewan what is accepted before driving anywhere with a car full of small appliances.",
+    "source": "https://gowlingwlg.com/en/insights-resources/articles/2026/canadian-product-stewardship-and-epr"
+   }
+  ]
+ },
+ "tools": {
+  "name": "Tools and workshop",
+  "openingTruth": "Tools are usually the most valuable thing left in a garage and the most casually thrown out: the drawer of chisels and the dusty hand plane under the bench are routinely worth more than the big machine standing in the middle of the floor, so do not let anyone clear the garage as a favour until someone has turned the hand tools over and read the names stamped on them.",
+  "tells": [
+   {
+    "what": "Pre-war Stanley bench planes, Nos. 3 to 8",
+    "tell": "The size number is cast into the toe, in front of the front knob - but only on planes from roughly the turn of the twentieth century onward. The earliest and most desirable examples often carry no cast number at all, so do not conclude that an unnumbered plane is not a Stanley; judge those by the lever cap, the frog and the iron instead. The logo stamped on the cutting iron dates it: a cursive heart-shaped \"SW\" (sweetheart) logo means roughly 1920-1935 and is the one buyers ask for. Rosewood knob and tote, not stained hardwood or plastic."
+   },
+   {
+    "what": "Stanley Bedrock planes, numbered in the 600s",
+    "tell": "\"BED ROCK\" is cast into the bed casting. The sides of the bed are flat-topped where a Bailey's are rounded over. The number is three digits beginning with 6, not a single digit."
+   },
+   {
+    "what": "Stanley No. 1 and No. 2 planes",
+    "tell": "A No. 1 is only about 140 mm long and has no rear handle at all - just a front knob and a small hump to hold. If someone offers you pocket change for \"the little one\", stop the sale."
+   },
+   {
+    "what": "Bare cordless tools on a battery platform still being sold",
+    "tell": "Look at the battery foot, not the tool. If the pack slides on and latches, and that platform is still on the shelf at a Canadian retailer, the bare tool sells. If the pack is a stubby stick that drops into a hole in the handle, it does not."
+   },
+   {
+    "what": "Mechanic's hand tools by Snap-on, Mac, Matco or Proto, and the roll cabinets they came in",
+    "tell": "The brand is forged or stamped into the tool itself, not applied as a sticker. Roll cabinets carry a model number on the back panel or inside a drawer."
+   },
+   {
+    "what": "Machinist's measuring tools",
+    "tell": "A fitted wooden or plastic case with a shaped bed, a maker's name engraved rather than printed, and a graduated thimble or dial. Keep the case - a micrometer without its case is worth a fraction of one with it."
+   },
+   {
+    "what": "Cast-iron stationary machinery",
+    "tell": "Tap the table. Cast iron rings and is cold to the hand; aluminum or pressed steel does neither. A cast metal badge rather than a printed sticker is the other sign."
+   },
+   {
+    "what": "Complete sets, in their trays and cases",
+    "tell": "Count against the tray's moulded recesses before concluding the set is incomplete. Missing sizes are usually loose in the bottom of the toolbox."
+   },
+   {
+    "what": "Hand saws, chisels and braces by named makers",
+    "tell": "An etch on the saw plate, visible if you hold it to the light at a low angle through the rust. A medallion on the handle carrying a maker's name. A plate that tapers - thicker at the teeth than at the back."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Cordless tools on a dead battery platform"
+   },
+   {
+    "what": "Gas-powered equipment that will not start"
+   },
+   {
+    "what": "Half-used chemicals from the shelf above the bench"
+   },
+   {
+    "what": "Rusted-solid hand tools"
+   },
+   {
+    "what": "Corded power tools with no certification mark on the rating plate"
+   },
+   {
+    "what": "Dull and damaged consumables"
+   },
+   {
+    "what": "Jars and coffee cans of mixed fasteners"
+   },
+   {
+    "what": "Bulk wooden moulding planes"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "An electrical product cannot be sold, displayed or advertised for sale unless it is approved and bears a recognized certification mark - used tools included",
+    "jurisdiction": "Ontario",
+    "detail": "O. Reg. 438/07 (Product Safety) under the Electricity Act, 1998, s. 5(1): \"No person shall use, advertise, display, sell, offer for sale or other disposal any electrical product or device unless it has been approved in accordance with this Regulation.\" Under s. 2(1) a product is deemed approved only if it bears the mark of a certification body accredited under the Standards Council of Canada Act and recognized by the Electrical Safety Authority, a recognized field-evaluation agency's label, or an ESA label. Section 5(2) additionally prohibits using a product other than for its intended purpose or in its intended manner. The regulation contains no exemption for used goods, estate sales or private sales; its only exemption (s. 5(4)) is for trade-show display or demonstration with the Authority's permission. Practical effect: a power tool with no legible certification mark, or one that has been rewired or had its switch bypassed, is a disposal item, not stock. We found no record of enforcement against charity shops or private sellers of second-hand tools as opposed to importers and retailers, but the prohibition is plainly worded and carries no used-goods exemption.",
+    "source": "https://www.ontario.ca/laws/regulation/R07438"
+   },
+   {
+    "rule": "The same certification requirement applies in British Columbia",
+    "jurisdiction": "British Columbia",
+    "detail": "Electrical Safety Regulation s. 21(1) requires electrical equipment to bear evidence of either the mark or label of a certification agency accredited by the Standards Council of Canada, a label of an agency acceptable to the provincial safety manager, or an approval mark issued under the Safety Standards Act. A person must not use electrical equipment in British Columbia, or offer for sale, sell, display or otherwise dispose of electrical equipment for use in British Columbia, without it.",
+    "source": "https://www.technicalsafetybc.ca/regulatory-resources/regulatory-notices/approved-certification-marks-electrical-products"
+   },
+   {
+    "rule": "Gasoline is accepted for disposal only in an approved can, and the can is not given back",
+    "jurisdiction": "British Columbia",
+    "detail": "Product Care Recycling's BC household hazardous waste program accepts \"Gasoline, including stale or old gasoline contaminated with oil or water\", but only in a ULC-approved gas can or jerry can, with a maximum container size of 25 litres, and states that \"for safety reasons, the gasoline container cannot be returned to you at drop off\". Other flammable liquids: maximum container size 10 litres, with a maximum aerosol container size of 680 g. Diesel, butane and refillable propane cylinders are not accepted. Oil and antifreeze are handled by a separate program.",
+    "source": "https://productcare.org/products/hhw/british-columbia"
+   },
+   {
+    "rule": "Toronto excludes gasoline from its free Toxic Taxi and caps volumes at 50 litres",
+    "jurisdiction": "Toronto, Ontario",
+    "detail": "Gasoline \"must be brought to a Drop-Off Depot or Community Environment Day in any container that can be left behind\" and is excluded from Toxic Taxi collection. Toxic Taxi collection requires a minimum of 10 and a maximum of 50 litres/kilograms per pickup, and depots accept a maximum of 50 litres/kilograms per drop-off. \"Gas tanks/cylinders (e.g. propane/BBQ, helium, oxygen, etc.)\" are listed as household hazardous waste.",
+    "source": "https://www.toronto.ca/services-payments/recycling-organics-garbage/household-hazardous-waste/"
+   },
+   {
+    "rule": "Refillable propane cylinders expire after ten years and cannot lawfully be filled after that",
+    "jurisdiction": "Canada",
+    "detail": "Per the Canadian Propane Association, refillable propane cylinders must be replaced, or inspected and requalified by a Transport Canada approved requalifier, every ten years, and \"It's against the law to fill an expired or damaged cylinder\". Retailer take-back of expired cylinders happens at the retailer's discretion and is not mandated. Cylinders retain residual propane even when they appear empty, and must never be placed in household garbage or roadside recycling.",
+    "source": "https://propane.ca/safety/cylinder-recycling/"
+   },
+   {
+    "rule": "Cordless tool battery packs are recycled free, up to 5 kg each",
+    "jurisdiction": "Canada, with two provincial exceptions",
+    "detail": "Recycle Your Batteries, Canada! (operated by Call2Recycle) collects single-use and rechargeable batteries weighing up to 5 kg each at no cost, including the lithium-ion, nickel-cadmium, nickel-metal-hydride and small sealed lead acid packs used in cordless power tools. Small sealed lead acid batteries are not accepted in Alberta or Saskatchewan. Home Depot Canada stores are drop-off sites, along with many municipal and retail locations.",
+    "source": "https://recycleyourbatteries.ca/types-of-batteries/"
+   }
+  ]
+ },
+ "bike": {
+  "name": "Bicycles and sporting goods",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "A lugged steel road bike from roughly 1970 to 1989 carrying a tubing decal",
+    "tell": "Look at the seat tube and down tube for a decal naming the tubing: Reynolds 531, Columbus SL, SP or SLX, Tange, or Ishiwata. The frame joints are lugs, meaning sleeves with shaped, scalloped edges, not smooth welds. The shift levers are on the down tube, not the handlebars. A magnet will not stick to the rims. On a Reynolds frame, read the whole decal rather than just the number. Reynolds' own 1972 booklet on what the 531 decals guarantee sets out the hierarchy: the top decals promise 531 stays, taper-gauge forks and butted frame tubes, while a decal reading only \"butted frame tubes\" covers the top, seat and down tubes and leaves the fork blades and stays as lesser material. The words \"forks & stays\" are what tell you the 531 runs through the whole frame."
+   },
+   {
+    "what": "Any adult bike with alloy rims that rolls, brakes and shifts",
+    "tell": "Magnet-test the rims, not the spokes or the frame. Our Community Bikes in Vancouver gives the test in a parenthesis on its donation page: \"(if a magnet sticks to the rim it's steel)\". If the magnet falls off, the rims are alloy — that inference is ours, not theirs, but it is the whole point of the test."
+   },
+   {
+    "what": "Hockey skates, protective gear and sticks in sizes people actually need",
+    "tell": "Skates with steel left above the blade holder and no deep rust pitting, pads with intact straps and foam that has not crushed flat, and sticks with no cracks at the hosel. On any helmet, the CSA sticker must be present, legible and unpainted."
+   },
+   {
+    "what": "Skis and snowboards whose bindings are less than ten years old",
+    "tell": "Find the binding model and its year, not the ski's year. Snow Valley Ski Club's swap in Edmonton states that \"Skis with bindings older than 10 years may not be accepted.\" It gives no reason for the rule."
+   },
+   {
+    "what": "Cast iron and steel free weights, Olympic plates and dumbbells",
+    "tell": "The weight is cast or stamped into the iron. There is no motor, no display and no electronics, so there is nothing on it that can be broken."
+   },
+   {
+    "what": "A recent e-bike whose battery still holds charge",
+    "tell": "The pack charges and holds that charge overnight, the casing is not swollen or cracked, the contacts are free of corrosion, and the display powers up and reports a sensible range."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Entry-level dual-suspension mountain bikes"
+   },
+   {
+    "what": "A bike with steel rims"
+   },
+   {
+    "what": "A bike that has sat outside and seized"
+   },
+   {
+    "what": "Used bicycle helmets"
+   },
+   {
+    "what": "Used ski and snowboard helmets"
+   },
+   {
+    "what": "Straight, unshaped downhill skis"
+   },
+   {
+    "what": "Skis and boards with bindings more than ten years old"
+   },
+   {
+    "what": "An e-bike with a dead battery"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Bicycle helmets are single-impact items and must be replaced after any impact",
+    "jurisdiction": "Canada, national guidance from Parachute, not law",
+    "detail": "Parachute, Canada's national injury prevention charity, states: \"Some helmets are designed for a single impact, such as a bicycle helmet, and must be replaced after an impact. Others are multi-impact, such as hockey helmets, and are designed to protect against more than one impact, but must be replaced when you see damage.\" That is the whole of what the guidance covers. The inference about second-hand helmets is ours, not Parachute's: on a used bike helmet you cannot establish whether the single impact has already happened, which is why a crashed helmet should be binned rather than passed on. Parachute's page gives impact-based replacement only and states no time interval, so the widely repeated five-year rule is not something we can source to it.",
+    "source": "https://parachute.ca/en/injury-topic/helmets/"
+   },
+   {
+    "rule": "E-bike and e-mobility lithium batteries must go to a battery recycling route, not household waste",
+    "jurisdiction": "Canada, with distinct additional programs in British Columbia and Quebec",
+    "detail": "Call2Recycle Canada operates the e-mobility battery collection program, accepting rechargeable lithium batteries that power e-bikes, e-scooters, e-skateboards and hoverboards. Collection runs through retailers, municipalities, property managers and other potential partners who opt in to be collectors and receive specialized shipping boxes, so coverage depends on who has opted in near you — check the Call2Recycle locator for your own province rather than assuming a site exists. In British Columbia, Call2Recycle also offers a separate and distinct BC e-mobility program supporting the collection and recycling of full e-bikes, including the battery, in that province. In Quebec, effective 1 July 2026, ecocentres can also opt in to collect complete e-mobility devices for recycling. Outside those two provinces, only the battery is covered and the frame must be handled separately.",
+    "source": "https://www.call2recycle.ca/e-mobility/"
+   }
+  ]
+ },
+ "vehicle": {
+  "name": "Cars and vehicles",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "A complete non-running car or light truck, still on four tires",
+    "tell": "All four wheels on. Engine and transmission still in it. VIN plate at the base of the windshield readable. Doors and hood present. If you can read the VIN and count four tires, you have something to hand over."
+   },
+   {
+    "what": "A car that still starts and drives, however badly",
+    "tell": "It turns over and will move under its own power onto a trailer. Under 12 years old. Under about 250,000 km. No structural rust through the sills or spring perches."
+   },
+   {
+    "what": "Alloy wheels, a spare set of winter tires on rims, a tow hitch, a roof box, a recent battery — stored separately in the garage",
+    "tell": "It is already off the vehicle and on the garage floor. If it is still bolted to the car, leave it."
+   },
+   {
+    "what": "British Columbia only: a vehicle still insured in BC and still driveable",
+    "tell": "Count six months backwards from the day you apply. If the insurance lapsed at any point in that window, or the car will not drive today, you do not qualify."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "A stripped shell — engine or transmission pulled, wheels off, sitting on blocks or on its brake discs"
+   },
+   {
+    "what": "Any vehicle with a lien or encumbrance registered against it"
+   },
+   {
+    "what": "A vehicle with an open insurance claim against it"
+   },
+   {
+    "what": "A car still registered to a parent who has died, before the estate paperwork exists"
+   },
+   {
+    "what": "An Ontario vehicle branded \"irreparable\" — worth nothing as a car"
+   },
+   {
+    "what": "A vehicle a tow truck cannot physically reach"
+   },
+   {
+    "what": "Loose tires off their rims, and the shelf of old oil, antifreeze and brake fluid"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Licence plates travel with the driver, not the vehicle",
+    "jurisdiction": "Ontario",
+    "detail": "On a sale the seller keeps the licence plates and the plate portion of the permit, and gives the buyer the vehicle portion of the owner's permit with the completed and signed Application for Transfer on the back, an original signed and dated bill of sale, and a safety standards certificate where one is required.",
+    "source": "https://www.ontario.ca/page/buy-or-sell-used-vehicle-ontario"
+   },
+   {
+    "rule": "Vehicles are branded none, salvage, irreparable or rebuilt, and the brand governs what you can do with the car",
+    "jurisdiction": "Ontario",
+    "detail": "Under the mandatory vehicle branding program, a vehicle branded irreparable \"has been written-off as a total loss\", \"can only be used for parts or scrap\" and \"cannot be driven again in Ontario\" — it remains sellable for parts and scrap but can never be registered for road use. A salvage vehicle has also been a total loss but may be repaired; to be reclassified as rebuilt it must undergo and pass a structural inspection at a registered DriveON Vehicle Inspection Centre, with photographs of the damage and detailed invoices for the major components used. Only vehicles branded none or rebuilt can be driven on Ontario roads. Owners have 90 days to appeal a salvage or irreparable brand assigned in Ontario.",
+    "source": "https://www.ontario.ca/page/mandatory-vehicle-branding-program"
+   },
+   {
+    "rule": "A scrapped vehicle must be formally discarded with the SAAQ",
+    "jurisdiction": "Quebec",
+    "detail": "Discard the vehicle online through SAAQclic if it is registered to an individual, or in person at a SAAQ service outlet. Where the vehicle goes to a scrap dealer or recycler, the dealer-recycler \"will give you an attestation of transaction, which you must present at one of our service outlets\"; ownership then transfers to the dealer-recycler. You are issued a new registration certificate marked \"Mise au rancart\". You must remove the licence plate: you \"can destroy it so that nobody can use it or keep it for up to 3 years to register a vehicle that requires a licence plate of the same category.\"",
+    "source": "https://saaq.gouv.qc.ca/en/vehicle-registration/storage-licensing-for-road-use-or-discarding/vehicle-discarding/procedure-to-discard-a-vehicle"
+   },
+   {
+    "rule": "Your registration stays with you, not the vehicle",
+    "jurisdiction": "Alberta",
+    "detail": "An Alberta registration can be transferred to another vehicle you own. To do it, bring to a registry agent \"acceptable identification\", \"proof of ownership of the new vehicle\" and \"proof of valid insurance 'pink card'\". Alberta issues no separate paper title, so the registration certificate is the ownership document.",
+    "source": "https://www.alberta.ca/transfer-vehicle-registration"
+   },
+   {
+    "rule": "A detached catalytic converter is regulated metal, even though a whole car is not",
+    "jurisdiction": "British Columbia",
+    "detail": "BC's regulated metals are items substantially made of non-ferrous metal — aluminum, copper including brass and bronze, lead, magnesium, nickel and zinc — together with a specific list of scrap items that includes utility wire, traffic signals, street lighting equipment, sewer grates, guardrails, grave markers, construction site scrap metal and \"a catalytic converter that is not attached to an exhaust system.\" Car batteries are noted as not regulated. The practical consequence for a seller is that cutting the converter out turns one transaction into two, and the detached part is the regulated one.",
+    "source": "https://www2.gov.bc.ca/gov/content/safety/crime-prevention/metal-recycling/regulated-metals"
+   },
+   {
+    "rule": "Certified recyclers must remove hazardous materials before the shell is shredded",
+    "jurisdiction": "Canada (industry certification, not statute)",
+    "detail": "The Canadian Auto Recyclers' Environmental Code, developed from the National Code of Practice written for Environment Canada in 2008, requires removal and proper management of reusable parts, batteries, mercury switches, oils, fluids, coolants, gasoline and refrigerants before metal recycling. Certification requires an independent audit, and Automotive Recyclers of Canada makes maintaining it a condition of membership for direct members. Pre-2002 vehicles commonly contain mercury switches in convenience lighting.",
+    "source": "https://autorecyclers.ca/strict-environmental-code-is-the-new-gold-standard-for-the-auto-recyclers-of-canada-members/"
+   }
+  ]
+ },
+ "books": {
+  "name": "Books, records and media",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "LPs in almost any genre except classical, opera and overstocked easy listening",
+    "tell": "Look up the exact pressing's completed sales on Discogs, not its asking prices. Audiopile says it reads the median price rather than the highest, also looks at the \"Wants\" count to judge sellability, and warns that online prices do not necessarily reflect the local market. Pressing origin matters — it pays more for Japanese, UK and other imports — so read the catalogue and matrix numbers on the label and in the run-out groove, not just the artist."
+   },
+   {
+    "what": "Records you were about to throw out because they look rough",
+    "tell": "Put the visibly damaged records in a separate box and take them along anyway rather than sorting them into the bin."
+   },
+   {
+    "what": "Antiquarian books, modern firsts, fine bindings and local history",
+    "tell": "Look for a dust jacket present and intact, a date on the title page matching the copyright page with no later printing line, and an author signature. With none of those it is probably an ordinary secondhand book — but anything pre-1900, finely bound, or local history should be seen by a dealer before you decide."
+   },
+   {
+    "what": "Books published in the last five years, and classics in new editions",
+    "tell": "Check the copyright page. If the newest date is more than five years old and the book is nonfiction, Halifax is not the stop for it — and its cap is 20 items per household in any case."
+   },
+   {
+    "what": "Children's and teen books printed since 2000, in gift condition",
+    "tell": "It specifically wants board and baby books, preschool titles, popular series, graphic novels, non-fiction on nature, animals and space, and books with diverse characters. Its refusal list is short and exact: textbooks, encyclopedias, workbooks, library books, self-published books and damaged books."
+   },
+   {
+    "what": "CDs with no scratches, with their original liners",
+    "tell": "A disc in a wallet or binder that still has its liner meets Halifax's rule. Discs stripped of their artwork are the hard ones to place."
+   },
+   {
+    "what": "Cassettes, where they are collectible rather than common",
+    "tell": "Audiopile's distinction is between common commercial tapes and collectible ones; a tape recorded or dubbed at home is neither. Sealed or small-run commercial releases are the ones worth asking about."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "General mass-market paperbacks"
+   },
+   {
+    "what": "Reader's Digest Condensed Books and other book-club condensed editions"
+   },
+   {
+    "what": "Encyclopedia sets"
+   },
+   {
+    "what": "Ex-library books and library discards"
+   },
+   {
+    "what": "Outdated textbooks and computer manuals"
+   },
+   {
+    "what": "Travel guides"
+   },
+   {
+    "what": "Magazines, including long runs of National Geographic"
+   },
+   {
+    "what": "Classical and opera LPs"
+   },
+   {
+    "what": "Easy-listening and middle-of-the-road LPs"
+   },
+   {
+    "what": "VHS tapes and ordinary audio cassettes"
+   },
+   {
+    "what": "Used DVDs and Blu-rays, as a sale"
+   },
+   {
+    "what": "Anything mouldy, musty, water-damaged, yellowed or heavily highlighted"
+   },
+   {
+    "what": "Self-published books and workbooks"
+   },
+   {
+    "what": "Hardcovers and spiral-bound books, as a prison donation"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Prison book programs take softcovers only, and screen the content",
+    "jurisdiction": "Canada — correctional institutions, via Books to Prisoners BC (Vancouver)",
+    "detail": "Books to Prisoners BC says that most prisons in Canada do not accept hardcover books, so it prefers that you do not donate them; it adds that hardcovers weigh more and cost more to ship. Spiral-bound books are also on its not-accepted list, along with damaged books, pornography, anything explaining how to immobilize a person, Canadian true crime about people currently incarcerated, and books critical of Canadian police and prison systems. Do not mail books to a prisoner directly on the assumption they will arrive.",
+    "source": "https://bookstoprisoners.ca/donate/"
+   },
+   {
+    "rule": "Hardcover books must be taken apart before the parts go in the carts",
+    "jurisdiction": "City of Calgary, Alberta",
+    "detail": "Calgary instructs residents to remove cardboard hard covers and spines and recycle them as separate items from the pages, and to put coverless and loose pages into the recycling. Leather, canvas and plastic book covers go in the black cart as garbage. Old and unusable paper books may go in the blue cart or a community recycling depot.",
+    "source": "https://www.calgary.ca/waste/what-goes-where/paper-books.html"
+   },
+   {
+    "rule": "Discs and tapes that cannot be reused are garbage; only the paper parts are recyclable",
+    "jurisdiction": "City of Calgary, Alberta",
+    "detail": "Calgary directs old and broken discs and tapes — vinyl records, CDs, DVDs and video tapes — to the black cart as garbage, while paper covers, music liners and record sleeves go in the blue cart. Its first advice is to pass usable media on to family and friends, sell it, or donate it to a local charity.",
+    "source": "https://www.calgary.ca/uep/wrs/what-goes-where/vinyl-records.html"
+   },
+   {
+    "rule": "Tapes, CDs, DVDs and records that cannot be reused go in the garbage; cases and inserts go in recycling",
+    "jurisdiction": "Peel Region (Mississauga, Brampton, Caledon), Ontario",
+    "detail": "Peel Region states that video and audio tapes, CDs, DVDs and records that cannot be re-used may be placed in the garbage for disposal, and that empty cassette or video boxes, printed paper sleeves and inserts go in the recycling cart or a clear or blue transparent plastic bag. Reusable items in good condition may be donated at some Community Recycling Centre locations, where staff have the right to refuse items on inspection.",
+    "source": "https://peelregion.ca/waste/sorter/crc/vhs-cassettes-records-cds-or-dvds"
+   },
+   {
+    "rule": "Cassettes, CDs and DVDs are not accepted in the Blue Bin",
+    "jurisdiction": "City of Toronto, Ontario",
+    "detail": "Toronto's Blue Bin page names cassettes, CDs and DVDs under other plastics that do not belong in the bin. Books are not listed on either the accepted or the not-accepted side — they appear only in a photo caption of paper items — and the page tells residents to check the Waste Wizard tool when they are unsure, which is the only authoritative answer for books in Toronto.",
+    "source": "https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/what-goes-in-my-blue-bin/"
+   }
+  ]
+ },
+ "building": {
+  "name": "Building materials and renovation",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "A joined kitchen under about 20 years old, still complete",
+    "tell": "Open a door and look at the carcass edge. Plywood or solid wood boxes are wanted. MDF that has swollen and gone soft under the sink is not, and Edmonton refuses \"Mouldy or water damaged cabinets\" outright and wants \"Quality cabinets – no damage with all doors and drawers attached\"."
+   },
+   {
+    "what": "Granite and hard-surface countertop, but only in small pieces",
+    "tell": "Measure before you cut, because the limit is tighter than it sounds. A straight 8-foot run at a standard 25-inch depth is about 16.7 sq ft — right on the line, and donatable. It is the island top and the long L-return that blow past 17 sq ft."
+   },
+   {
+    "what": "Copper pipe, brass valves and cast iron radiators",
+    "tell": "A magnet will not stick to copper or brass. It will stick to a cast iron radiator, which is still worth taking in, but at a much lower ferrous rate."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Anything that contains asbestos, or might"
+   },
+   {
+    "what": "Used drywall"
+   },
+   {
+    "what": "Sealed glass window units and anything aluminum-framed"
+   },
+   {
+    "what": "Cabinets missing doors or drawers, or with water damage"
+   },
+   {
+    "what": "Short lumber, and lumber with nails still in it"
+   },
+   {
+    "what": "Old high-volume toilets, used shower doors and jetted tubs"
+   },
+   {
+    "what": "Vermiculite loose-fill attic insulation"
+   },
+   {
+    "what": "Used carpet and underlay"
+   },
+   {
+    "what": "Grout, mortar, caulk, adhesives and part-used chemicals"
+   },
+   {
+    "what": "Used vinyl siding"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "The federal asbestos ban does not cover what is already in your walls",
+    "jurisdiction": "Canada (federal)",
+    "detail": "The Prohibition of Asbestos and Products Containing Asbestos Regulations (SOR/2018-196) prohibit importing, selling and using processed asbestos fibres and products containing them. But section 3 provides that the Regulations do not apply to asbestos integrated into a structure or infrastructure before the day they came into force, and excludes \"a product containing asbestos and used before the day on which these Regulations come into force\". Section 7 permits physical possession or control to be transferred to allow disposal. The practical consequence: do not tell people the federal ban makes their old material illegal to move. What actually blocks them is charity policy, provincial occupational health and safety law, and landfill acceptance rules.",
+    "source": "https://laws.justice.gc.ca/eng/regulations/SOR-2018-196/FullText.html"
+   },
+   {
+    "rule": "Asbestos abatement employers must be licensed and workers certified — and that covers identifying and sampling, not just removal",
+    "jurisdiction": "British Columbia",
+    "detail": "As of 1 January 2024, asbestos abatement contractors must hold a WorkSafeBC licence to operate in British Columbia, and anyone performing asbestos abatement work must complete mandatory training and be certified; certificates are valid for three years. Asbestos abatement work is defined to include identifying material that is or may be asbestos-containing, collecting samples, assessing the risk, removing, repairing, transporting or disposing of the material, and planning or supervising any of that work. An independent operator who is not an employer is not required to hold a licence, but one who hires a worker to perform abatement work is an employer and must be licensed.",
+    "source": "https://www.worksafebc.com/en/about-us/news-events/announcements/2024/January/bill-5-asbestos-certification-licensing-requirements-now-in-effect"
+   },
+   {
+    "rule": "The asbestos regulation exempts owner-occupied private homes, but not anyone you hire",
+    "jurisdiction": "Ontario",
+    "detail": "O. Reg. 278/05 (Designated Substance — Asbestos on Construction Projects and in Buildings and Repair Operations) does not apply to \"the owner of a private home that is occupied by the owner or the owner's family\", nor to \"the owner of a residential building that contains no more than four units, one of which is occupied by the registered owner or family\". It does apply to the constructors, employers and workers engaged on private construction projects and on the repair or maintenance of such buildings. Doing it yourself in your own home is outside the regulation; paying someone to do it brings them inside it.",
+    "source": "https://www.ontario.ca/document/guide-regulation-respecting-asbestos-construction-projects-and-buildings-and-repair-2"
+   },
+   {
+    "rule": "Pre-1990 drywall must be tested before it can be recycled",
+    "jurisdiction": "Metro Vancouver, British Columbia",
+    "detail": "Metro Vancouver's guidance states that until about 1990 the tape and joint compound used between drywall boards sometimes contained asbestos. If the drywall went in after 1990 and you have documentation such as a building permit and inspection report, you can safely remove it; if before 1990, have the tape and joint compound tested — sampling by a qualified person, analysis by an accredited laboratory. Recycling and waste centres accept non-asbestos material only with a date stamp, original packaging or a test certificate from a testing facility dated less than four weeks before drop-off, printed on letterhead and showing the laboratory's contact information and analyst, the client name and sample identification, and the type and amount of asbestos. Asbestos-containing material is not accepted at those centres at all; it goes to a local landfill that accepts it, by prior arrangement and for a special handling fee.",
+    "source": "https://metrovancouver.org/services/solid-waste/Documents/gypsumdrywall-disposal.pdf"
+   },
+   {
+    "rule": "Disposing of hazardous material at a waste and recycling centre can attract a surcharge plus clean-up costs",
+    "jurisdiction": "Metro Vancouver, British Columbia",
+    "detail": "In accordance with GVS&DD Bylaw No. 302, 2016, section 5.12, any person who disposes of hazardous material at a waste and recycling centre may be charged a surcharge and the costs of remediation and clean-up. Hiding a bag of asbestos board in a mixed load is a financial risk, not just an ethical one.",
+    "source": "https://metrovancouver.org/services/solid-waste/Documents/emterra-asbestos-brochure.pdf"
+   },
+   {
+    "rule": "Assume vermiculite insulation made before 1990 contains asbestos",
+    "jurisdiction": "Canada (federal guidance)",
+    "detail": "Health Canada states that vermiculite ore from the Libby Mine in Montana, produced from the 1920s to 1990 and supplying the majority of the world market mostly under the Zonolite brand, may contain asbestos, and that it is \"prudent, in the absence of evidence to the contrary, to assume that vermiculite insulation material produced before 1990 may contain some asbestos\". It also states there is currently no evidence of a risk to health where the insulation remains sealed behind wallboards and floorboards or isolated in an attic. CCOHS advises hiring a professional to sample it before work that will disturb it, and never handling or removing it yourself if asbestos is suspected.",
+    "source": "https://www.ccohs.ca/oshanswers/diseases/vermiculite.html"
+   },
+   {
+    "rule": "Lead paint: do not sand, heat-gun or burn it off",
+    "jurisdiction": "Canada (federal guidance)",
+    "detail": "Health Canada states that your home \"probably contains lead-based paint if it was built before 1960\", and that if it was built between 1960 and 1990 the exterior may contain lead-based paint while interior surfaces may contain lead in smaller amounts. Its direction is explicit: \"Do not use sanders, heat guns or blowlamps to remove lead-based paint--this creates toxic dust and fumes with lead.\"",
+    "source": "https://www.canada.ca/en/health-canada/services/home-safety/lead-based-paint.html"
+   },
+   {
+    "rule": "Leftover paint has a free, funded return route in eight provinces",
+    "jurisdiction": "British Columbia, Saskatchewan, Manitoba, Ontario, New Brunswick, Prince Edward Island, Nova Scotia, and Newfoundland and Labrador",
+    "detail": "Product Care Recycling accepts leftover latex and oil-based paint, primers, coatings, aerosols and empty paint cans in plastic, metal and composite, free of charge, at bottle depots, recycling centres, municipal sites and retail locations. Drop-off limits are up to 10 paint cans per visit at a maximum 25 litres each, and up to 50 aerosol containers at a maximum 680 g each. Use the recycling locator on productcare.org rather than guessing which depot takes it. Quebec is not in the Product Care paint program and runs its own system.",
+    "source": "https://productcare.org/paint/"
+   }
+  ]
+ },
+ "metal": {
+  "name": "Scrap metal",
+  "openingTruth": "A magnet does most of the sorting for you. If it sticks, you are almost certainly holding plain steel or cast iron, the cheapest thing the yard buys. If it does not stick, you are holding the copper, brass, aluminum or lead that actually pays. There is one exception worth knowing before you start throwing things on piles: ferritic stainless steel, grade 430, sticks firmly to a magnet and still grades well above mild steel. So magnetic does not always mean worthless — test a bright, rust-free piece twice. Sort the load in the driveway before you go anywhere, because the fridge at the bottom of it may cost you a fee instead of earning you anything.",
+  "tells": [
+   {
+    "what": "Copper pipe and copper wire",
+    "tell": "Scratch it. Copper shows reddish-brown under the tarnish and a magnet will not pull on it at all."
+   },
+   {
+    "what": "Brass",
+    "tell": "Yellow-gold, surprisingly heavy for its size, no magnet pull. Chrome-plated taps are still brass underneath but grade lower because of the plating."
+   },
+   {
+    "what": "Aluminum",
+    "tell": "Light for its bulk, dull grey, no magnet pull, and it does not rust — it blooms a chalky white powder instead."
+   },
+   {
+    "what": "Lead",
+    "tell": "Absurdly heavy for its size, dull grey, and soft enough to mark with a fingernail. Two common false positives: wheel weights sold in Canada for years now are steel or zinc rather than lead, and sash counterweights are often cast iron. Run the fingernail test and the weight-for-size test before you grade either as lead."
+   },
+   {
+    "what": "Stainless steel",
+    "tell": "Bright, and it does not rust. A magnet does not stick to annealed 304 at all, though cold-worked 304 — a drawn sink bowl, for instance — can go weakly magnetic. A magnet pulls firmly on the cheaper 430, which is the trap in the magnet test, because 430 still pays a premium over mild steel. The yard prices the two very differently, so ask which it is calling yours."
+   },
+   {
+    "what": "Insulated copper wire and cable",
+    "tell": "Judge it by how much metal is in the jacket. Heavy cable with a thin jacket is the good stuff; a fat jacket over a hair-thin core is not."
+   },
+   {
+    "what": "Electric motors, transformers and sealed compressors",
+    "tell": "Far heavier than an object that size has any right to be."
+   },
+   {
+    "what": "Catalytic converters",
+    "tell": "Yards treat a loose converter as stolen until shown otherwise. Bring the ownership or the scrapped vehicle's paperwork."
+   },
+   {
+    "what": "Lead-acid batteries",
+    "tell": "Carry them upright and never open, tip or drain one."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Plain steel and cast iron in household quantities"
+   },
+   {
+    "what": "Galvanized ducting, roofing and eavestrough"
+   },
+   {
+    "what": "Cast iron radiators and claw-foot tubs"
+   },
+   {
+    "what": "Metal still attached to non-metal"
+   },
+   {
+    "what": "Food and drink cans"
+   },
+   {
+    "what": "Thin painted or badly rusted sheet steel"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "In Ontario, a fridge, freezer, air conditioner or heat pump cannot be scrapped until a certified person has recovered the refrigerant and affixed a notice to the unit",
+    "jurisdiction": "Ontario",
+    "detail": "Under O. Reg. 463/10 (Ozone Depleting Substances and Other Halocarbons), made under the Environmental Protection Act, section 41(1) provides that a person shall not dismantle, destroy, recycle, incinerate or dispose of by landfilling refrigeration equipment, or a container that has contained a refrigerant, unless a notice has been affixed under section 32 and the disposal is carried out in a manner authorized under the Act. Only a person certified under section 34 may make that determination, and the notice must show the date, the certified person's name, their certificate number and its expiry, their employer, and a statement that the equipment no longer contains refrigerant. The definition in section 1 covers air-conditioning, heat pump, refrigeration and freezer units, including a motor-vehicle air conditioner, but only \"where that unit is designed to contain, contains or has contained\" a class 1 or class 2 ozone depleting substance or a halocarbon. That qualifier matters both ways. There is no household exemption, so an ordinary kitchen fridge or window air conditioner charged with a halocarbon refrigerant is covered, which is nearly every older unit. But a unit charged with a hydrocarbon refrigerant instead — R-600a isobutane or R-290 propane, now common in newer domestic fridges and freezers — contains no halocarbon and arguably falls outside the definition, so check the nameplate before assuming either way. A refrigerant dehumidifier is substantively a refrigeration unit but is not named in the definition. Section 41(2) carries an exemption for dismantling during manufacture, which will not help you. This is the reason yards refuse these units or charge a degassing fee. Text current to the consolidation of 30 August 2024, last amendment O. Reg. 336/24.",
+    "source": "https://www.ontario.ca/laws/regulation/100463"
+   },
+   {
+    "rule": "The federal halocarbon regulations do not govern a privately owned household appliance unless it sits on federal or Aboriginal lands",
+    "jurisdiction": "Canada (federal)",
+    "detail": "The Federal Halocarbon Regulations, 2022 (SOR/2022-110) are frequently quoted in disposal advice as though they bind every homeowner. Mostly they do not, but the scope has two limbs and the second one is easy to miss. Section 2(1) applies the Regulations to systems owned by the Crown in right of Canada, a board or agency of the Government of Canada, a Crown corporation or a federal work or undertaking — and, separately, to systems located on aboriginal lands or federal lands, whoever owns them. So a privately owned domestic refrigerator or window air conditioner in an ordinary house falls outside the Regulations, while the identical fridge on a reserve or in federal housing falls inside them, because that second limb turns on location rather than ownership. For everyone else, the rule that actually governs scrapping your appliance is provincial, which is why it matters which province you are in.",
+    "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2022-110/FullText.html"
+   },
+   {
+    "rule": "In Toronto, removing metal that someone has set out for collection is a prohibited act under the waste bylaw",
+    "jurisdiction": "Toronto, Ontario",
+    "detail": "Toronto Municipal Code Chapter 844 (Waste Collection, Residential Properties), section 844-23.C provides that no person shall \"pick over, interfere with, disturb, remove or scatter any waste set out for collection\" unless authorized to do so by the General Manager. Section 844-8 treats metal goods as a special collection service with its own set-out requirements rather than as ordinary garbage. We read Toronto's chapter because Toronto is the largest market this page serves. We have not read the equivalent bylaw for any other city, and collection regimes differ enormously between municipalities, so look up your own rather than assuming this one travels. Chapter current to 11 February 2025, as amended by By-law 104-2025.",
+    "source": "https://www.toronto.ca/legdocs/municode/1184_844.pdf"
+   }
+  ]
+ },
+ "toys": {
+  "name": "Toys and baby equipment",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "LEGO, sorted and identified",
+    "tell": "Instruction booklets and the original box multiply the value. Minifigures are worth far more per gram than plain brick. Sealed or complete sets with a set number on the box are worth looking up individually before anything goes into a mixed tub. Licensed themes (Star Wars, Harry Potter, Modular Buildings) hold value best."
+   },
+   {
+    "what": "A recent stroller or baby carriage in working order",
+    "tell": "Needs a permanently affixed label giving the manufacturer or importer, model name or number and the date of manufacture. Needs a lap belt and crotch strap solidly attached to the seat or frame, working brakes, working folding locks and securely attached wheels."
+   },
+   {
+    "what": "Playpens, high chairs, baby gates and carriers that meet their own requirements",
+    "tell": "A playpen must not be sold with protruding bolts or torn vinyl or mesh, must use fine mosquito-type mesh, must not have more than two wheels or casters or the ability to attach more, and must have working locking mechanisms, set-up instructions and identifying information. A baby gate with diamond-shaped openings, or V openings at the top larger than 38 mm, is illegal to sell. Used portable bed rails should not be sold if damaged or missing the safety labels stating recommended ages."
+   },
+   {
+    "what": "Boxed board games with every piece present",
+    "tell": "Count the pieces against the rules sheet before you box it. An intact insert, an unsplit box and a legible rules sheet are what separate a saleable game from a refused one. Out-of-print and hobby games are worth looking up individually."
+   },
+   {
+    "what": "Playmobil, Brio, Duplo and known wooden-toy brands",
+    "tell": "Original box and a complete figure or track count. Sorted by set rather than tipped into one bin. No peeling paint, no rough wooden edges, no loose parts."
+   },
+   {
+    "what": "Complete jigsaw puzzles",
+    "tell": "If you cannot confirm the count, say so on a note taped to the box. Shops would rather know than discover it later. Puzzles for children under three must not have small parts that pose a choking hazard."
+   },
+   {
+    "what": "Nursery furniture that is not a crib",
+    "tell": "A toy box with a lid needs ventilation openings in two or more adjacent sides, and the lid should be lightweight with sound hinges. Airtight plastic or rubber storage bins big enough to hold a child must not be promoted for toy storage."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Soft toys in bulk"
+   },
+   {
+    "what": "Any used child car seat or booster seat"
+   },
+   {
+    "what": "Baby walkers"
+   },
+   {
+    "what": "Drop-side cribs, and any crib made before September 1986"
+   },
+   {
+    "what": "Infant bath seats and bath rings"
+   },
+   {
+    "what": "Bike, ski, snowboard and hockey helmets"
+   },
+   {
+    "what": "Incomplete puzzles, games missing pieces, and battery toys that no longer work"
+   },
+   {
+    "what": "Used bottles, nipples, teethers, breast pumps and polycarbonate baby bottles"
+   },
+   {
+    "what": "Crib mattresses"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "Baby walkers cannot be sold, given away, advertised or imported",
+    "jurisdiction": "Canada (federal), all provinces and territories",
+    "detail": "Baby walkers are listed in Schedule 2 to the Canada Consumer Product Safety Act, and section 5 states that no person shall manufacture, import, advertise or sell a consumer product listed in Schedule 2. The Act defines a baby walker as one mounted on wheels or another device permitting movement, with an enclosed area supporting the baby sitting or standing so their feet touch the floor, enabling horizontal movement. Health Canada's guidance for garage sale vendors lists baby walkers among products that are banned in Canada, states that it is illegal to sell or give them away, and instructs that if you have one in your possession you should destroy and discard it so it cannot be used. Walkers are still sold in other countries, and prohibited products are subject to being detained at the Canadian border, so one brought or shipped in from abroad is caught too.",
+    "source": "https://laws-lois.justice.gc.ca/eng/acts/C-1.68/FullText.html"
+   },
+   {
+    "rule": "Giving something away for free is legally the same as selling it",
+    "jurisdiction": "Canada (federal)",
+    "detail": "This is the point most people get wrong. The Canada Consumer Product Safety Act defines \"sell\" to include distributing a product \"to one or more persons, whether or not the distribution is made for consideration\". Health Canada puts it plainly: the requirements do not distinguish between new and used products, and any person who sells, distributes or gives away a non-compliant consumer product is breaking the law in Canada. It also states that when you sell a used product it is your responsibility to make sure it is safe, even if it is being given away for free, and that everyone holding a garage sale is legally responsible for ensuring the products being sold, whether new or used, are safe and meet current regulatory requirements. Handing a banned crib to a neighbour, or putting a walker on the curb with a \"free\" sign, is not a way around any of this.",
+    "source": "https://laws-lois.justice.gc.ca/eng/acts/C-1.68/FullText.html"
+   },
+   {
+    "rule": "Traditional drop-side cribs are banned, and cribs made before September 1986 should not be sold",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Health Canada lists traditional drop-side cribs among products whose sale is banned under the Canada Consumer Product Safety Act and its regulations, and states that it is illegal to sell or give these products away. The mechanism is the Cribs, Cradles and Bassinets Regulations, which permit only an \"access side\" whose bottom part is stationary and whose top part has adjustment positions, with a mechanism that latches or locks automatically and requires two separate, deliberate and simultaneous actions to release. A side rail that slides down bodily cannot meet that definition. Separately, Health Canada states it is illegal to advertise, import, sell or give away cribs that do not meet current requirements, and that cribs manufactured before September 1986 likely do not meet them. It also does not recommend using cribs older than ten years, as they are more likely to have broken, worn, loose or missing parts.",
+    "source": "https://www.canada.ca/en/health-canada/services/buying-second-hand-products.html"
+   },
+   {
+    "rule": "Crib dimensions that make an older crib non-compliant",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Useful for deciding on the spot whether a crib is a donation or a disposal item. Spacing between the bars must be no more than 6 cm (2 3/8 in). The gap between the mattress and the crib must be no more than 3 cm (1 3/16 in). A crib must have a side height of at least 66 cm (26 in) with the mattress support in its lowest position. Corner posts must be no more than 3 mm (1/8 in) high. The mattress support must be firmly fixed to the end panels, and Health Canada states that cribs with a floating mattress support system using S-shaped or Z-shaped hooks are not safe and must not be sold. Cribs, cradles and bassinets must carry the manufacturer or importer, model name or number, date of manufacture and assembly instructions, and any with visible damage, missing parts or missing information should be destroyed.",
+    "source": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/consumer-education/facts-garage-sale-vendors.html"
+   },
+   {
+    "rule": "Car seats: expiry dates are not a federal legal requirement, but passing on a used seat is still a bad idea",
+    "jurisdiction": "Canada (federal), with use enforced provincially and territorially",
+    "detail": "Get this one right, because it is widely misstated. Transport Canada states that although it is not required by regulation, most if not all child car seats and booster seats sold in Canada carry an expiry or useful life date, and Health Canada repeats that the expiry date is not regulated or required by Transport Canada. So an expired seat is not automatically illegal because of the date alone. What does bite: all new and used car seats and booster seats sold in Canada must meet Transport Canada's requirements, and that includes seats sold at garage sales, at second-hand stores, through personal sales, through online second-hand retailers, borrowed, or given away for free. Health Canada states it is illegal to sell car seats that do not meet current regulatory requirements, and that you should not sell a seat that has been in a vehicle during a collision. Transport Canada adds that a seat made before 1 January 2012 may be illegal to advertise, sell or give away, because it may not meet the latest standards. A seat must carry the National Safety Mark, come with its manual, and have a known history; Health Canada's advice is not to use a seat if the seller or lender does not know its history.",
+    "source": "https://tc.canada.ca/en/road-transportation/defects-recalls-vehicles-tires-child-car-seats/expiry-dates-child-car-seats-booster-seats"
+   },
+   {
+    "rule": "A car seat bought in the United States or abroad cannot be sold, given away or used here",
+    "jurisdiction": "Canada (federal); use enforced by provincial and territorial police",
+    "detail": "Transport Canada and Health Canada state that child, infant and booster seats that do not comply with the relevant Canadian regulations must not be imported, advertised or sold in Canada, whether by individuals or for commercial purposes, and that provincial and territorial legislation does not allow their use. Seats bought outside Canada, including online from non-Canadian vendors, will not carry Transport Canada's National Safety Mark. If a seat in the garage came back from a trip south, it is not a donation and not a sale.",
+    "source": "https://tc.canada.ca/en/road-transportation/defects-recalls-vehicles-tires-child-car-seats/child-car-seat-cross-border-shopping-what-parents-caregivers-should-know"
+   },
+   {
+    "rule": "Other banned children's items that must be destroyed, not donated",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Health Canada's list of products banned under the Canada Consumer Product Safety Act and its regulations, which are illegal to sell or give away, includes infant self-feeding devices (structural devices that prop a feeding bottle so a baby can feed unattended), polycarbonate baby bottles containing bisphenol A, inclined infant sleep products, yo-yo balls, relight candles, balloon blowing kits, lawn darts with elongated tips, and jequirity beans or anything made with them. Schedule 2 to the Act also prohibits products made wholly or partly of polyurethane foam containing tris(2-chloroethyl) phosphate and intended for a child under three.",
+    "source": "https://www.canada.ca/en/health-canada/services/buying-second-hand-products.html"
+   },
+   {
+    "rule": "Baby gates with large V or diamond openings are illegal to sell",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Baby gates with diamond-shaped openings, or V openings at the top larger than 38 mm (1 1/2 in), are illegal to sell in Canada, because a child's head can become caught and the child could strangle. This rules out most old accordion-style gates. Gates must also come with information identifying the manufacturer, model name or number and date of manufacture, plus instructions for use and installation.",
+    "source": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/consumer-education/facts-garage-sale-vendors.html"
+   },
+   {
+    "rule": "Toys: condition rules that decide whether a toy is legal to pass on",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Under the Toys Regulations, toys for children under three must not have small parts that pose a choking hazard. Toys must be in good repair, with no sharp edges or points, no loose eyes or noses, no rough wooden edges, securely attached fasteners and no peeling paint. Health Canada states specifically that plush toys with loose eyes or noses are not safe and should not be sold. Toys that are excessively loud — exceeding 100 dB measured at the distance the toy would ordinarily be from a child's ear — cannot be sold. Health Canada also warns that small powerful magnets pose a serious ingestion hazard to children of all ages, because swallowed magnets can attract across several layers of intestine, so check construction sets, science kits, puzzles and games for loose ones.",
+    "source": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/industry-professionals/industry-guide-second-hand-products-including-children-products/guidance-document.html"
+   },
+   {
+    "rule": "Strollers, playpens and other regulated baby items",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Strollers and carriages made before 1985 should not be sold. Strollers need a lap belt and crotch strap solidly attached to the seat or frame, working brakes and folding locks, securely attached wheels, and a label giving the manufacturer or importer, model name or number and date of manufacture. Playpens must not be sold with protruding bolts or torn vinyl or mesh, must use fine mosquito-type mesh, must not have more than two wheels or casters or the ability to attach more, and must have working locking mechanisms, set-up instructions and identifying information. Used portable bed rails should not be sold if damaged or missing the safety labels stating recommended ages.",
+    "source": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/consumer-education/facts-garage-sale-vendors.html"
+   },
+   {
+    "rule": "Recalled items must be destroyed if the fault cannot be corrected",
+    "jurisdiction": "Canada (federal)",
+    "detail": "Before selling or giving away a second-hand product, check with the manufacturer and the federal recall database. Health Canada's instruction is that if a product has been recalled and the problem has not been and cannot be corrected, do not sell it: destroy it so that it cannot be used by someone else, and dispose of it according to your municipal requirements. The database is at recalls-rappels.canada.ca and covers recalls and safety advisories.",
+    "source": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/reports-publications/industry-professionals/industry-guide-second-hand-products-including-children-products/guidance-document.html"
+   }
+  ]
+ },
+ "music": {
+  "name": "Musical instruments",
+  "openingTruth": "",
+  "tells": [
+   {
+    "what": "Electric and acoustic guitars from the known makers",
+    "tell": "Find the serial number — on the headstock, on the neck plate, or on a label inside the soundhole — and identify the exact model and year before you let anyone make you an offer. Then look at completed sold prices, not asking prices."
+   },
+   {
+    "what": "Tube amplifiers",
+    "tell": "Look through the grille or the back panel for a row of glass tubes. Fender, Marshall, Vox, Traynor and Garnet are names worth stopping for."
+   },
+   {
+    "what": "Effects pedals and analog synthesizers",
+    "tell": "Do not bundle the pedals in with the gig bag as accessories. Price them separately, one at a time."
+   },
+   {
+    "what": "Professional microphones and recording gear",
+    "tell": "Shure SM57 and SM58, and anything stamped Neumann, AKG or Sennheiser, are worth identifying rather than boxing up as cables and bits."
+   },
+   {
+    "what": "Step-up and professional band instruments",
+    "tell": "A Selmer Paris stamp on a saxophone, or a professional-model designation on a Yamaha or Bach trumpet, changes the answer entirely. Read the engraving near the valves or on the bell before you treat the thing as scrap."
+   },
+   {
+    "what": "Good grand pianos, and only good ones",
+    "tell": "Look for Steinway, Yamaha, Kawai, Bösendorfer or Mason & Hamlin on the fallboard. If the name means nothing to a piano dealer on the phone, it is a disposal job."
+   },
+   {
+    "what": "Orchestral strings above student grade",
+    "tell": "Take it to a violin shop or luthier for an opinion before a pawnbroker or a general antiques dealer sees it. Keep the bow and the case with it, and do not have it cleaned, repaired or re-varnished first."
+   }
+  ],
+  "worthNothing": [
+   {
+    "what": "Upright pianos, player pianos and reed organs"
+   },
+   {
+    "what": "Any piano that has not been tuned in decades"
+   },
+   {
+    "what": "Student band instruments from the rental era"
+   },
+   {
+    "what": "Digital pianos, home keyboards and electronic organs more than about a decade old"
+   },
+   {
+    "what": "Record players and hi-fi separates that come out of the house with the instruments"
+   }
+  ],
+  "legalOrSafety": [
+   {
+    "rule": "A CITES permit can be required before you ship an instrument out of Canada, and permits are never issued retroactively",
+    "jurisdiction": "Canada — applies to export and import across the border, not to a sale within Canada",
+    "detail": "Environment and Climate Change Canada administers CITES in Canada. Its permits page states that you must have the necessary CITES permits before you import or export items, that the permits must be validated by a border services officer at the place of exit and the place of entry, and that \"Permits will not be issued retroactively\" — if you do not have the proper permit, border officers can hold and seize the item and you will not be able to get a permit afterward to release it. The page notes that CITES parts and derivatives turn up in items including musical instruments. The materials that matter here are elephant ivory, common in pre-1970s piano key tops, and tortoiseshell. We have deliberately removed the rosewood warning that appeared in an earlier version of this page: CITES changed how it treats rosewood in finished instruments, and we could not retrieve the current annotation text from CITES, whose site refuses automated retrieval, so this page makes no claim about rosewood in either direction — ask CITES Canada before you ship a rosewood instrument abroad. If you sell to a buyer outside Canada and ship the instrument, you are the exporter. Selling the same instrument to someone in Canada does not engage any of this.",
+    "source": "https://www.canada.ca/en/environment-climate-change/services/convention-international-trade-endangered-species/permits.html"
+   },
+   {
+    "rule": "Worked elephant ivory needs a permit for every import and export, personal items included, since 8 January 2024",
+    "jurisdiction": "Canada — border movements only",
+    "detail": "Environment and Climate Change Canada states that \"Permits are required for the import and export of all items of worked elephant tusk (ivory)\" and that \"The requirements will be in force on January 8, 2024.\" Raw ivory is prohibited for import and export without a permit outside narrow museum, zoo, scientific research and law-enforcement purposes. Worked ivory held as a personal effect or household item is no longer automatically exempt. This bites on pianos in particular, because ivory key tops were ordinary before the 1970s, and on older bows, woodwind rings and inlays. Confirm with CITES Canada what documentation your specific instrument needs before you list it internationally.",
+    "source": "https://www.canada.ca/en/environment-climate-change/services/convention-international-trade-endangered-species/import-export-elephant-tusk-ivory-rhinoceros-horn.html"
+   }
+  ]
+ }
+}

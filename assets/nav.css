@@ -5,7 +5,7 @@
    squeezed the CTA until its label wrapped onto two lines. Now
    three grouped panels, one plain link and the CTA, organised by
    who the visitor is: someone getting rid of something, someone
-   buying, or an organisation receiving.
+   buying, or an organization receiving.
 
    The links are real <a href> elements pointing at the routes in
    assets/routes.js, not buttons. Crawlers can follow them, they

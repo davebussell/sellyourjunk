@@ -30,7 +30,7 @@ KINDS = [
     ('electronics',     'Electronics',                     'Working devices for reuse, and dead ones for responsible recycling.'),
     ('books-media',     'Books and media',                 'Books, records and games, which most general thrift stores take only in small quantities.'),
     ('shelter',         'Shelters and community services',  'They take specific things for specific people. Call before you load the car — a wasted trip costs them staff time.'),
-    ('food-bank',       'Food banks',                      'Food first, but several also run household-goods programmes.'),
+    ('food-bank',       'Food banks',                      'Food first, but several also run household-goods programs.'),
     ('specialty',       'Specialist',                      'Organizations that take one category properly rather than everything badly.'),
 ]
 

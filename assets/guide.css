@@ -352,3 +352,32 @@
   .t-truth p{font-size:1.05rem}
   .t-box{padding:19px 18px;border-radius:16px}
 }
+
+/* "How to tell what you have got" — the physical identification guide.
+   This is the half of the editorial that survived two adversarial audits,
+   because it describes the object in front of the reader rather than
+   claiming anything about an organization. It needs no citation: you can
+   check it by pulling the drawer out. */
+.t-tells{list-style:none;margin:0;padding:0;display:grid;gap:15px}
+.t-tells li{font-size:.9rem;line-height:1.55;padding-left:18px;position:relative}
+.t-tells li::before{
+  content:"";position:absolute;left:0;top:.5em;width:7px;height:7px;
+  border:2px solid var(--calm);border-radius:50%;
+}
+.t-tells li b{display:block;font-weight:650;letter-spacing:-.012em;margin-bottom:3px}
+.t-tells li span{display:block;color:var(--ink-2);font-size:.87rem}
+
+/* counted from the directory, never asserted. --clay on --paper is 3.76:1 and
+   these are the organization names behind each count — the part a reader
+   checks the claim against, so it has to be properly legible. */
+.t-refuse li em{display:block;color:var(--ink-2);font-size:.8rem;font-style:normal;margin-top:3px}
+.t-refuse li span{display:inline;color:inherit;font-size:inherit;font-weight:650}
+
+.t-none{
+  list-style:none;margin:0;padding:0;
+  display:flex;flex-wrap:wrap;gap:8px;
+}
+.t-none li{
+  font-size:.85rem;line-height:1.4;color:var(--ink-2);
+  background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:7px 13px;
+}

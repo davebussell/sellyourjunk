@@ -9,6 +9,7 @@ so that re-running the research does not silently lose them.
   python prep-donations.py <raw-metros.json>
 """
 import json, os, sys, re
+from ca_spelling import walk_strings
 from datetime import date
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -143,6 +144,8 @@ def main():
                        'localNote': m.get('localNote', ''), 'orgs': orgs})
 
     os.makedirs(os.path.join(ROOT, 'data'), exist_ok=True)
+    # Canadian English on every reader-facing string (see ca_spelling.py).
+    metros = walk_strings(metros)
     json.dump({'lastChecked': CHECKED, 'metros': metros},
               open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

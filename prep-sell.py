@@ -16,6 +16,7 @@ of this file.
   python prep-sell.py <raw-sell-metros.json>
 """
 import json, os, sys, re
+from ca_spelling import walk_strings
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'data', 'sell-outlets.json')
@@ -205,6 +206,8 @@ def main():
                        'localNote': local, 'regulationNote': reg, 'orgs': orgs})
 
     os.makedirs(os.path.join(ROOT, 'data'), exist_ok=True)
+    # Canadian English on every reader-facing string (see ca_spelling.py).
+    metros = walk_strings(metros)
     json.dump({'lastChecked': CHECKED, 'metros': metros},
               open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

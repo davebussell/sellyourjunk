@@ -184,58 +184,100 @@ def org_sell(o):
 '''
 
 
-def ed_block(ed, route):
-    """The researched, fact-checked editorial. Absent sections simply do not render."""
-    if not ed:
-        return ''
+# What the organizations on a page say they will not take, grouped into themes
+# so the page can count them. Every one of these is computed from the orgs'
+# own refuses lists, each checked against that organization's website - which
+# is why this replaced the researched prose about what "most charities" do.
+REFUSE_THEMES = [
+    ('mattresses and box springs', r'mattress|box ?spring'),
+    ('upholstered furniture',      r'upholster|sofa|couch|chesterfield|cushion'),
+    ('particleboard or flat-pack', r'particle ?board|mdf|flat ?pack|ikea|melamine|laminate'),
+    ('large appliances',           r'large appliance|major appliance|fridge|freezer|washer|dryer|stove'),
+    ('tube televisions',           r'crt|tube (?:tv|television)|projection'),
+    ('car seats and cribs',        r'car ?seat|crib|playpen|walker|infant'),
+    ('anything damaged or stained', r'damag|stain|torn|rip|broken|soiled|worn out|odour|odor|smell'),
+    ('hazardous material',         r'hazard|asbestos|paint|chemical|propane|fuel|oil|battery'),
+    ('anything needing repair',    r'repair|not working|non-?working|incomplete|missing part'),
+    ('encyclopedias and textbooks', r'encyclop|textbook|condensed|ex-?library'),
+]
+
+
+def refusal_summary(orgs):
+    """"4 of the 7 places here will not take mattresses" - counted, not claimed."""
+    import re as _re
+    n, out = len(orgs), []
+    for label, pat in REFUSE_THEMES:
+        rx = _re.compile(pat, _re.I)
+        hits = [o for o in orgs if any(rx.search(r) for r in (o.get('refuses') or []))]
+        if len(hits) >= 2:
+            out.append((len(hits), label, [o['name'] for o in hits]))
+    out.sort(reverse=True)
+    return n, out[:5]
+
+
+def ed_block(ed, route, orgs):
+    """The editorial half: what the object is, and what the law says.
+
+    Deliberately narrow. Two research passes and two adversarial audits
+    established that the material about physical objects holds up and the
+    material about organizations does not - quotes attributed to charities
+    whose domains do not resolve, prices credited to shops that publish
+    none, "most charities" built from one affiliate. All of that is cut.
+    What an organization accepts or refuses now comes from the directory,
+    where every record was checked against that organization's own site.
+    """
     out = []
-    if ed.get('openingTruth'):
+    if ed and ed.get('openingTruth'):
         out.append(f'''    <div class="t-truth">
       {IC["info"]}
       <p>{E(ed["openingTruth"])}</p>
     </div>
 ''')
-    if ed.get('worthMoney') or ed.get('worthNothing'):
-        cols = ''
-        if ed.get('worthMoney'):
-            items = ''.join(
-                f'<li><b>{E(w["what"])}</b>{(" — " + E(w.get("roughValue"))) if w.get("roughValue") else ""}'
-                f'<span>{E(w["why"])}</span>'
-                f'{f"<em>{E(w['tell'])}</em>" if w.get("tell") else ""}</li>'
-                for w in ed['worthMoney'])
-            cols += f'<div class="t-col up"><h3>{IC["check"]}Worth money</h3><ul>{items}</ul></div>'
-        if ed.get('worthNothing'):
-            items = ''.join(f'<li><b>{E(w["what"])}</b><span>{E(w["why"])}</span></li>'
-                            for w in ed['worthNothing'])
-            cols += f'<div class="t-col down"><h3>{IC["x"]}Worth nothing</h3><ul>{items}</ul></div>'
-        out.append(f'    <div class="t-split">{cols}</div>\n')
-    if ed.get('commonlyRefused'):
+
+    if ed and ed.get('tells'):
         items = ''.join(
-            f'<li><b>{E(r["what"])}</b><span>{E(r["why"])}</span>'
-            f'{f"<em>{E(r['whoRefuses'])}</em>" if r.get("whoRefuses") else ""}</li>'
-            for r in ed['commonlyRefused'])
+            f'<li><b>{E(t["what"])}</b><span>{E(t["tell"])}</span></li>' for t in ed['tells'])
         out.append(f'''    <div class="t-box">
-      <h2>What gets turned away at the door</h2>
-      <p>Most refusals are about condition and completeness, not category. These are the
-        ones that cost people a wasted trip.</p>
-      <ul class="t-refuse">{items}</ul>
+      <h2>How to tell what you have got</h2>
+      <p>Before you call anyone, two minutes with the object settles most of it. None of
+        this needs an expert — it needs a flashlight and a look at the back.</p>
+      <ul class="t-tells">{items}</ul>
     </div>
 ''')
-    for law in (ed.get('legalOrSafety') or []):
+
+    n, themes = refusal_summary(orgs)
+    if themes:
+        rows = ''.join(
+            f'<li><b>{c} of {n}</b> will not take <span>{E(label)}</span>'
+            f'<em>{E(", ".join(names[:4]))}{" and others" if len(names) > 4 else ""}</em></li>'
+            for c, label, names in themes)
+        out.append(f'''    <div class="t-box">
+      <h2>What this list turns away</h2>
+      <p>Counted from what each place says on its own site, not from what is generally
+        true. Most refusals are about condition and completeness rather than category.</p>
+      <ul class="t-refuse">{rows}</ul>
+    </div>
+''')
+
+    if ed and ed.get('worthNothing'):
+        items = ''.join(f'<li>{E(w["what"])}</li>' for w in ed['worthNothing'])
+        out.append(f'''    <div class="t-box">
+      <h2>Rarely worth anything</h2>
+      <p>Not a rule, and not a reason to bin something without asking. These are the
+        things people most often expect to be worth money and find are not.</p>
+      <ul class="t-none">{items}</ul>
+    </div>
+''')
+
+    for law in (ed.get('legalOrSafety') if ed else []) or []:
         out.append(f'''    <div class="t-law">
       {IC["info"]}
       <div><b>{E(law["rule"])}</b> <span class="t-juris">{E(law["jurisdiction"])}</span>
         <p>{E(law["detail"])}</p>
-        {f'<a href="{E(law["source"])}" target="_blank" rel="noopener">Official source &rarr;</a>' if law.get('source') else ''}
+        <a href="{E(law["source"])}" target="_blank" rel="noopener">Read the rule &rarr;</a>
       </div>
     </div>
 ''')
-    if ed.get('howToPrepare'):
-        items = ''.join(f'<li>{IC["check"]}<span>{E(s)}</span></li>' for s in ed['howToPrepare'])
-        out.append(f'    <div class="g-check"><h2>Before you go</h2><ul>{items}</ul></div>\n')
-    key = 'pickupReality' if route == 'donate' else 'sellVsDonate'
-    if ed.get(key):
-        out.append(f'    <div class="t-note"><p>{E(ed[key])}</p></div>\n')
     return ''.join(out)
 
 
@@ -349,7 +391,7 @@ def page(route, city, slug, item, orgs, ed, idx, checked, siblings):
       if you {verb} to them.</span>
     </div>
 
-{ed_block(ed, route)}
+{ed_block(ed, route, orgs)}
     <div class="g-sec">
       <h2>{n} places in {E(cityname)} that take {E(noun)}</h2>
     </div>

@@ -33,7 +33,7 @@ KINDS = [
     ('auction',       'Auction houses',              'They sell it for you to whoever bids. It can beat every other route here, and it can also fetch almost nothing — the price is decided in the room, not by them, and you find out weeks later.'),
     ('building-salvage','Architectural and building salvage','Doors, windows, cabinetry, fixtures and hardware pulled out of a renovation.'),
     ('jeweller',      'Gold and jewellery buyers' ,  'Paid against the daily spot price, minus a margin almost nobody publishes.'),
-    ('scrap-metal',   'Scrap metal yards',           'Paid by weight and grade at the scale. Appliances, copper, aluminium, radiators.'),
+    ('scrap-metal',   'Scrap metal yards',           'Paid by weight and grade at the scale. Appliances, copper, aluminum, radiators.'),
     ('auto-salvage',  'Auto salvage and scrap cars',       'Non-running vehicles, usually towed free. Often the single most valuable thing on a property.'),
     ('books-records', 'Book and record shops'     ,    'They buy selectively. Most general paperbacks are worth nothing to anyone.'),
     ('other',         'Other',                       ''),
