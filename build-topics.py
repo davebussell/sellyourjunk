@@ -25,6 +25,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 _spec = importlib.util.spec_from_file_location('guides', os.path.join(ROOT, 'build-guides.py'))
 _g = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(_g)
 head, FOOT, IC, E, tel, SITE = _g.head, _g.FOOT, _g.IC, _g.E, _g.tel, _g.SITE
+city_label, fit_title = _g.city_label, _g.fit_title
 
 _bo = importlib.util.spec_from_file_location('outlets', os.path.join(ROOT, 'build-outlets.py'))
 _o = importlib.util.module_from_spec(_bo); _bo.loader.exec_module(_o)
@@ -243,18 +244,44 @@ def page(route, city, slug, item, orgs, ed, idx, checked, siblings):
     pslug, noun, phrase = item
     verb = 'donate' if route == 'donate' else 'sell'
     canon = f'{SITE}/{route}/{slug}/{pslug}'
-    title = f'Where to {verb} {phrase} in {cityname}'
     n = len(orgs)
+    label = city_label(slug, cityname)
+    # The count in the title is generated from the same rows as the H1 below.
+    # Numbers are retained in 97.3% of titles where the H1 agrees and 25.8%
+    # where it does not, and a hand-typed count that drifts is a false title.
     if route == 'donate':
-        desc = (f'{n} verified places in {cityname} that accept donated {phrase}, what each one '
-                f'refuses, and which will collect from your home.')
-        lede = (f'{n} organizations in and around {cityname} that take donated {noun} — what each one '
-                f'accepts, what it turns away, and which of them will come and collect it.')
+        free = sum(1 for o in orgs if o.get('pickup') == 'free')
+        clauses = ([f'{free} collect free, {n - free} drop-off', f'{free} collect free']
+                   if free > 1 else
+                   [f'{free} collects free, {n - free} drop-off', f'{free} collects free']
+                   if free else ['who collects, who refuses', 'all drop-off'])
     else:
-        desc = (f'{n} businesses in {cityname} that buy used {phrase}, what each pays for, and '
-                f'exactly what kind of deal each one is offering.')
-        lede = (f'{n} businesses in and around {cityname} that buy used {noun} from the public — what '
-                f'each one takes, and whether you are being offered a purchase, a consignment or a loan.')
+        pawn = sum(1 for o in orgs if o.get('pawnWarning'))
+        shop = 'pawn shop' if pawn == 1 else 'pawn shops'
+        clauses = ([f'{pawn} {shop}, {n - pawn} buy outright', f'{pawn} of {n} are pawn']
+                   if pawn else ['who buys, and on what terms', 'what each one pays'])
+    title = fit_title(f'{verb.title()} {noun} in {label}', clauses,
+                      f'{n} places' if route == 'donate' else f'{n} buyers')
+    # Observed snippets average 146 characters on desktop and 136 on mobile, so
+    # writing to about 140 means nothing is cut on either. Real organization names
+    # are what make each of these 189 descriptions different from the others, so
+    # they go on the end and only as many as fit.
+    if route == 'donate':
+        desc = (f'{n} places in {label} that take used {noun}, including which collect '
+                f'and what they refuse.')
+        lede = (f'{n} organizations in and around {cityname} that take donated {noun} — what '
+                f'each one accepts, what it turns away, and which will come and collect it.')
+    else:
+        desc = (f'{n} businesses in {label} that buy used {noun}, and whether each is a '
+                f'purchase, a consignment or a loan.')
+        lede = (f'{n} businesses in and around {cityname} that buy used {noun} from the public '
+                f'— what each takes, and whether you are offered a purchase, a consignment '
+                f'or a loan.')
+    for o in orgs[:3]:
+        cand = desc + ' ' + o['name'] + '.'
+        if len(cand) > 145:
+            break
+        desc = cand
 
     other = 'sell' if route == 'donate' else 'donate'
     otherN = len(idx[slug][other].get(TO_CAT[pslug], []))
@@ -300,7 +327,7 @@ def page(route, city, slug, item, orgs, ed, idx, checked, siblings):
           + '\n</script>')
 
     render = org_donate if route == 'donate' else org_sell
-    return head(title + ' | We Pay for Junk', desc, canon, ld) + f'''
+    return head(title, desc, canon, ld) + f'''
 <section class="band" style="padding-bottom:0">
   <div class="g-wrap">
     <nav class="t-crumb">

@@ -54,6 +54,79 @@ IC = {
  'x':     '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>',
 }
 
+# Cities that share a name with a better-known place abroad. Six of the first
+# 58 impressions this site ever recorded came from the United Kingdom, at an
+# average position of 40, and /sell/london and /donate/london are the obvious
+# candidates. Qualifying the province costs nothing and is correct either way.
+SEARCH_NAME = {
+    'london':   'London, Ontario',
+    'halifax':  'Halifax, Nova Scotia',
+    'hamilton': 'Hamilton, Ontario',
+    'victoria': 'Victoria, BC',
+}
+
+def city_label(slug, name):
+    return SEARCH_NAME.get(slug, name)
+
+
+def title_clause(orgs, route):
+    """Candidate clauses for after the colon, richest first.
+
+    Google documents seven reasons it replaces a title, and one is
+    micro-boilerplate: "repeated boilerplate text in <title> elements for a
+    subset of pages within a site." Fourteen metros sharing one skeleton is
+    that class by definition. These are computed from each city's own rows,
+    so they differ because the cities differ.
+    """
+    n = len(orgs)
+    if route == 'donate':
+        free = sum(1 for o in orgs if o.get('pickup') == 'free')
+        cond = sum(1 for o in orgs if o.get('pickup') == 'conditional')
+        if free >= 3:
+            return [f'{free} collect free, {n - free} drop-off',
+                    f'{free} collect free', f'{n} listed, {free} collect']
+        if free >= 1:
+            v = 'collects' if free == 1 else 'collect'
+            return [f'{free} {v} free, {n - free} drop-off',
+                    f'{free} {v} free', f'{n} charities listed']
+        if cond >= 2:
+            return [f'{cond} may collect, {n - cond} drop-off',
+                    f'{cond} may collect', f'{n} charities listed']
+        return ['all drop-off, and what each refuses',
+                'every one is drop-off', f'{n} listed, all drop-off']
+    pawn = sum(1 for o in orgs if o.get('pawnWarning'))
+    weight = sum(1 for o in orgs if o.get('deal') == 'by-weight')
+    consign = sum(1 for o in orgs if o.get('deal') == 'consignment-split')
+    lend = 'lends' if pawn == 1 else 'lend'
+    if pawn >= 4:
+        return [f'{pawn} pawn shops, {n - pawn} outright buyers',
+                f'{pawn} pawn shops of {n}', f'{pawn} of {n} are pawn']
+    if consign >= 4:
+        return [f'{consign} consign, {n - consign} buy outright',
+                f'{consign} sell it for you', f'{consign} on consignment']
+    if weight >= 4:
+        return [f'{weight} paid by weight, {n - weight} by the item',
+                f'{weight} paid by weight', f'{weight} buy by weight']
+    if pawn:
+        return [f'what each pays, and which {pawn} {lend} instead',
+                f'{n} buyers, {pawn} also {lend}', f'{n} buyers and their terms']
+    return ['who buys outright, and who does not',
+            f'{n} buyers and their terms', f'{n} buyers listed']
+
+
+# Over 60 characters Google rewrote 76% of titles in the largest measured
+# sample, and over 70 it rewrote 99.9%. The clause after the colon is the part
+# we can afford to lose, so take the richest one that still fits.
+TITLE_MAX = 60
+
+def fit_title(stem, clauses, tail=None):
+    for c in list(clauses) + ([tail] if tail else []):
+        t = f'{stem}: {c}'
+        if len(t) <= TITLE_MAX:
+            return t
+    return stem
+
+
 def tel(p):
     return re.sub(r'[^0-9+]', '', p or '')
 
@@ -184,7 +257,9 @@ def city_page(m, all_metros, checked):
     name, slug = m['name'], m['slug']
     orgs = m['orgs']
     canon = f'{SITE}/donate/{slug}'
-    title = f'Where to donate used furniture and household goods in {name}'
+    label = city_label(slug, name)
+    title = fit_title(f'Donate used goods in {label}', title_clause(orgs, 'donate'),
+                      f'{len(orgs)} charities')
     desc = (f'{len(orgs)} places in {name} that accept donated furniture, clothes, appliances and '
             f'household goods — including which ones will collect from your home, and what each one refuses.')
 
@@ -276,7 +351,7 @@ def city_page(m, all_metros, checked):
 
     local = f'<p class="lede" style="margin-top:14px">{E(m["localNote"])}</p>' if m.get('localNote') else ''
 
-    return head(title + ' | We Pay for Junk', desc, canon, ld_tag) + f'''
+    return head(title, desc, canon, ld_tag) + f'''
 <section class="band" style="padding-bottom:0">
   <div class="g-wrap">
     <div class="g-hero">
@@ -333,7 +408,7 @@ def city_page(m, all_metros, checked):
 
 def hub_page(metros, checked):
     canon = f'{SITE}/donate/'   # trailing slash: Netlify 301s /donate -> /donate/
-    title = 'Where to donate used goods in Canada — city by city'
+    title = 'Where to donate used goods in Canada, city by city'
     total = sum(len(m['orgs']) for m in metros)
     desc = (f'Verified guides to donating used furniture, clothing and household goods in {len(metros)} Canadian '
             f'cities. {total} organizations, with what each one refuses and which will collect from your home.')
@@ -347,7 +422,7 @@ def hub_page(metros, checked):
                        'url': f'{SITE}/donate/{m["slug"]}'} for m in metros]}
     ld_tag = '<script type="application/ld+json">\n' + json.dumps(ld, indent=2, ensure_ascii=False) + '\n</script>'
 
-    return head(title + ' | We Pay for Junk', desc, canon, ld_tag) + f'''
+    return head(title, desc, canon, ld_tag) + f'''
 <section class="band" style="padding-bottom:0">
   <div class="g-wrap">
     <div class="g-hero">

@@ -19,6 +19,7 @@ _spec = importlib.util.spec_from_file_location(
 _g = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_g)
 head, FOOT, IC, E, tel, SITE = _g.head, _g.FOOT, _g.IC, _g.E, _g.tel, _g.SITE
+city_label, title_clause, fit_title = _g.city_label, _g.title_clause, _g.fit_title
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, 'data', 'sell-outlets.json')
@@ -134,7 +135,9 @@ def outlet_html(o):
 def city_page(m, all_metros, checked):
     name, slug, orgs = m['name'], m['slug'], m['orgs']
     canon = f'{SITE}/sell/{slug}'
-    title = f'Where to sell used furniture, electronics and household goods in {name}'
+    label = city_label(slug, name)
+    title = fit_title(f'Sell used goods in {label}', title_clause(orgs, 'sell'),
+                      f'{len(orgs)} buyers')
     desc = (f'{len(orgs)} businesses in {name} that buy used goods from the public — pawn shops, '
             f'consignment, scrap yards, auto salvage and buy-back. What each one takes, and how the '
             f'deal actually works.')
@@ -199,7 +202,7 @@ def city_page(m, all_metros, checked):
     ]}
     ld_tag = '<script type="application/ld+json">\n' + json.dumps(ld, indent=2, ensure_ascii=False) + '\n</script>'
 
-    return head(title + ' | We Pay for Junk', desc, canon, ld_tag) + f'''
+    return head(title, desc, canon, ld_tag) + f'''
 <section class="band" style="padding-bottom:0">
   <div class="g-wrap">
     <div class="g-hero">
@@ -260,7 +263,7 @@ def city_page(m, all_metros, checked):
 def hub_page(metros, checked):
     canon = f'{SITE}/sell/'
     total = sum(len(m['orgs']) for m in metros)
-    title = 'Where to sell used goods in Canada — city by city'
+    title = 'Where to sell used goods in Canada, city by city'
     desc = (f'{total} verified businesses across {len(metros)} Canadian cities that buy used furniture, '
             f'electronics, gold, scrap and cars from the public. What each takes and how the deal works.')
     cities = ''.join(
@@ -272,7 +275,7 @@ def hub_page(metros, checked):
                        'url': f'{SITE}/sell/{m["slug"]}'} for m in metros]}
     ld_tag = '<script type="application/ld+json">\n' + json.dumps(ld, indent=2, ensure_ascii=False) + '\n</script>'
 
-    return head(title + ' | We Pay for Junk', desc, canon, ld_tag) + f'''
+    return head(title, desc, canon, ld_tag) + f'''
 <section class="band" style="padding-bottom:0">
   <div class="g-wrap">
     <div class="g-hero">
